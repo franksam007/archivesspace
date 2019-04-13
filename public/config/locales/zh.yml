@@ -1,0 +1,2047 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh:
+  brand:
+    title: 3Golden AMS公共界面
+    title_link_text: 返回首页
+    home: 首页
+    welcome_head: 欢迎进入3Golden AMS
+    welcome_message: |
+                     <p>搜索收藏集、电子资料及其他</p>
+
+    welcome_search_label: "查找您所需档案/资料："
+    welcome_page_title: 3Golden AMS公共界面
+
+  actions:
+    search: 搜索
+    search_header: 搜索档案
+    search_within: 结果中搜索
+    search_in: "搜索%{type}"
+    new_search: 新搜索
+    refine_search: 细化搜索
+    browse: 浏览
+    show_advanced_search: 显示高级搜索
+    hide_advanced_search: 隐藏高级搜索
+    backup:  返回前一页
+    backup_abbr: 返回
+    cite: 引用
+    bookmark: 书签
+    request: 请求
+    print: 打印
+    print-generating: 生成中
+    collection_overview: 收藏集总览
+    hierarch: 收藏集组织
+    numeric: 装具清单
+    detailed: 详细内容
+    record_details: 文件详细
+    clipboard: 复制到剪切板
+    search_add_row: 添加搜索行
+    search_remove_row: 移除下一行
+    staff_link: 职员专用
+
+  page_actions: 页面操作
+
+  request:
+    email_header: 感谢您的请求
+    required: 必须
+    user_name: 您的姓名
+    user_email: 您的电子邮件地址
+    date: 预计到达时间
+    note: 对职员留言
+    visit: "请求访问%{repo_name}以便浏览<strong>%{archival_object}</strong>"
+    submit: 提交请求
+    submitted: 请求已提交。您将很快收到附有您的请求的电子邮件。
+    errors:
+      name: 请输入您的姓名
+      email: 请输入合法电子邮件地址
+    email:
+      subject: "关于%{title}的请求"
+
+  search-button:
+    label: 搜索
+  search-limit: "限制到%{limit}项"
+  search-limiting: "已限制到%{limit}项"
+  search-limits:
+    all: 所有文件类型
+    repository: 档案库
+    repositories: 档案库
+    resource: 收藏集
+    resources: 收藏集
+    digital: 电子资料
+    digital_object: 电子资料
+    objects: 档案或数字对象
+    subject: 主题
+    agent: 内容创建者
+    agents: 内容创建者
+  search-field: 搜索字段
+  searched-field: "正在搜索%{field}"
+
+  pagination:
+    first: 首页
+    last: 末页
+    previous: "&#171;"
+    next: "&#187;"
+    summary_prefix: 正在展示
+    summary_offset_connector: "-"
+    summary_total_connector: "，共"
+    summary_suffix: 项
+    page_prefix: 页
+    page_connector: "，共"
+
+  search_results:
+    page_title: "找到%{count}项"
+    results_head: "展示%{type}: %{start} - %{end}，共%{total}"
+    results: 项
+    head_prefix: 找到
+    head_suffix: 项
+    searching: 搜索中
+    search_for: "搜索%{type}，条件：%{conditions}"
+    keyword_contain: "<strong>关键字</strong>: <span class='searchterm'>%{kw}</span>"
+    title_contain: "<strong>标题</strong> 包含  <span class='searchterm'>%{kw}</span>"
+    notes_contain: "<strong>note</strong> 包含  <span class='searchterm'>%{kw}</span>"
+    creators_text_contain: "<strong>创建者</strong> 包含 <span class='searchterm'>%{kw}</span>"
+    subjects_text_contain: "<strong>主题</strong> 包含 <span class='searchterm'>%{kw}</span>"
+    identifier_contain: "<strong>标识</strong> 包含 <span class='searchterm'>%{kw}</span>"
+    four_part_id_contain: "<strong>标识</strong> 包含 <span class='searchterm'>%{kw}</span>"
+    in_repository: "，目标库：<strong>%{name}</strong>"
+    year_range: " 从 <strong>%{from_year}</strong> 到 <strong>%{to_year}</strong>"
+    anything: "*"
+    search_term: 搜索词
+    title: 所有文件
+    error: 由于意外错误，无法完成搜索
+    no_results: 未找到相应文件
+    no_results_prefix: 无搜索结果符合
+    result_type: 文件类型
+    result_title: 标题
+    filter_by: 过滤条件
+    filtered_by: 过滤条件
+    remove_filter: 移除此过滤器
+    modified: 最近修改日期
+    created: 创建日期
+    text_placeholder: 文本过滤
+    clear_all: 清除所有
+    created: 已创建
+    modified: 已修改
+    component_switch: 包含子项
+    more_facets: 更多
+    fewer_facets: 更少
+    op:
+      AND: 与
+      OR:  或
+      NOT:  与非
+    op_first_row:
+      NOT: 非
+    filter:
+      head: 过滤结果
+      add: 附加过滤器
+      form: 结果中搜索
+      show_fewer: 展示更少
+      show_more: 展示更多
+      query: 文本
+      subjects: 主题
+      primary_type: 类型
+      repository: 档案库
+      used_within_published_repository: 档案库
+      creators: 创建者
+      fullrecord: 关键字
+      subjects_text: 主题
+      title: 标题
+      creators_text: 创建者
+      scope: 范围
+      notes: 注释
+      identifier: 标识
+      source: 源
+      published_agents: 名称
+      agents_text: 名称
+      classification_uri: 分类
+      linked_agent_roles: 角色
+      from_year: 从（年）
+      to_year: 到（年）
+      years: 年
+      from: 从
+      to: 到
+      years_include: 包括年份
+      year_now: 现在
+      year_begin: 起始
+      from_to: "从%{begin}年到%{end}年"
+      child_container_u_sstr: 子装具
+      grand_child_container_u_sstr: 孙装具
+      type_enum_s: 类型
+      published_series_title_u_sstr: 系列
+      instance_type_enum_s: 实例类型
+
+  search_sorting:
+    sort_by: "排序："
+    sort: 排序
+    and: "与："
+    asc: (升序)
+    desc: (降序)
+    relevance: 相关性
+    title_sort: 标题
+    user_mtime: 已修改
+    primary_type: 文件类型
+    processing_priority: 优先级
+    processing_status: 状态
+    parent_id: 文件类型
+    create_time: 已创建
+    authority_id: 权威机构ID
+    source: 源
+    rules: 规则
+    outcome: 输出
+    event_type: 类型
+    identifier: 标识
+    select: 选择
+    year_sort: 年
+    sorting: "%{type} %{direction}"
+    classification_identifier: 标识
+
+  inherit:
+    inherited: "从%{level}级:"
+    collection: 收藏集
+    series: 系列
+    sub-series: 子系列
+    class: 类
+    file: 案卷
+    fonds: 全宗
+    item: 条目
+    otherlevel: 其他级别
+    recordgrp: 文件组
+    subfonds: 子全宗
+    subgrp: 子组
+
+  errors:
+    error_404: "未找到%{type}类型文件"
+    error_404_message: "所访问的%{type}类型文件不存在，或已经被删除。"
+    backend_down: 无法连接数据库
+    backend_down_message: 系统遇到技术问题，请稍后重试。
+    unexpected_error: 由于异常错误，无法完成请求
+
+  boolean:
+    "true": 是
+    "false": 否
+
+  navbar:
+    search_placeholder: 输入搜索词
+    search_all: 所有文件
+    error_no_term: 没有输入搜索词。
+    search_terms_results: "{{search_terms}}搜索结果为{{number}}条"
+
+  internal_links:
+    main: 主要内容
+    filter: 过滤结果
+    collection: 收藏集组织
+    search_collection: 收藏集中搜索
+
+  accordion:
+    expand: 展开所有
+    collapse: 折叠所有
+
+  advanced_search:
+    operator_label: 搜索操作符
+    operator:
+      AND: 与
+      OR: 或
+      NOT: 非
+    button_text: 搜索
+    reset: 清除
+    nav_switcher:
+      show: 显示高级
+      hide: 隐藏高级
+    index_switcher:
+      show: 显示高级搜索
+      hide: 隐藏高级搜索
+
+  contains: "包含 %{count} %{type}"
+  found: "在%{count} %{type}中找到"
+  coll_obj:
+    _singular: 收藏集或文件
+    _plural: 收藏集和/或文件
+
+  # I don't have a place for these, so I'm putting them here
+  scope_note : 范围说明
+  multiple_containers: 多装具
+  # adding the inherited title to the display string
+  inherited: "%{title}, %{display}"
+  extent_number_type: "%{number} %{type}"
+  extent_phys_details: " : %{deets}"
+  extent_dims: " ; %{dimensions}"
+
+  external_docs: 外部文件
+  more_about: 更多关于
+  listing: 正在列示
+  list: "%{type}列表"
+  cont_arr: 收藏集组织
+  dig_cont_arr: 数字对象组织
+  subgroups: 子组
+  accessed: 已访问
+  containers: 物理存储信息
+  related_accessions: 相关未处理资料
+  related_resources: 相关收藏集
+  linked_instances: 链接文件
+  linked_digital_objects: 电子资料
+
+  accession:
+   _singular: 未处理资料
+   _plural: 未处理资料
+   _public:
+      section:
+        summary: 概要
+        acquisition_type: 征集类型
+        provenance: 出处
+        access_restrictions: 访问限制
+        access_restrictions_apply: 适用访问限制
+        use_restrictions: 使用限制
+        use_restrictions_apply: 适用使用限制
+        content_description: 内容著录
+        inventory: 清单
+      related_accessions:
+       accessions: 相关未处理资料
+       deaccessions: 注销藏品
+
+  archival_object:
+    _singular: 归档文件
+    _plural: 归档文件
+    _public:
+      section:
+        components: 构件
+        summary: 概要
+      messages:
+        no_components: 归档文件没有构件
+      header:
+       dates: 日期
+       lang: 语言
+       physdesc: 物理描述
+       storage: 装具信息
+       access: 访问条件
+       use: 使用条件
+       component: 构件
+       ref_id: 参考标识
+
+  archive:
+    _singular: 档案
+    _plural: 档案
+
+  repository:
+    _singular: 档案库
+    _plural: 档案库
+    what: 此档案库的内容有哪些?
+    details: 档案库详情
+    part: 构件
+
+  context: 位于
+  context_delimiter: "/"
+  bulk:
+     _singular: "大部分资料的日期为%{dates}"
+     _plural: "大部分资料的日期为%{dates}"
+
+  resource:
+    _singular: 收藏集
+    _plural: 收藏集
+    _public:
+      identifier: 标识
+      extent: 扩充
+      dates: 日期
+      lang: 语言
+      digital_object: 数字对象
+      physdesc: 物理描述
+      storage: 装具信息
+      access: 访问条件
+      use: 使用条件
+      additional: 附加描述
+      section:
+        components: 构件
+        summary: 概要
+      messages:
+        no_components: 资源没有构件
+      finding_aid:
+        head: 查找辅助与管理信息
+        title: 标题
+        subtitle: 子标题
+        status: 状态
+        author: 作者
+        date:  日期
+        description_rules: 著录规则
+        identifier: 标识
+        language: 著录语言
+        sponsor: 资助者
+        edition_statement: 版本说明
+        series_statement: 系列说明
+        note: 注释
+        revision: 修订说明
+      related_accessions:
+        accessions: 藏品登记记录
+        deaccessions: 藏品注销记录
+
+  top_container:
+    _singular: 装具
+    _plural: 装具
+
+  related_resource:
+    _singular: 相关收藏集
+    _plural: 相关收藏集
+
+  digital_object: &digital_object_attributes
+    _singular: 数字对象
+    _plural: 数字对象
+    _public:
+      thumbnail: 缩略图
+      link: 链接到数字对象
+      badge_label: 数字%{level}
+      section:
+        components: 构件
+        summary: 概要
+      messages:
+        no_components: 数字对象没有构件
+
+  digital_object_component:
+    _public:
+      section:
+        components: 构件
+        summary: 概要
+      messages:
+        no_components: 数字对象的构件没有构件
+
+  subject:
+    _singular: 主题
+    _plural: 主题
+    used_within: 用于
+
+  component:
+    _singular: 构件
+    _plural: 构件
+
+  unprocessed: 未处理资料
+
+  classification:
+    _singular: 文件组
+    _plural: 文件组
+    creator: 创建者
+    identifier_separator: "."
+    _public:
+      actions:
+        show_subgroups: 显示子组
+
+  classification_term:
+    _singular: 文件组术语
+    _plural: 文件组术语
+    identifier_separator: "/"
+
+  all_agents: 名称
+
+  an_agent: 名称
+
+  pui_agent:
+    _singular: 名称
+    _plural:  名称
+    related: 相关名称
+    creator: 创建者
+  record:
+    _singular: 文件
+    _plural: 文件
+
+  record_group:
+    _singular: 文件组
+    _plural: 文件组
+
+  agent:
+    _singular: 名称
+    _plural: 名称
+    _public:
+      section:
+        summary: 概要
+        other_names: 其他名称
+        other_names_preamble: "也称为："
+        related_agents: 相关名称
+        dates_of_existence: 日期
+        related_agent_description: 描述
+        related_agent_dates: 日期
+
+  agent_person:
+    _singular: 个人
+
+  agent_family:
+    _singular: 家族
+
+  agent_corporate_entity:
+    _singular: 组织
+
+  agent_software:
+    _singular: 软件
+
+  components:
+    expand: 展开
+    collapse: 折叠
+
+  instance:
+    _public:
+      link_to_digital_object: 链接到文件
+
+  record_tree:
+    record_tree_tab: 文件树
+    search_tab: 搜索构件
+
+  location: 位置
+
+  description: 关于
+
+  contact: 联系人
+
+  hours: 小时
+
+  number_of: "%{type}数量："
+
+  parent_inst: 父机构
+
+  email: 发送邮件
+
+  fax: 传真
+
+#  The following are the enums for things like notes type, etc.
+
+  enumerations:
+    linked_event_archival_record_roles:
+      source: 源
+      outcome: 输出
+      transfer: 移交
+    linked_agent_archival_record_relators:
+      abr: 节选者
+      act: 演员
+      adi: 布景师
+      adp: 改编者
+      anl: 分析师
+      anm: 动画制作者
+      ann: 注解者
+      ape: 被上诉人
+      apl: 上诉人
+      app: 申请人
+      arc: 建筑师/架构师
+      arr: 牵头人
+      acp: 艺术复制
+      art: 艺术家
+      ard: 艺术指导
+      asg: 受让人
+      asn: 关联名称
+      att: 特征名称
+      auc: 拍卖人
+      aut: 作者
+      aqt: 引用或文字摘要中的作者
+      aft: 后记、版权页及其它的作者
+      aud: 对话作者
+      aui: 介绍及其他的作者
+      aus: 剧本及其它的作者
+      ato: 自传作家
+      ant: 被引用者
+      bnd: 装订者
+      bdd: 装订设计者
+      blw: 简介作者
+      bkd: 图书设计者
+      bkp: 图书生产者
+      bjd: 图书护封设计者
+      bpd: 藏书票设计者
+      bsl: 图书销售商
+      brl: 盲文浮雕器
+      brd: 广播公司
+      cll: 书法家
+      ctg: 制图者
+      cas: 剪辑师
+      cns: 审查者
+      chr: 编舞者
+      cng: 电影摄影师
+      cli: 客户
+      cor: 收藏集注册员
+      clb: 合作者
+      col: 收藏者
+      clt: Collotyper（特种收藏家）
+      clr: 五彩画家
+      cmm: 评论员
+      cwt: 书写文字评论员
+      com: 汇编者
+      cpl: 原告
+      cpt: 原告-上诉人
+      cpe: 原告-被上诉人
+      cmp: 作曲家
+      cmt: 排版者
+      ccp: 概念构想者
+      cnd: 指挥
+      con: 管理员
+      csl: 顾问
+      csp: 项目顾问
+      cos: 竞争者
+      cot: 竞争者-上诉人
+      coe: 竞争者-被上诉人
+      cts: 资格存疑者
+      ctt: 资格存疑者-上诉人
+      cte: 资格存疑者-被上诉人
+      ctr: 承包人
+      ctb: 贡献者
+      cpc: 版权声索人
+      cph: 版权持有者
+      crr: 校对者
+      crp: 记者
+      cst: 戏装设计师=
+      cou: 管理法院
+      crt: Court reporter
+      cov: 封面设计师
+      cre: 创建者
+      cur: 展览馆长
+      dnc: 舞蹈演员
+      dtc: 数据贡献者
+      dtm: 数据管理者
+      dte: 受奉献者
+      dto: 奉献者
+      dfd: 被告
+      dft: 被告-上诉人
+      dfe: 被告-被上诉人
+      dgg: 学位授予者
+      dgs: 学位监督者
+      dln: 描画者
+      dpc: 描绘者
+      dpt: 寄存者
+      dsr: 设计师
+      drt: 导演
+      dis: 论文
+      dbp: 分销分发场所
+      dst: 分销商
+      dnr: 捐献者
+      drm: 起草人
+      dub: 存疑作者
+      edt: 编辑
+      edc: 汇编编辑
+      edm: 动土编辑
+      elg: 电气技师
+      elt: 电版工
+      enj: 立法管辖机构
+      eng: 工程师
+      egr: 雕刻师
+      etr: 蚀刻师
+      evp: 事件场所
+      exp: 鉴定者
+      fac: 副本
+      fld: 现场导演
+      fmd: 电影导演
+      fds: 电影分销商
+      flm: 电影编辑
+      fmp: 制片人
+      fmk: 电影摄制者
+      fpy: 甲方
+      frg: 伪造者
+      fmo: 前所有者
+      fnd: 投资者
+      gis: 地理信息专家
+      grt: 图形技师
+      hnr: 领奖人
+      hst: 东道主
+      his: 东道主机构
+      ilu: 灯光师
+      ill: 插图师
+      ins: 记录者
+      itr: 器乐家
+      ive: 受访者
+      ivr: 采访者
+      inv: 发明者
+      isb: 发行机构
+      jud: 法官
+      jug: 管辖范围
+      lbr: 实验室
+      ldr: 实验室主任
+      lsa: 造园技师
+      led: 领导
+      len: 出借人
+      lil: 海事控告人
+      lit: 海事控告人-上诉人
+      lie: 海事控告人-被上诉人
+      lel: 海事被控告人
+      let: 海事被控告人-上诉人
+      lee: 海事被控告人-被上诉人
+      lbt: 剧本作者
+      lse: 认可证持有人
+      lso: 认可证颁发者
+      lgd: 照明设计师
+      ltg: 平版家
+      lyr: 抒情诗人
+      mfp: 生产场所
+      mfr: 生产者
+      mrb: 大理石匠
+      mrk: 标记编辑
+      med: 媒介
+      mdc: 元数据联络人
+      mte: 金属雕刻师
+      mtk: 纪要书记员
+      mod: 主持人
+      mon: 监控者
+      mcp: 乐谱制作
+      msd: 音乐指导
+      mus: 音乐家
+      nrt: 解说员
+      osp: 屏幕演示器
+      opn: 对手
+      orm: 会议组织者
+      org: 发起人
+      oth: 其他
+      own: 所有者
+      pan: 专家
+      ppm: 造纸者
+      pta: 专利申请人
+      pth: 专利权所有人
+      pat: 资助人
+      prf: 表演者
+      pma: 许可机构
+      pht: 摄影家
+      ptf: 原告
+      ptt: 原告-上诉人
+      pte: 原告-被上诉人
+      plt: 制版者
+      pra: 行省总督
+      pre: 演播员
+      prt: 印刷者
+      pop: 电板印刷者
+      prm: 版画复制匠
+      prc: 处理联系人
+      pro: 制片人
+      prn: 制作公司
+      pmn: 制作经理
+      prs: 制作设计师
+      prd: 制作人员
+      prp: 制作场所
+      prg: 程序员
+      pdr: 项目指导
+      pfr: 校对者
+      prv: 提供者
+      pup: 出版场所
+      pbl: 出版者
+      pbd: 出版指导
+      ppt: 木偶艺人
+      rdd: 广播指导
+      rpc: 广播出品人
+      rcp: 接受者
+      rce: 录音工程师
+      rcd: 录音员
+      red: 校订者
+      ren: 渲染者
+      rpt: 记者
+      rps: 档案库
+      rth: 研究团队领导
+      rtm: 研究团队成员
+      res: 研究员
+      rsp: 被告
+      rst: 被告-上诉人
+      rse: 被告-被上诉人
+      rpy: 责任团体
+      rsg: 恢复者
+      rsr: 修复者
+      rev: 评论者
+      rbr: 加红者
+      sce: 电影剧本作者
+      sad: 科学顾问
+      scr: 抄写员
+      scl: 雕刻家
+      spy: 乙方
+      sec: 秘书
+      sll: 卖方
+      std: 布景师
+      stg: 布景
+      sgn: 签名者
+      sng: 歌手
+      sds: 音响设计师
+      spk: 演讲者
+      spn: 资助者
+      sgd: 舞台指导
+      stm: 舞台经理
+      stn: 标准团体
+      str: 铸版者
+      stl: 说书人
+      sht: 支持业主
+      srv: 调研者
+      tch: 教师
+      tcd: 技术指导
+      tld: 电视导演
+      tlp: 电视制片人
+      ths: 论文导师
+      trc: 抄写者
+      trl: 翻译者
+      tyd: 造型设计师
+      tyg: 排印师
+      uvp: 大学场所
+      vdg: 录像制作者
+      vac: 配音演员
+      voc: 声乐家
+      wit: 见证人
+      wde: 木刻家
+      wdc: 伐木者
+      wam: 配套资料作者
+      wac: 附加评论作者
+      wal: 附加歌词作者
+      wat: 附加文字作者
+      win: 介绍作者
+      wpr: 前言作者
+      wst: 辅助文字内容作者
+    linked_agent_event_roles:
+      authorizer: 授权人
+      executing_program: 正在执行程序
+      implementer: 实现者
+      recipient: 接受者
+      transmitter: 传送者
+      validator: 校验者
+    name_source:
+      cash: Canadian Subject Headings
+      ingest: Unspecified ingested source
+      lcshac: Library of Congress Children's Subject Headings
+      local: Local sources
+      naf: NACO Authority File
+      nad: NAD / ARK II Name Authority Database
+      nal: National Agricultural Library subject headings
+      rvm: Répertoire de vedettes-matière
+      ulan: Union List of Artist Names
+    name_rule:
+      local: Local rules
+      aacr: Anglo-American Cataloging Rules
+      dacs: "Describing Archives: A Content Standard"
+      rda: Resource Description and Access
+    extent_extent_type:
+      cassettes: 磁带
+      cubic_feet: 立方英尺
+      files: 文件
+      gigabytes: GB
+      leaves: 叶
+      linear_feet: 英尺
+      megabytes: MB
+      photographic_prints: 照片印刷
+      photographic_slides: 照片幻灯片
+      reels: 卷轴
+      sheets: 纸张
+      terabytes: TB
+      volumes: 卷
+    collection_management_processing_priority:
+      none: 未指定
+      high: 高
+      medium: 中
+      low: 低
+    collection_management_processing_status:
+      none: 未指定
+      new: 新
+      in_progress: 处理中
+      completed: 完成
+    date_era:
+      ce: 公元
+    date_calendar:
+      gregorian: 阳历
+    digital_object_digital_object_type:
+      cartographic: 制图
+      mixed_materials: 混合资料
+      moving_image: 动图
+      notated_music: 命名音乐
+      software_multimedia: 软件, 多媒体
+      sound_recording: 录音
+      sound_recording_musical: 录音（音乐）
+      sound_recording_nonmusical: 录音（非音乐）
+      still_image: 静图
+      text: 文本
+    digital_object_level:
+      collection: 收藏集
+      work: 作品
+      image: 图像
+    event_event_type:
+      accession: 藏品登录
+      accumulation: 积累
+      acknowledgement: 确认
+      acknowledgement_sent: 确认已发送
+      acknowledgement_received: 确认已收到
+      agreement_received: 协议已收到
+      agreement_sent: 协议已发送
+      agreement_signed: 协议已签署
+      appraisal: 鉴定
+      assessment: 评估
+      capture: 捕获
+      cataloged: 已编目
+      collection: 收藏集
+      compression: 压缩
+      contribution: 捐赠
+      component_transfer: 构件移交
+      copyright_transfer: 版权移交
+      custody_transfer: 监护权移交
+      deaccession: 藏品注销
+      decompression: 解压
+      decryption: 解密
+      deletion: 删除
+      digital_signature_validation: 数字签名校验
+      fixity_check: 固定性检查
+      ingestion: 接入
+      message_digest_calculation: 消息摘要（MD）计算
+      migration: 迁移
+      normalization: 标准化
+      processed: 已处理
+      processing_new: 正在处理新
+      processing_started: 处理已开始
+      processing_in_progress: 处理中
+      processing_completed: 处理完成
+      publication: 出版
+      replication: 复制
+      rights_transferred: 权利已移交
+      validation: 校验
+      virus_check: 病毒检查
+    resource_resource_type:
+      collection: 收藏集
+      publications: 出版物
+      papers: 论文
+      records: 记录
+    resource_finding_aid_description_rules:
+      aacr: Anglo-American Cataloguing Rules
+      cco: Cataloging Cultural Objects
+      dacs: "Describing Archives: A Content Standard"
+      rad: Rules for Archival Description
+      isadg: International Standard for Archival Description - General
+    resource_finding_aid_status:
+      completed: 完成
+      in_progress: 处理中
+      under_revision: 正在修订
+      unprocessed: 未处理
+    instance_instance_type:
+      accession: 藏品
+      audio: 音频
+      books: 数据
+      computer_disks: 计算机碟片
+      digital_object: 数字对象
+      digital_object_link: 数字对象链接
+      graphic_materials: 图形资料
+      maps: 地图
+      microform: 缩微片
+      mixed_materials: 混合资料
+      moving_images: 动图
+      realia: 教学用品
+      text: 文本
+    accession_acquisition_type:
+      deposit: 寄存
+      gift: 赠品
+      purchase: 购买
+      transfer: 移交
+    accession_resource_type:
+      collection: 收藏集
+      publications: 出版物
+      papers: 论文
+      records: 文件
+    subject_source:
+      aat: "Art & Architecture Thesaurus"
+      cash: Canadian Subject Headings
+      gmgpc: "TGM II, Genre and physical characteristic terms"
+      ingest: Unspecified ingested source
+      lcsh: Library of Congress Subject Headings
+      lcshac: Library of Congress Children's Subject Headings
+      local: Local sources
+      mesh: Medical Subject Headings
+      nal: National Agricultural Library subject headings
+      rbgenr: "Genre Terms: A Thesaurus for Use in Rare Book and Special Collections Cataloguing"
+      rvm: Répertoire de vedettes-matière
+      tgn: Getty Thesaurus of Geographic Names
+    event_outcome:
+      pass: 通过
+      partial pass: 部分通过
+      fail: 失败
+    agent_contact_salutation:
+      mr: 尊敬的
+      mrs: 尊敬的
+      ms: 尊敬的
+      madame: 尊敬的
+      sir: 尊敬的
+    container_type:
+      box: 盒
+      carton: 硬纸盒
+      case: 容器箱
+      folder: 文件夹
+      frame: 框架
+      object: 物品
+      page: 活页
+      reel: 卷轴
+      volume: 卷
+      container: 装具
+    file_version_use_statement:
+      audio-clip: 音频-片段
+      audio-master: 音频-母版
+      audio-master-edited: 音频-母版-经编辑
+      audio-service: 音频-服务
+      audio-streaming: 音频-流
+      image-master: 图像-母版
+      image-master-edited: 图像-母版-经编辑
+      image-service: 图像-服务
+      image-service-edited: 图像-服务-经编辑
+      image-thumbnail: 图像-缩略图
+      text-codebook: 文字-代码书
+      text-data: 文字-数据
+      text-data_definition: 文字-数据定义
+      text-georeference: 文字-地理参考
+      text-ocr-edited: 文字-Ocr-经编辑
+      text-ocr-unedited: 文字-Ocr-未编辑
+      text-tei-transcripted: 文字-Tei-抄本
+      text-tei-translated: 文字-Tei-经翻译
+      video-clip: 视频-片段
+      video-master: 视频-母版
+      video-master-edited: 视频-母版-经编辑
+      video-service: 视频-服务
+      video-streaming: 视频-流
+    file_version_checksum_methods:
+      md5: MD5
+      sha-1: SHA-1
+      sha-256: SHA-256
+      sha-384: SHA-384
+      sha-512: SHA-512
+    language_iso639_2:
+      aar: Afar
+      abk: Abkhazian
+      ace: Achinese
+      ach: Acoli
+      ada: Adangme
+      ady: Adyghe; Adygei
+      afa: Afro-Asiatic languages
+      afh: Afrihili
+      afr: Afrikaans
+      ain: Ainu
+      aka: Akan
+      akk: Akkadian
+      alb: Albanian
+      ale: Aleut
+      alg: Algonquian languages
+      alt: Southern Altai
+      amh: Amharic
+      ang: "English, Old (ca.450-1100)"
+      anp: Angika
+      apa: Apache languages
+      ara: Arabic
+      arc: Official Aramaic (700-300 BCE); Imperial Aramaic (700-300 BCE)
+      arg: Aragonese
+      arm: Armenian
+      arn: Mapudungun; Mapuche
+      arp: Arapaho
+      art: Artificial languages
+      arw: Arawak
+      asm: Assamese
+      ast: Asturian; Bable; Leonese; Asturleonese
+      ath: Athapascan languages
+      aus: Australian languages
+      ava: Avaric
+      ave: Avestan
+      awa: Awadhi
+      aym: Aymara
+      aze: Azerbaijani
+      bad: Banda languages
+      bai: Bamileke languages
+      bak: Bashkir
+      bal: Baluchi
+      bam: Bambara
+      ban: Balinese
+      baq: Basque
+      bas: Basa
+      bat: Baltic languages
+      bej: Beja; Bedawiyet
+      bel: Belarusian
+      bem: Bemba
+      ben: Bengali
+      ber: Berber languages
+      bho: Bhojpuri
+      bih: Bihari languages
+      bik: Bikol
+      bin: Bini; Edo
+      bis: Bislama
+      bla: Siksika
+      bnt: Bantu (Other)
+      bos: Bosnian
+      bra: Braj
+      bre: Breton
+      btk: Batak languages
+      bua: Buriat
+      bug: Buginese
+      bul: Bulgarian
+      bur: Burmese
+      byn: Blin; Bilin
+      cad: Caddo
+      cai: Central American Indian languages
+      car: Galibi Carib
+      cat: Catalan; Valencian
+      cau: Caucasian languages
+      ceb: Cebuano
+      cel: Celtic languages
+      cha: Chamorro
+      chb: Chibcha
+      che: Chechen
+      chg: Chagatai
+      chi: Chinese
+      chk: Chuukese
+      chm: Mari
+      chn: Chinook jargon
+      cho: Choctaw
+      chp: Chipewyan; Dene Suline
+      chr: Cherokee
+      chu: Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic
+      chv: Chuvash
+      chy: Cheyenne
+      cmc: Chamic languages
+      cnr: Montenegrin
+      cop: Coptic
+      cor: Cornish
+      cos: Corsican
+      cpe: "Creoles and pidgins, English-based"
+      cpf: "Creoles and pidgins, French-based"
+      cpp: "Creoles and pidgins, Portuguese-based"
+      cre: Cree
+      crh: Crimean Tatar; Crimean Turkish
+      crp: Creoles and pidgins
+      csb: Kashubian
+      cus: Cushitic languages
+      cze: Czech
+      dak: Dakota
+      dan: Danish
+      dar: Dargwa
+      day: Land Dayak languages
+      del: Delaware
+      den: Slave (Athapascan)
+      dgr: Dogrib
+      din: Dinka
+      div: Divehi; Dhivehi; Maldivian
+      doi: Dogri
+      dra: Dravidian languages
+      dsb: Lower Sorbian
+      dua: Duala
+      dum: "Dutch, Middle (ca.1050-1350)"
+      dut: Dutch; Flemish
+      dyu: Dyula
+      dzo: Dzongkha
+      efi: Efik
+      egy: Egyptian (Ancient)
+      eka: Ekajuk
+      elx: Elamite
+      eng: English
+      enm: "English, Middle (1100-1500)"
+      epo: Esperanto
+      est: Estonian
+      ewe: Ewe
+      ewo: Ewondo
+      fan: Fang
+      fao: Faroese
+      fat: Fanti
+      fij: Fijian
+      fil: Filipino; Pilipino
+      fin: Finnish
+      fiu: Finno-Ugrian languages
+      fon: Fon
+      fre: French
+      frm: "French, Middle (ca.1400-1600)"
+      fro: "French, Old (842-ca.1400)"
+      frr: Northern Frisian
+      frs: Eastern Frisian
+      fry: Western Frisian
+      ful: Fulah
+      fur: Friulian
+      gaa: Ga
+      gay: Gayo
+      gba: Gbaya
+      gem: Germanic languages
+      geo: Georgian
+      ger: German
+      gez: Geez
+      gil: Gilbertese
+      gla: Gaelic; Scottish Gaelic
+      gle: Irish
+      glg: Galician
+      glv: Manx
+      gmh: "German, Middle High (ca.1050-1500)"
+      goh: "German, Old High (ca.750-1050)"
+      gon: Gondi
+      gor: Gorontalo
+      got: Gothic
+      grb: Grebo
+      grc: "Greek, Ancient (to 1453)"
+      gre: "Greek, Modern (1453-)"
+      grn: Guarani
+      gsw: Swiss German; Alemannic; Alsatian
+      guj: Gujarati
+      gwi: Gwich'in
+      hai: Haida
+      hat: Haitian; Haitian Creole
+      hau: Hausa
+      haw: Hawaiian
+      heb: Hebrew
+      her: Herero
+      hil: Hiligaynon
+      him: Himachali languages; Western Pahari languages
+      hin: Hindi
+      hit: Hittite
+      hmn: Hmong; Mong
+      hmo: Hiri Motu
+      hrv: Croatian
+      hsb: Upper Sorbian
+      hun: Hungarian
+      hup: Hupa
+      iba: Iban
+      ibo: Igbo
+      ice: Icelandic
+      ido: Ido
+      iii: Sichuan Yi; Nuosu
+      ijo: Ijo languages
+      iku: Inuktitut
+      ile: Interlingue; Occidental
+      ilo: Iloko
+      ina: Interlingua (International Auxiliary Language Association)
+      inc: Indic languages
+      ind: Indonesian
+      ine: Indo-European languages
+      inh: Ingush
+      ipk: Inupiaq
+      ira: Iranian languages
+      iro: Iroquoian languages
+      ita: Italian
+      jav: Javanese
+      jbo: Lojban
+      jpn: Japanese
+      jpr: Judeo-Persian
+      jrb: Judeo-Arabic
+      kaa: Kara-Kalpak
+      kab: Kabyle
+      kac: Kachin; Jingpho
+      kal: Kalaallisut; Greenlandic
+      kam: Kamba
+      kan: Kannada
+      kar: Karen languages
+      kas: Kashmiri
+      kau: Kanuri
+      kaw: Kawi
+      kaz: Kazakh
+      kbd: Kabardian
+      kha: Khasi
+      khi: Khoisan languages
+      khm: Central Khmer
+      kho: Khotanese; Sakan
+      kik: Kikuyu; Gikuyu
+      kin: Kinyarwanda
+      kir: Kirghiz; Kyrgyz
+      kmb: Kimbundu
+      kok: Konkani
+      kom: Komi
+      kon: Kongo
+      kor: Korean
+      kos: Kosraean
+      kpe: Kpelle
+      krc: Karachay-Balkar
+      krl: Karelian
+      kro: Kru languages
+      kru: Kurukh
+      kua: Kuanyama; Kwanyama
+      kum: Kumyk
+      kur: Kurdish
+      kut: Kutenai
+      lad: Ladino
+      lah: Lahnda
+      lam: Lamba
+      lao: Lao
+      lat: Latin
+      lav: Latvian
+      lez: Lezghian
+      lim: Limburgan; Limburger; Limburgish
+      lin: Lingala
+      lit: Lithuanian
+      lol: Mongo
+      loz: Lozi
+      ltz: Luxembourgish; Letzeburgesch
+      lua: Luba-Lulua
+      lub: Luba-Katanga
+      lug: Ganda
+      lui: Luiseno
+      lun: Lunda
+      luo: Luo (Kenya and Tanzania)
+      lus: Lushai
+      mac: Macedonian
+      mad: Madurese
+      mag: Magahi
+      mah: Marshallese
+      mai: Maithili
+      mak: Makasar
+      mal: Malayalam
+      man: Mandingo
+      mao: Maori
+      map: Austronesian languages
+      mar: Marathi
+      mas: Masai
+      may: Malay
+      mdf: Moksha
+      mdr: Mandar
+      men: Mende
+      mga: "Irish, Middle (900-1200)"
+      mic: Mi'kmaq; Micmac
+      min: Minangkabau
+      mis: Uncoded languages
+      mkh: Mon-Khmer languages
+      mlg: Malagasy
+      mlt: Maltese
+      mnc: Manchu
+      mni: Manipuri
+      mno: Manobo languages
+      moh: Mohawk
+      mon: Mongolian
+      mos: Mossi
+      mul: Multiple languages
+      mun: Munda languages
+      mus: Creek
+      mwl: Mirandese
+      mwr: Marwari
+      myn: Mayan languages
+      myv: Erzya
+      nah: Nahuatl languages
+      nai: North American Indian languages
+      nap: Neapolitan
+      nau: Nauru
+      nav: Navajo; Navaho
+      nbl: "Ndebele, South; South Ndebele"
+      nde: "Ndebele, North; North Ndebele"
+      ndo: Ndonga
+      nds: "Low German; Low Saxon; German, Low; Saxon, Low"
+      nep: Nepali
+      new: Nepal Bhasa; Newari
+      nia: Nias
+      nic: Niger-Kordofanian languages
+      niu: Niuean
+      nno: "Norwegian Nynorsk; Nynorsk, Norwegian"
+      nob: "Norwegian Bokmål; Bokmål, Norwegian"
+      nog: Nogai
+      non: "Norse, Old"
+      nor: Norwegian
+      nqo: N'Ko
+      nso: Pedi; Sepedi; Northern Sotho
+      nub: Nubian languages
+      nwc: Classical Newari; Old Newari; Classical Nepal Bhasa
+      nya: Chichewa; Chewa; Nyanja
+      nym: Nyamwezi
+      nyn: Nyankole
+      nyo: Nyoro
+      nzi: Nzima
+      oci: Occitan (post 1500); Provençal
+      oji: Ojibwa
+      ori: Oriya
+      orm: Oromo
+      osa: Osage
+      oss: Ossetian; Ossetic
+      ota: "Turkish, Ottoman (1500-1928)"
+      oto: Otomian languages
+      paa: Papuan languages
+      pag: Pangasinan
+      pal: Pahlavi
+      pam: Pampanga; Kapampangan
+      pan: Panjabi; Punjabi
+      pap: Papiamento
+      pau: Palauan
+      peo: "Persian, Old (ca.600-400 B.C.)"
+      per: Persian
+      phi: Philippine languages
+      phn: Phoenician
+      pli: Pali
+      pol: Polish
+      pon: Pohnpeian
+      por: Portuguese
+      pra: Prakrit languages
+      pro: "Provençal, Old (to 1500)"
+      pus: Pushto; Pashto
+      que: Quechua
+      raj: Rajasthani
+      rap: Rapanui
+      rar: Rarotongan; Cook Islands Maori
+      roa: Romance languages
+      roh: Romansh
+      rom: Romany
+      rum: Romanian; Moldavian; Moldovan
+      run: Rundi
+      rup: Aromanian; Arumanian; Macedo-Romanian
+      rus: Russian
+      sad: Sandawe
+      sag: Sango
+      sah: Yakut
+      sai: South American Indian (Other)
+      sal: Salishan languages
+      sam: Samaritan Aramaic
+      san: Sanskrit
+      sas: Sasak
+      sat: Santali
+      scn: Sicilian
+      sco: Scots
+      sel: Selkup
+      sem: Semitic languages
+      sga: "Irish, Old (to 900)"
+      sgn: Sign Languages
+      shn: Shan
+      sid: Sidamo
+      sin: Sinhala; Sinhalese
+      sio: Siouan languages
+      sit: Sino-Tibetan languages
+      sla: Slavic languages
+      slo: Slovak
+      slv: Slovenian
+      sma: Southern Sami
+      sme: Northern Sami
+      smi: Sami languages
+      smj: Lule Sami
+      smn: Inari Sami
+      smo: Samoan
+      sms: Skolt Sami
+      sna: Shona
+      snd: Sindhi
+      snk: Soninke
+      sog: Sogdian
+      som: Somali
+      son: Songhai languages
+      sot: "Sotho, Southern"
+      spa: Spanish; Castilian
+      srd: Sardinian
+      srn: Sranan Tongo
+      srp: Serbian
+      srr: Serer
+      ssa: Nilo-Saharan languages
+      ssw: Swati
+      suk: Sukuma
+      sun: Sundanese
+      sus: Susu
+      sux: Sumerian
+      swa: Swahili
+      swe: Swedish
+      syc: Classical Syriac
+      syr: Syriac
+      tah: Tahitian
+      tai: Tai languages
+      tam: Tamil
+      tat: Tatar
+      tel: Telugu
+      tem: Timne
+      ter: Tereno
+      tet: Tetum
+      tgk: Tajik
+      tgl: Tagalog
+      tha: Thai
+      tib: Tibetan
+      tig: Tigre
+      tir: Tigrinya
+      tiv: Tiv
+      tkl: Tokelau
+      tlh: Klingon; tlhIngan-Hol
+      tli: Tlingit
+      tmh: Tamashek
+      tog: Tonga (Nyasa)
+      ton: Tonga (Tonga Islands)
+      tpi: Tok Pisin
+      tsi: Tsimshian
+      tsn: Tswana
+      tso: Tsonga
+      tuk: Turkmen
+      tum: Tumbuka
+      tup: Tupi languages
+      tur: Turkish
+      tut: Altaic languages
+      tvl: Tuvalu
+      twi: Twi
+      tyv: Tuvinian
+      udm: Udmurt
+      uga: Ugaritic
+      uig: Uighur; Uyghur
+      ukr: Ukrainian
+      umb: Umbundu
+      und: Undetermined
+      urd: Urdu
+      uzb: Uzbek
+      vai: Vai
+      ven: Venda
+      vie: Vietnamese
+      vol: Volapük
+      vot: Votic
+      wak: Wakashan languages
+      wal: Walamo
+      war: Waray
+      was: Washo
+      wel: Welsh
+      wen: Sorbian languages
+      wln: Walloon
+      wol: Wolof
+      xal: Kalmyk; Oirat
+      xho: Xhosa
+      yao: Yao
+      yap: Yapese
+      yid: Yiddish
+      yor: Yoruba
+      ypk: Yupik languages
+      zap: Zapotec
+      zbl: Blissymbols; Blissymbolics; Bliss
+      zen: Zenaga
+      zgh: Standard Moroccan Tamazight
+      zha: Zhuang; Chuang
+      znd: Zande languages
+      zul: Zulu
+      zun: Zuni
+      zxx: No linguistic content; Not applicable
+      zza: Zaza; Dimili; Dimli; Kirdki; Kirmanjki; Zazaki
+    archival_record_level:
+      class: 类
+      collection: 收藏集
+      file: 案卷
+      fonds: 全宗
+      item: 条目
+      otherlevel: 其他级别
+      recordgrp: 文件组
+      series: 系列
+      subfonds: 子全宗
+      subgrp: 子组
+      subseries: 子系列
+    container_location_status:
+      current: 当前
+      previous: 前一个
+    date_type:
+      expression: 表达式
+      single: 单个
+      bulk: 批量日期
+      inclusive: 包含性日期
+      range: 范围
+    date_label:
+      record_keeping: 文件保存
+      broadcast: 广播
+      copyright: 版权
+      creation: 创建
+      deaccession: 藏品注销
+      agent_relation: 代理关联
+      digitized: 已电子化
+      existence: 存在
+      event: 时间
+      issued: 已发行
+      modified: 已修改
+      publication: 出版
+      usage: 使用
+      other: 其他
+    date_certainty:
+      approximate: 接近的
+      inferred:  推断的
+      questionable: 可疑的
+    extent_portion:
+      whole: 全部
+      part: 部分
+    deaccession_scope:
+      whole: 全部
+      part: 部分
+    file_version_xlink_actuate_attribute:
+      none: 无
+      other: 其他
+      onLoad: 载入时
+      onRequest: 请求时
+    file_version_xlink_show_attribute:
+      new: 新
+      replace: 替代
+      embed: 内嵌
+      other: 其他
+      none: 无
+    file_version_file_format_name:
+      aiff: Audio Interchange File Format
+      avi: Audio/Video Interleaved Format
+      gif: Graphics Interchange Format
+      jpeg: JPEG File Interchange Format
+      mp3: MPEG Audio Layer 3
+      pdf: Portable Document Format
+      tiff: Tagged Image File Format
+      txt: Plain Text File
+    location_temporary:
+      conservation: 保藏室
+      exhibit: 展览室
+      loan: 出借中
+      reading_room: 阅览室
+    name_person_name_order:
+      direct: 直接
+      inverted: 间接
+    country_iso_3166:
+      AF: Afghanistan
+      AX: Åland Islands
+      AL: Albania
+      DZ: Algeria
+      AS: American Samoa
+      AD: Andorra
+      AO: Angola
+      AI: Anguilla
+      AQ: Antarctica
+      AG: Antigua and Barbuda
+      AR: Argentina
+      AM: Armenia
+      AW: Aruba
+      AU: Australia
+      AT: Austria
+      AZ: Azerbaijan
+      BS: Bahamas
+      BH: Bahrain
+      BD: Bangladesh
+      BB: Barbados
+      BY: Belarus
+      BE: Belgium
+      BZ: Belize
+      BJ: Benin
+      BM: Bermuda
+      BT: Bhutan
+      BO: Bolivia
+      BQ: "Bonaire, Sint Eustatius and Saba"
+      BA: Bosnia and Herzegovina
+      BW: Botswana
+      BV: Bouvet Island
+      BR: Brazil
+      IO: British Indian Ocean Territory
+      BN: Brunei Darussalam
+      BG: Bulgaria
+      BF: Burkina Faso
+      BI: Burundi
+      KH: Cambodia
+      CM: Cameroon
+      CA: Canada
+      CV: Cape Verde
+      KY: Cayman Islands
+      CF: Central African Republic
+      TD: Chad
+      CL: Chile
+      CN: China
+      CX: Christmas island
+      CC: Cocos (Keeling) Islands
+      CO: Colombia
+      KM: Comoros
+      CG: Congo
+      CD: Democratic Republic of the Congo
+      CK: Cook Islands
+      CR: Costa Rica
+      CI: Côte d'Ivoire
+      HR: Croatia
+      CU: Cuba
+      CW: Curaçao
+      CY: Cyprus
+      CZ: Czech Republic
+      DK: Denmark
+      DJ: Djibouti
+      DM: Dominica
+      DO: Dominican Republic
+      EC: Ecuador
+      EG: Egypt
+      SV: El Salvador
+      GQ: Equatorial Guinea
+      ER: Eritrea
+      EE: Estonia
+      ET: Ethiopia
+      FK: Falkland Islands (Malvinas)
+      FO: Faroe Islands
+      FJ: Fiji
+      FI: Finland
+      FR: France
+      GF: French Guiana
+      PF: French Polynesia
+      TF: French Southern Territories
+      GA: Gabon
+      GM: Gambia
+      GE: Georgia
+      DE: Germany
+      GH: Ghana
+      GI: Gibraltar
+      GR: Greece
+      GL: Greenland
+      GD: Grenada
+      GP: Guadeloupe
+      GU: Guam
+      GT: Guatemala
+      GG: Guernsey
+      GN: Guinea
+      GW: Guinea-Bissau
+      GY: Guyana
+      HT: Haiti
+      HM: Heard Island and Mcdonald Islands
+      VA: Holy See (Vatican City State)
+      HN: Honduras
+      HK: Hong Kong
+      HU: Hungary
+      IS: Iceland
+      IN: India
+      ID: Indonesia
+      IR: "Iran, Islamic Republic of"
+      IQ: Iraq
+      IE: Ireland
+      IM: Isle of Man
+      IL: Israel
+      IT: Italy
+      JM: Jamaica
+      JP: Japan
+      JE: Jersey
+      JO: Jordan
+      KZ: Kazakhstan
+      KE: Kenya
+      KI: Kiribati
+      KP: "Korea, Democratic People's Republic of"
+      KR: "Korea, Republic of"
+      KW: Kuwait
+      KG: Kyrgyzstan
+      LA: "Lao People's Democratic Republic"
+      LV: Latvia
+      LB: Lebanon
+      LS: Lesotho
+      LR: Liberia
+      LY: Libya
+      LI: Liechtenstein
+      LT: Lithuania
+      LU: Luxembourg
+      MO: Macao
+      MK: "Macedonia, Former Yugoslav Republic of"
+      MG: Madagascar
+      MW: Malawi
+      MY: Malaysia
+      MV: Maldives
+      ML: Mali
+      MT: Malta
+      MH: Marshall Islands
+      MQ: Martinique
+      MR: Mauritania
+      MU: Mauritius
+      YT: Mayotte
+      MX: Mexico
+      FM: "Micronesia, Federated States of"
+      MD: "Moldova, Republic of"
+      MC: Monaco
+      MN: Mongolia
+      ME: Montenegro
+      MS: Montserrat
+      MA: Morocco
+      MZ: Mozambique
+      MM: Myanmar
+      NA: Namibia
+      NR: Nauru
+      NP: Nepal
+      NL: Netherlands
+      NC: New Caledonia
+      NZ: New Zealand
+      NI: Nicaragua
+      NE: Niger
+      NG: Nigeria
+      NU: Niue
+      NF: Norfolk Island
+      MP: Northern Mariana Islands
+      "NO": Norway
+      OM: Oman
+      PK: Pakistan
+      PW: Palau
+      PS: "Palestinian Territory, Occupied"
+      PA: Panama
+      PG: Papua New Guinea
+      PY: Paraguay
+      PE: Peru
+      PH: Philippines
+      PN: Pitcairn
+      PL: Poland
+      PT: Portugal
+      PR: Puerto rico
+      QA: Qatar
+      RE: Réunion
+      RO: Romania
+      RU: Russian Federation
+      RW: Rwanda
+      BL: Saint Barthélemy
+      SH: "Saint Helena, Ascension and Tristan da Cunha"
+      KN: Saint Kitts and Nevis
+      LC: Saint Lucia
+      MF: Saint Martin (French Part)
+      PM: Saint Pierre and Miquelon
+      VC: Saint Vincent and the Grenadines
+      WS: Samoa
+      SM: San Marino
+      ST: Sao Tome and Principe
+      SA: Saudi Arabia
+      SN: Senegal
+      RS: Serbia
+      SC: Seychelles
+      SL: Sierra Leone
+      SG: Singapore
+      SX: Sint Maarten (Dutch Part)
+      SK: Slovakia
+      SI: Slovenia
+      SB: Solomon Islands
+      SO: Somalia
+      ZA: South Africa
+      GS: South Georgia and the South Sandwich Islands
+      SS: South Sudan
+      ES: Spain
+      LK: Sri Lanka
+      SD: Sudan
+      SR: Suriname
+      SJ: Svalbard and Jan Mayen
+      SZ: Swaziland
+      SE: Sweden
+      CH: Switzerland
+      SY: Syrian Arab Republic
+      TW: "Taiwan, Province of China"
+      TJ: Tajikistan
+      TZ: "Tanzania, United Republic of"
+      TH: Thailand
+      TL: Timor-Leste
+      TG: Togo
+      TK: Tokelau
+      TO: Tonga
+      TT: Trinidad and Tobago
+      TN: Tunisia
+      TR: Turkey
+      TM: Turkmenistan
+      TC: Turks and Caicos Islands
+      TV: Tuvalu
+      UG: Uganda
+      UA: Ukraine
+      AE: United Arab Emirates
+      GB: United Kingdom
+      US: United States
+      UM: United States Minor Outlying Islands
+      UY: Uruguay
+      UZ: Uzbekistan
+      VU: Vanuatu
+      VE: Venezuela
+      VN: Viet Nam
+      VG: "Virgin Islands, British"
+      VI: "Virgin Islands, U.S."
+      WF: Wallis and Futuna
+      EH: Western Sahara
+      YE: Yemen
+      ZM: Zambia
+      ZW: Zimbabwe
+    rights_statement_rights_type:
+      intellectual_property: 知识产权
+      license: 执照/许可证
+      statute: 法规
+      institutional_policy: 机构政策
+    rights_statement_ip_status:
+      copyrighted: 受版权保护
+      public_domain: 公共领域
+      unknown: 未知
+    subject_term_type:
+      cultural_context: 文化背景
+      function: 功能
+      geographic: 地理
+      genre_form: "类型/形式"
+      occupation: 职业
+      style_period: "风格/时期"
+      technique: 技术
+      temporal: 时间
+      topical: 局部
+      uniform_title: 统一标题
+    _note_types: &note_type_definitions
+      accessrestrict: 访问条件
+      accruals: 获利/增殖
+      acqinfo: 直接收集源
+      altformavail: 拷贝的存在及其位置
+      appraisal: 鉴定
+      arrangement: 安排/布局
+      bibliography: 参考书目
+      bioghist: 传记/历史
+      custodhist: 典藏历史
+      fileplan: 档案计划
+      index: 索引
+      odd: 一般
+      otherfindaid: 其他检索工具
+      originalsloc: 原版的存在及其位置
+      phystech: 物理特性及技术要求
+      prefercite: 首选引用方式
+      processinfo: 处理信息
+      scopecontent: 范围与内容
+      separatedmaterial: 分离的资料
+      userestrict: 使用条件
+      dimensions: 外形尺寸
+      legalstatus: 法律状态
+      summary: 概要
+      edition: 版本
+      extent: 容积
+      note: 一般注释
+      inscription: 题词
+      langmaterial: 资料语言
+      physdesc: 物理描述
+      relatedmaterial: 相关资料
+      abstract: 总览
+      physloc: 物理位置
+      materialspec: 资料特定详情
+      physfacet: 物理面
+    note_digital_object_type:
+      <<: *note_type_definitions
+    note_multipart_type:
+      <<: *note_type_definitions
+    note_singlepart_type:
+      <<: *note_type_definitions
+    linked_agent_role:
+      creator: 创建者
+      source: 源
+      subject: 主题
+    agent_relationship_associative_relator:
+      is_associative_with: 与相关方联合的
+    agent_relationship_earlierlater_relator:
+      is_earlier_form_of: 相关方的早期形式
+      is_later_form_of: 相关方的新近形式
+    agent_relationship_parentchild_relator:
+      is_child_of: 相关方的子级
+      is_parent_of: 相关方的父级
+    accession_sibling_relator:
+      sibling_of: 同属/同辈
+    accession_parts_relator:
+      forms_part_of: 作为...的构件
+      has_part: 以...作为一部分
+    accession_parts_relator_type:
+      part: "\"部分\"关系"
+    accession_sibling_relator_type:
+      bound_with: "\"与之绑定\"关系"
+    agent_relationship_subordinatesuperior_relator:
+      is_subordinate_to: 是相关方的下属
+      is_superior_of: 是相关方的上级
+    note_index_item_type:
+      name: 名称
+      person: 个人
+      family: 家族
+      corporate_entity: 法人实体
+      subject: 主题
+      function: 功能
+      occupation: 职业
+      title: 标题
+      geographic_name: 地理名称
+    user_defined_enum_1:
+      novalue: 数值没有定义
+    user_defined_enum_2:
+      novalue: 数值没有定义
+    user_defined_enum_3:
+      novalue: 数值没有定义
+    user_defined_enum_4:
+      novalue: 数值没有定义
+    job_type:
+      print_to_pdf_job: 打印PDF
+      import_job: 导入数据
+      find_and_replace_job: 批量查找/替换(Beta)
+      report_job: 报告
+      container_conversion_job: 报告
+    dimension_units:
+      inches: 英吋
+      feet: 英尺
+      yards: 码
+      millimeters: 毫米
+      centimeters: 厘米
+      meters: 米
+    restriction_type:
+      RestrictedSpecColl: 1 - 捐赠者/大学要求的访问限制
+      RestrictedCurApprSpecColl: 2 - 档案库要求的访问限制
+      RestrictedFragileSpecColl: 3 - 受限的易损品
+      InProcessSpecColl: 4 - 处理中受限
+      ColdStorageBrbl: 5 - 其他
+    location_function_type:
+      av_materials: 音像资料
+      arrivals: 接收
+      shared: 共享
+
+  enumeration_names:
+    accession_acquisition_type: 藏品-征集类型
+    accession_parts_relator: 藏品-相关方
+    accession_parts_relator_type: 藏品-相关方类型
+    accession_sibling_relator: "藏品-同属相关方"
+    accession_sibling_relator_type: 藏品-同属相关方类型
+    accession_resource_type: 藏品-资源类型
+    agent_contact_salutation: 代理-联系人称呼
+    agent_relationship_associative_relator: 代理关系-联合相关方
+    agent_relationship_earlierlater_relator: 代理关系-早晚期相关方
+    agent_relationship_parentchild_relator: 代理关系-父子相关方
+    agent_relationship_subordinatesuperior_relator: 代理关系-上下级相关方
+    archival_record_level: 归档文件-级别
+    collection_management_processing_priority: 收藏集管理-处理优先级
+    collection_management_processing_status: 收藏集管理-处理状态
+    container_location_status: 装具-位置状态
+    container_type: 装具-类型
+    country_iso_3166: ISO 3166国家代码
+    date_calendar: 日期-日历Calendar
+    date_certainty: 日期-确定性
+    date_era: 日期-纪元
+    date_label: 日期-标签
+    date_type: 日期-类型
+    deaccession_scope: 注销藏品-范围
+    digital_object_digital_object_type: 数字对象-数字对象类型
+    digital_object_level: 数字对象-级别
+    event_event_type: 事件-事件类型
+    event_outcome: 事件-输出
+    extent_extent_type: 扩充-扩充类型
+    extent_portion: 扩充-部分
+    file_version_checksum_methods: 文件版本-校验和方法
+    file_version_file_format_name: 文件版本-文件格式名称
+    file_version_use_statement: 文件版本-使用说明
+    file_version_xlink_actuate_attribute: 文件版本-Xlink动作属性
+    file_version_xlink_show_attribute: 文件版本-Xlink显示属性
+    instance_instance_type: 实例-实例类型
+    language_iso639_2: ISO 639-2语言
+    linked_agent_archival_record_relators: 链接的代理-归档文件相关方
+    linked_agent_event_roles: 链接的代理-时间角色
+    linked_agent_role: 链接的代理-角色
+    linked_event_archival_record_roles: 链接的时间-归档文件角色
+    location_temporary: 位置-临时
+    name_person_name_order: 名称-个人名称属性
+    name_rule: 名称-规则
+    name_source: 名称-源
+    note_bibliography_type: 注释-参考书目类型
+    note_digital_object_type: 注释-数字对象类型
+    note_index_item_type: 注释-索引条目类型
+    note_index_type: 注释-索引类型
+    note_multipart_type: 注释-多部件类型
+    note_orderedlist_enumeration: 注释-有序列表枚举
+    note_singlepart_type: 注释-单部件类型
+    telephone_number_type: 电话-号码类型
+    resource_finding_aid_description_rules: 资源检索工具-描述规则
+    resource_finding_aid_status: 资源检索工具-状态
+    resource_resource_type: 资源-资源类型
+    rights_statement_ip_status: 权利声明-知识产权状态
+    rights_statement_rights_type: 权利声明-权利类型
+    subject_source: 主题-源
+    subject_term_type: 主题-术语类型
+    user_defined_enum_1: 用户定义枚举1
+    user_defined_enum_2: 用户定义枚举2
+    user_defined_enum_3: 用户定义枚举3
+    user_defined_enum_4: 用户定义枚举4
+    job_type: 作业类型
+    dimension_units: 量纲
+    restriction_type: 本地访问限制类型
+    location_function_type: 场所功能类型
+# added to support things like provenance
+    inventory: 清单
+    disposition: 布置
+    content_description: 内容著录
+    provenance: 出处
+    access_date: 访问日期
+    access_restrictions_note: 访问条件
+    use_restrictions_note: 使用条件
+
+  pdf_reports:
+    administrative_information: 管理信息
+    collection_inventory: 收藏集清单
+    summary_information: 概要信息
+    table_of_contents: 目录
+    publication_statement: 出版说明
+    controlled_access_headings: 受控访问标题
+    finding_aid_date_prefix: 检索工具由系统产生，基于
+    finding_aid_written_in: 检索工具写在
+    your_finding_aid_pdf: "%{title}的检索工具"
+    your_finding_aid_is_attached: 已付上搜素辅助PDF
+    submit: 发送PDF
+    description: 请输入电子邮件地址，以便接收此收藏集的PDF版本。
+    coming_soon: 系统将生成PDF文件，并在完成后发送到您的邮箱。
+    required: 必填
+    user_email: 电子邮件地址
+
+  readmore:
+    see_more: 查看更多
+    see_less: 查看更少
+
+  skipnav:
+    main_content: 跳到主要内容
+    sidebar: 跳到侧栏
+    search: 跳到搜索
+    search_results: 跳到搜索结果
+
+  search_tab: 搜索 %{target}

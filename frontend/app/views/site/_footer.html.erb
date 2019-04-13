@@ -1,7 +1,9 @@
 <div class="container-fluid footer">
    <div class="row">
       <div class="col-md-12">
-        <p><% if AppConfig[:enable_public] %>View <a href="<%= AppConfig[:public_proxy_url] %>">Public Interface</a> | <% end %>Visit <a href="http://archivesspace.org">ArchivesSpace.org</a> | <%= ASConstants.VERSION %> |<% if AppConfig[:feedback_url] && !AppConfig[:feedback_url].blank? %> <a id='aspaceFeedbackLink' href='http://archivesspace.org/feedback' target='_blank'>Send Feedback or Report a Problem</a> <% end %></p>
+        <p>
+          <% if AppConfig[:enable_public] %>查看 <a href="<%= AppConfig[:public_proxy_url] %>"><b>公共界面</b></a> | <% end %>
+        </p>
       </div>
    </div>
 </div>

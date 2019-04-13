@@ -1,0 +1,151 @@
+zh:
+  help:
+    icon: "<span class='context-help-icon glyphicon glyphicon-question-sign'></span>"
+    help_center: 帮助中心
+    default_tooltip: 帮助中心
+    topics:
+      # Accession help tooltips
+      accession: 关于藏品登录的帮助
+      accession_basic_information: 关于基本信息帮助
+      accession_extents: 关于容积/尺寸的帮助
+      accession_dates: 关于日期的帮助
+      accession_related_resources: 关于相关资源的帮助
+      accession_linked_agents: 关于代理链接的帮助
+      accession_subjects: 关于主题的帮助
+      accession_external_documents: 关于外部文档的帮助
+      accession_rights_statements: 关于权利声明方面的帮助
+      accession_deaccessions: 关于藏品注销的帮助
+      accession_instances: 关于实例的帮助
+      accession_collection_management: 关于收藏集管理的帮助
+      accession_classification: 关于分类的帮助
+      accession_user_defined: 关于用户定义的帮助
+      # Resource help tooltips
+      resource: 资源帮助
+      resource_basic_information: 关于基本信息的帮助
+      resource_dates: 关于日期的帮助
+      resource_extents: 关于容积/尺寸的帮助
+      resource_finding_aid: 关于检索工具的帮助
+      resource_related_accessions: 关于藏品登录的帮助
+      resource_linked_agents: 关于代理链接的帮助
+      resource_subjects: 关于主题的帮助
+      resource_notes: 关于注释的帮助
+      resource_external_documents: 关于外部文档的帮助
+      resource_rights_statements: 关于权利声明方面的帮助
+      resource_instances: 关于实例的帮助
+      resource_deaccessions: 关于藏品注销的帮助
+      resource_collection_management: 有关收藏集管理的帮助
+      resource_classification: 关于分类的帮助
+      resource_user_defined: 关于用户定义的帮助
+      # Archival Object help tooltips
+      archival_object: 档案对象的帮助
+      archival_object_basic_information: 关于基本信息的帮助
+      archival_object_dates: 关于日期的帮助
+      archival_object_extents: 关于容积/尺寸的帮助
+      archival_object_finding_aid: 关于检索工具的帮助
+      archival_object_related_accessions: 关于相关藏品的帮助
+      archival_object_linked_agents: 关于代理链接的帮助
+      archival_object_subjects: 关于主题的帮助
+      archival_object_notes: 有关注释的帮助
+      archival_object_external_documents: 关于外部文档的帮助
+      archival_object_rights_statements: 关于权利声明方面的帮助
+      archival_object_instances: 关于实例的帮助
+      archival_object_deaccessions: 关于注销藏品的帮助
+      archival_object_collection_management: 有关集合管理的帮助
+      archival_object_classification: 关于分类的帮助
+      archival_object_user_defined: 关于用户定义的帮助
+      # Digital Object help tooltips
+      digital_object: 关于数字对象的帮助
+      digital_object_basic_information: 关于基本信息的帮助
+      digital_object_dates: 关于日期的帮助
+      digital_object_extents: 关于容积/尺寸的帮助
+      digital_object_finding_aid: 关于检索工具的帮助
+      digital_object_related_accessions: 关于相关藏品的帮助
+      digital_object_linked_agents: 关于代理链接的帮助
+      digital_object_subjects: 关于主题的帮助
+      digital_object_notes: 关于注释的帮助
+      digital_object_external_documents: 关于外部文档的帮助
+      digital_object_rights_statements: 关于权利声明方面的帮助
+      digital_object_instances: 关于实例的帮助
+      digital_object_deaccessions: 关于藏品注销的帮助
+      digital_object_collection_management: 关于收藏其管理方面的帮助
+      digital_object_classification: 关于分类关于帮助
+      digital_object_user_defined: 关于用户定义的帮助
+      # Digital Object Component help tooltips
+      digital_object_component: 关于数字对象组件的帮助
+      digital_object_component_basic_information: 关于基本信息的帮助
+      digital_object_component_dates: 关于日期的帮助
+      digital_object_component_extents: 关于范围的帮助
+      digital_object_component_finding_aid: 关于检索工具的帮助
+      digital_object_component_related_accessions: 关于相关藏品登录的帮助
+      digital_object_component_linked_agents: 关于代理链接的帮助
+      digital_object_component_subjects: 关于主题的帮助
+      digital_object_component_notes: 关于注释的帮助
+      digital_object_component_external_documents: 关于外部文档的帮助
+      digital_object_component_rights_statements: 有关权利声明的帮助
+      digital_object_component_instances: 关于实例的帮助
+      digital_object_component_deaccessions: 关于藏品注销的帮助
+      digital_object_component_collection_management: 有关收藏集管理的帮助
+      digital_object_component_classification: 关于分类的帮助
+      digital_object_component_user_defined: 关于用户定义的帮助
+      # Subjects
+      subject: 关于主题的帮助
+      subject_basic_information: 基本信息帮助
+      subject_terms: 有关术语和细分的帮助
+      subject_external_documents: 外部文档的帮助
+      # Agent Persons
+      agent_person: 关于个人（代理）的帮助
+      agent_person_dates_of_existence: 关于存在日期的帮助
+      agent_person_names: 关于名称的帮助
+      agent_person_contact_details: 关于联系人详细信息的帮助
+      agent_person_notes: 关于注释的帮助
+      agent_person_related_agents: 相关代理的帮助
+      agent_person_external_documents: 关于外部文档的帮助
+      # Agent Family
+      agent_family: 关于家族（代理）的帮助
+      agent_family_dates_of_existence: 关于存在日期的帮助
+      agent_family_names: 关于名称的帮助
+      agent_family_contact_details: 关于联系人详细信息的帮助
+      agent_family_notes: 关于注释的帮助
+      agent_family_related_agents: 关于相关代理的帮助
+      agent_family_external_documents: 关于外部文档的帮助
+      # Agent Corporate Entity
+      agent_corporate_entity: 关于法人实体（代理）的帮助
+      agent_corporate_entity_dates_of_existence: 关于存在日期的帮助
+      agent_corporate_entity_names: 关于名称的帮助
+      agent_corporate_entity_contact_details: 关于联系人详细信息的帮助
+      agent_corporate_entity_notes: 关于注释的帮助
+      agent_corporate_entity_related_agents: 关于相关代理的帮助
+      agent_corporate_entity_external_documents: 关于外部文档的帮助
+      # Agent Software
+      agent_software: 关于软件（代理）的帮助
+      agent_software_dates_of_existence: 关于存在日期的帮助
+      agent_software_names: 关于名称的帮助
+      agent_software_contact_details: 关于联系人详细信息的帮助
+      agent_software_notes: 关于注释的帮助
+      agent_software_related_agents: 关于相关代理的帮助
+      agent_software_external_documents: 关于外部文档的帮助
+      # Location
+      location: 关于位置的帮助
+        # Event
+      event: 关于事件的帮助
+      event_basic_information: 关于基本信息的帮助
+      event_date: 关于事件日期/时间的帮助
+      event_linked_agents: 关于代理链接的帮助
+      event_linked_records: 关于记录链接的帮助
+      # Classification
+      classification: 关于分类的帮助
+      classification_term: 关于分类术语的帮助
+      # Import
+      import: 导入数据的帮助
+      # Search
+      search: 搜索和浏览帮助
+      # Manage Groups
+      repository_groups: 关于组管理的帮助
+      # Manage User Access
+      repository_users: 有关用户组分配的帮助
+      # Repositories
+      repository: 关于档案库管理的帮助
+      # Manage Users
+      user: 关于用户管理的帮助
+      # Controlled Value Lists
+      enumeration: 关于受控值列表的帮助

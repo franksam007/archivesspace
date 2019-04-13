@@ -1,0 +1,1506 @@
+zh:
+  actions:
+    add: 添加
+    add_event: 添加事件
+    automate: 自动生成
+    batch: 批次
+    browse: 浏览
+    cancel: 取消
+    close: 关闭
+    continue: 继续
+    confirm: 确认
+    confirm_removal: 确认删除
+    container_labels: 下载装具标签
+    create: 创建
+    cut: 剪切
+    defaults: 默认值
+    edit: 编辑
+    edit_oai: 编辑OAI设置
+    edit_batch: 编辑批次
+    edit_groups: 编辑组
+    edit_default_values: 编辑默认值
+    edit_default_archival_object_values: 编辑构件默认值
+    edit_required_fields: 编辑必填字段
+    edit_global_oai: 查看/编辑全局OAI设置
+    required: 必填字段
+    export: 导出
+    view: 查看
+    spawn: 产生
+    show_all: 显示全部
+    transfer_record: 传送
+    more: 更多
+    link_to: 链接到
+    add_prefix: 添加
+    merge_replace: 替换
+    merge_add: 添加
+    merge_confirm_title: 合并到本记录？
+    merge_agent_compare_agent_details: 比较代理
+    merge_from_browse_confirm_title: 合并选定记录
+    merge_subject_confirm_message: "所选记录将被合并到主题'%{source}'中，选定的记录将被删除，并且任何链接的记录将重新链接到此主题。"
+    merge_agent_confirm_message: "所选记录将别合并到代理'%{source)'中，选定的记录将被删除，任何链接的记录将重新链接到此代理。单击“比较代理”按钮将弹出一个屏幕，您可以选择从每条记录中选择要保留的字段和子记录。"
+    merge_agent_from_browse_confirm_message: "选择的第一个代理将随后选择的记录合并到其中，所有随后选择的记录将被删除，任何链接的记录将重新链接到所选的第一个代理。"
+    merge_resource_confirm_message: "所选记录将别合并到资源'%{source}'中，选定的记录将被删除，并将任何链接的记录重新链接到此资源。"
+    move: 移动
+    move_up_a_level: 上移层级
+    move_up: 上移
+    move_down: 下移
+    move_down_into: 下移到...
+    paste: 粘贴
+    remove: 删除
+    refresh_page: 刷新页面
+    new_prefix: 新增
+    save_prefix: 保存
+    save_plus_one: "+1"
+    save_anyway: 仍然保存
+    select: 选择
+    set_default: 设为默认
+    suppress: 抑制
+    suppress_confirm_title: 抑制此记录？
+    suppress_confirm_message: "虽然被抑制的记录将保留在数据库中，但它将对大多数用户隐藏，并且对大多数功能不可用。"
+    transfer: 传送
+    transfer_confirm_title: 传送此记录？
+    transfer_confirm_message: "记录'%{target}'将传输到所选档案库"
+    transfer_successful: 传送成功。在重新编制索引时，记录可能需要一些时间才能显示在目标档案库中。
+    transfer_failed: 传送失败
+    transfer_failed_records_using_digital_objects: "以下链接到的数字对象的记录将被传输，但这样做会打破他们的实例链接"
+    unset_default: 取消默认设置
+    unsuppress: 取消抑制
+    unsuppress_confirm_title: 取消抑制此记录？
+    unsuppress_confirm_message: 否
+    unable_to_move_message: "无法移动记录"
+    move_ordering_problem_message: "记录移动排序问题"
+    delete: 删除
+    delete_confirm_title: "删除此记录？ %{title}"
+    delete_confirm_message: "<p>请注意<strong>您无法撤消此操作</strong>。</p> <p>此操作将从数据库中删除记录，包括该记录对其他记录的任何引用。</p>"
+    delete_repository_confirm_title: "删除此档案库？ %{name}"
+    delete_repository_confirm_message: "<p>请注意<strong>您无法撤消此操作</strong>。</p> <p>此操作将从数据库中删除<strong>档案库</strong>和所有相关记录，包括它对其他记录的任何引用。</p> <p>要继续，请在下面输入'%{repository}'：</p> <p> <input id ='deleteRepoConfim' data-confirm-answer ='%{repository}“> </input> </p>"
+    delete_multiple: 删除记录
+    delete_multiple_confirm_title: 删除记录?
+    delete_multiple_confirm_message: "<p>请注意<strong>您无法撤消此操作</strong>。</p> <p>此操作将从数据库中删除这些记录，包括他们对其他记录的任何引用。</p>"
+    edit_multiple: 编辑记录
+    edit_multiple_confirm_title: 编辑记录?
+    edit_multiple_confirm_message: "<p>这将批量更新记录</p>"
+    export_eac: 下载EAC-CPF
+    export_ead: 下载EAD
+    export_mods: 下载MODS
+    export_mets: 下载METS
+    export_marc: 下载MARCXML
+    export_dc: 下载DC
+    export_csv: 下载CSV
+    loading: 加载中...
+    revert: 还原修改
+    finish_editing: 关闭记录
+    merge: 合并
+    form_changes_message: "<small><span class='muted'>存在未保存修改</span></small>"
+    toolbar_disabled_message: "<small><span class='muted'>存在未保存修改 - 保存或还原后访问工具栏和记录树</span></small>"
+    publish: 发布全部
+    publish_confirm_title: 发布?
+    publish_confirm_message: "<p>执行此操作将发布此记录，任何子记录（外部文档，注释等）以及层次结构中的所有构件。</p>"
+    view_search_results: 转到搜索结果
+    view_published: 查看已发布
+    print_to_pdf: 生成PDF
+    resource_to_pdf: 欲打印资源
+    download_pdf: 下载PDF
+    download_report: 下载报告
+    click_to_show: 请点击加载记录。
+    rapid_data_entry: 快速数据输入
+    enable_reorder: 启动重新排序模式
+    reorder_active: 禁止重新排序模式
+
+  database_warning:
+    message: "<p><strong>数据库警告：</strong>您当前正在使用嵌入式数据库（Apache Derby）。 嵌入式数据库仅用于测试/演示目的。 您应该将MySQL用于任何用于生产的数据，包括您打算转移到生产实例的测试实例中的数据。</p>"
+
+  states:
+    auto_generated: 保存时系统生成
+
+  export_options:
+    include_unpublished: 包含未发布
+    include_daos: 包含&lt;dao&gt;标签
+    numbered_cs: 使用编号&lt;c&gt;标签
+    print_pdf: 打印PDF
+    ead3: EAD3模式
+    use_mods: 使用MODS
+    use_dc: 使用Dublin Core
+
+  pagination:
+    first: 首页
+    last: 末页
+    previous: "&#171;"
+    previous_label: 前一页
+    next: "&#187;"
+    next_label:
+    summary_prefix: 正在展示
+    summary_offset_connector: "-"
+    summary_total_connector: "，共"
+    summary_suffix: 项
+    page_prefix: 页
+    page_connector: "，共"
+
+  search_results:
+    title: 搜索结果
+    context: 找到
+    no_results: 未找到记录
+    no_results_prefix: 没有搜索结果满足
+    result_type: 记录类型
+    result_title: 标题
+    result_identifier: 标识
+    filtered_by: 过滤器
+    modified: 最近修改
+    created: 创建者
+    text_placeholder: 文本过滤
+    clear_all: 清除全部
+    component_switch: 显示构件
+    filter:
+      query: 文本
+      subjects: 主题
+      primary_type: 记录类型
+      digital_object_type: 类型
+      level: 层级
+      classification_path: 分类
+      accession_date_year: 藏品登录日期
+      creators: 创建者
+      source: 源
+      rules: 规则
+      parent_type: 记录类型
+      processing_priority: 处理优先级
+      processing_status: 状态
+      publish: 已发布
+      temporary: 临时
+      outcome: 输出
+      event_type: 类型
+      first_term_type: 术语类型 (首项)
+      classification_uri: 分类
+      location_uris: 位置
+      agents: 代理
+      fullrecord: 关键字
+      subjects_text: 主题
+      title: 标题
+      creators_text: 创建者
+      notes: 注释
+      container_profile_width_u_sstr: 宽度
+      container_profile_height_u_sstr: 高度
+      container_profile_depth_u_sstr: 深度
+      container_profile_dimension_units_u_sstr: 维度单位
+      building: 建筑物
+      floor: 楼层
+      room: 房间
+      area: 区域
+      location_profile_display_string_u_ssort: 位置配置
+      location_profile_width_u_sstr: 宽度
+      location_profile_height_u_sstr: 高度
+      location_profile_depth_u_sstr: 深度
+      location_profile_dimension_units_u_sstr: 维度单位
+      rights_statement_agent_uris: 权利声明代理
+      assessment_surveyors: 调查者
+      assessment_review_required: 评论必填
+      assessment_sensitive_material: 敏感资料
+      assessment_reviewer_uris: 评论者
+      assessment_surveyed_by_uris: 调查者
+      assessment_reviewers: 评论者
+      assessment_inactive: 非活动
+      assessment_survey_year: 调查年度
+      assessment_record_types: 记录类型
+      assessment_completed: 完成
+    help:
+      row_selection: 点击一行来选择它进行批量操作。 按住Alt键的同时单击复选框以选择或取消多个选定行。
+
+
+  search_sorting:
+    sort_by: "过滤条件："
+    and: "和:"
+    asc: 升序
+    desc: 降序
+    relevance: 相关性
+    title_sort: 标题
+    user_mtime: 修改时间
+    primary_type: 记录类型
+    processing_priority: 处理优先级
+    processing_status: 处理状态
+    processing_hours_total: 总处理时间
+    parent_id: 记录类型
+    create_time: 已创建
+    authority_id: 权威机构ID
+    source: 源
+    rules: 规则
+    outcome: 输出
+    event_type: 类型
+    identifier: 标识
+    select: 选择
+    building: 建筑物
+    floor: 楼层
+    room: 房间
+    area: 区域
+    resource_type: 资源类型
+    acquisition_type: 收集类型
+    accession_date: 藏品登录日期
+    restrictions_apply: 应用限制
+    access_restrictions: 访问限制
+    use_restrictions: 使用限制
+    level: 描述层级
+    language: 语言
+    restrictions: 限制
+    ead_id: EAD ID
+    finding_aid_status: 搜索辅助状态
+    digital_object_id: 数字对象ID
+    digital_object_type: 数字对象类型
+    publish: 发布
+    location_profile_display_string_u_ssort: 位置配置
+    assessment_survey_begin: 调查开始日期
+    assessment_survey_end: 调查完成日期
+    assessment_id: ID
+
+  advanced_search:
+    operator:
+      AND: 与
+      OR: 或
+      NOT: 非
+    date_operator:
+      equal: 等于
+      greater_than: 大于
+      lesser_than: 小于
+      empty: 空值
+    boolean_field:
+      true_value: 真
+      false_value: 假
+    button_text: 搜索
+    reset: 清除
+    nav_switcher:
+      show: 显示高级
+      hide: 隐藏高级
+    index_switcher:
+      show: 显示高级搜索
+      hide: 隐藏高级搜索
+    text_operator:
+      contains: 包含
+      empty: 为空
+    enum_field:
+      empty: 未赋值
+
+  become-user:
+    become-user: 成为用户
+    failed: 无法切换到指定用户
+    success: 成功切换用户
+
+  navbar:
+    become-user: 成为用户
+    brand: 3Golden AMS
+    create: 创建
+    import: 导入
+    import_eac: EAC文件
+    import_ead: EAD文件
+    import_marcxml: MARCXML
+    import_marcxml_subjects_and_agents: MARCXML(仅限主题和代理)
+    import_accession_csv: 藏品登录CSV
+    import_digital_object_csv: 数字对象CSV
+    search_all: 全部记录
+    search_placeholder: 搜索全部记录
+    search_button_title: 搜索全部记录
+    show_advanced_search_button_title: 显示高级搜索
+    hide_advanced_search_button_title: 隐藏高级搜索
+    plugins: 插件
+    repositories_manage: 管理档案库
+    oai_config: 管理OAI-PMH设置
+    manage_groups: 管理组
+    manage_users: 管理用户
+    manage_container_profiles: 管理装具配置
+    manage_location_profiles: 管理位置配置
+    manage_top_containers: 管理顶层装具
+    manage_enumerations: 管理受控值列表
+    global_preferences: 全局偏好
+    user_repo_preferences: 档案库偏好
+    repo_preferences: 用户偏好
+    manage_user_access: 管理用户访问
+    logout: 登出
+    login: 登录
+    login_expired_link: 请再试%{link}。
+    login_fail: 登录失败
+    login_success: 登录成功，正在跳转...
+    register: 现在注册
+    register_prefix: 需要账号?
+    list_reports: 报告
+    global_admin: 系统
+    system_info: 系统信息
+    unpublished: 取消发布
+    manage_assessment_attributes: 管理评估属性
+  session:
+    gone: 未找到后端会话
+    expired: 由于长时间未活动，会话已过期
+    inline_login_title: 会话已过期
+
+  batch_delete:
+    archival_records:
+      success: 记录已删除
+      error: "无法删除记录:"
+    subjects:
+      success: 主题已删除
+      error: "无法删除主题:"
+    agents:
+      success: 代理已删除
+      error: "无法删除代理:"
+    locations:
+      success: 位置已删除
+      error: "无法删除位置:"
+    assessments:
+      success: 评估已删除
+      error: "无法删除评估:"
+
+  welcome:
+    heading: 欢迎来到3Golden AMS
+    message: 全面、标准的档案管理工具
+    message_logged_in: 全面、标准的档案管理工具
+
+  breadcrumb:
+    home: 首页
+
+  save_changes_modal:
+    body: 存在一些修改，请保存或放弃这些修改后继续。
+    save: 保存修改
+    dismiss: 放弃修改
+
+  slug: &slug_attributes
+    slug: 用户友好Web路径
+    public_url: 公开URL
+    is_slug_auto: 自动生成用户友好Web路径?
+    autogen_disabled: " -- 生成空白Web路径, 自动生成友好Web路径选项被惊禁用"
+
+  linker:
+    link_to_prefix: 链接到
+    create_and_link_to_prefix: 创建并链接到
+    hint_text: 拟搜索的记录类型
+    placeholder: 拟搜索的记录类型类型
+    no_results: 无匹配结果，请试一下 '浏览'.
+    searching: 搜索中...
+    delete: "&times;"
+
+  mixed_content:
+    wrap_prefix: "封装字符："
+    help: "启用混合内容，&#160;&#160;--&#160;&#160;针对元素输入'<'或高亮所封装的文本"
+
+  import:
+    eac_title: 导入EAC文件
+    ead_title: 导入EAD文件
+    marcxml_title: 导入MARCXML文件
+    marcxml_subjects_and_agents_title: 从MARCXML文件导入主题和代理
+    accession_csv_title: 从CSV文件导入藏品登录记录
+    digital_object_csv_title: 从CSV文件导入数字对象记录
+    import_report: 导入报告
+    import_another: 导入另一文件
+    file_select: 选择上载文件
+    submit: 导入
+    submit_busy_message: 正在导入...
+    messages:
+      missing_repo: 须在导入之前选择档案库
+      missing_file:  选择上载EAD文件
+      error_prefix: 文件导入错误
+      complete: 导入完成
+
+  default_values:
+    form_title:
+      archival_object: 构件记录默认值
+      resource: 资源记录默认值
+      accession: 藏品登录记录默认值
+      subject: 主题记录默认值
+      agent_person: 代理记录默认值 (个人)
+      agent_family: 代理记录默认值 (家庭)
+      agent_corporate_entity: 代理记录默认值 (企业实体)
+      agent_software: 代理记录默认值 (软件)
+      digital_object: 数字对象默认值
+      digital_object_component: 数字对象 构件默认值
+      location: 位置记录默认值
+      event: 事件记录默认值
+      classification: 分类记录默认值
+      classification_term: 分类术语默认值
+    messages:
+      defaults_updated: 默认值已更新
+
+  required_fields:
+    form_title:
+      agent_person: 代理记录必填字段 (个人)
+      agent_family: 代理记录必填字段 (家庭)
+      agent_corporate_entity: 代理记录必填字段 (企业实体)
+      agent_software: 代理记录必填字段 (软件)
+    messages:
+      required_fields_updated: 必填字段已更新
+
+  tree:
+    drag_and_drop_actions:
+      before: 前面添加条目
+      after: 后面添加条目
+      as_child: 添加子条目
+    unexpected_failure: 无法获取目录树，请尝试刷新页面。
+
+  errors:
+    sidebar_label: 错误和警告
+    error_403: 无法访问页面
+    error_403_message: "您尝试访问的页面可能已不存在，或者您可能无权查看该页面。"
+    error_404: 未找到记录
+    error_404_message: "您尝试访问的记录可能已不存在，或者您可能无权查看该记录。"
+    error_tree_pane_ajax: 载入表单时发生错误
+    merge_conflict: "代理合并未完成: %{message}"
+    merge_too_many_victims: 此次合并只能选择一个代理。
+    merge_different_types: 为此次合并选择的代理必须属于同一类型。
+    linked_to_assessment: 由于记录链接到评估，无法删除。
+
+  accession:
+    <<: *slug_attributes
+    _frontend:
+      messages:
+        created: 藏品 <strong>%{accession.display_string}</strong> 已创建
+        unsuppressed: 藏品 <strong>%{accession.display_string}</strong> 已取消抑制
+        updated: 藏品 <strong>%{accession.display_string}</strong> 已更新
+        suppressed: 藏品 <strong>%{accession.display_string}</strong> 已被抑制
+        suppressed_info: 藏品被抑制，无法编辑
+        deleted: 藏品 <strong>%{accession.display_string}</strong> 已删除
+        transfer_description: 将此藏品传送到...
+        transfer_target: 选择传送目标档案库
+        spawned: "此藏品已从藏品 <strong>%{accession.display_string}</strong>衍生出来"
+        delete_conflict: "藏品无法删除: <pre>%{error}</pre>"
+      section:
+        basic_information: 基本信息
+      action:
+        create: 创建藏品
+        save: 保存藏品
+
+  agent: &agent_attributes
+    <<: *slug_attributes
+    _frontend:
+      messages:
+        created: 代理已创建
+        updated: 代理已更新
+        deleted: 代理已删除
+        delete_conflict: "代理无法删除: <pre>%{error}</pre>"
+        merge_description: 选择合并目标代理
+        merged: 代理已合并
+        please_select_a_agent_to_merge: 请选择代理
+      section:
+        basic_information: 基本信息
+        dates_of_existence: 存在日期
+        name: 名称形式
+        contacts: 联系详情
+        search_embedded: 链接记录
+        linked_via_rights_statement: 链接记录（通过权利声明）
+        target_record: 记录将被更新
+        victim_record: 记录将被删除
+      action:
+        create: 创建代理
+        preview: 合并预览
+
+  agent_contact:
+    _frontend:
+      action:
+        add: 添加联系人
+
+  telephone:
+    _frontend:
+      action:
+        add: 添加电话号码
+
+  agent_corporate_entity:
+    <<: *slug_attributes
+    _frontend:
+      action:
+        save: 保存企业实体
+
+  agent_family:
+    <<: *slug_attributes
+    _frontend:
+      action:
+        save: 保存家庭
+
+  agent_person:
+    <<: *slug_attributes
+    _frontend:
+      action:
+        save: 保存个人
+
+  agent_software:
+    <<: *slug_attributes
+    _frontend:
+      action:
+        save: 保存软件
+
+  archival_object:
+    <<: *slug_attributes
+    _frontend:
+      messages:
+        created: 在资源 <strong>%{resource.title}</strong> 上，归档对象 <strong>%{archival_object.display_string}</strong> 已创建
+        created_with_parent: 在资源 <strong>%{resource.title}</strong> 上，归档对象 <strong>%{archival_object.display_string}</strong> 作为 <strong>%{parent.display_string}</strong> 子项创建
+        updated: 归档对象 <strong>%{archival_object.display_string}</strong> 已更新
+        updated_with_parent: 归档对象 <strong>%{archival_object.display_string}</strong> 已更新
+        please_select_a_resource_for_transfer: 请选择资源
+        transfer_success: 归档对象 <strong>%{archival_object.display_string}</strong> 成功传送到资源 <strong>%{resource.title}</strong>
+        transfer_error: "因错误或冲突，无法传送归档对象: <pre>%{exception}</pre>"
+        deleted: "归档对象 <strong>%{archival_object.display_string}</strong> 已删除"
+        unsuppressed: 归档对象 <strong>%{archival_object.title}</strong> 已取消抑制
+        suppressed: 归档对象 <strong>%{archival_object.title}</strong> 已被抑制
+        suppressed_info: 归档对象被抑制，无法编辑
+        has_unpublished_ancestor: 请注意，此记录的祖先未发布
+        delete_conflict: "归档对象无法删除: <pre>%{error}</pre>"
+      section:
+        basic_information: 基本信息
+      action:
+        add_child: 添加子项
+        add_sibling: 添加同级
+        save: 保存归档对象
+      tree:
+        new_record_title: 新增归档对象
+
+  classification:
+    <<: *slug_attributes
+    _frontend:
+      messages:
+        created: "分类 <strong>%{classification.title}</strong> 已创建"
+        updated: "分类 <strong>%{classification.title}</strong> 已更新"
+        deleted: "分类 <strong>%{classification.title}</strong> 已删除"
+      section:
+        basic_information: 基本信息
+        search_embedded: 链接记录
+      action:
+        add_child: 添加子项
+        create: 创建分类
+        save: 保存分类
+        add: 添加分类
+
+  classification_term:
+    <<: *slug_attributes
+    _frontend:
+      messages:
+        created: "分类术语 <strong>%{classification_term.title}</strong> 已创建"
+        created_with_parent: "分类术语 <strong>%{classification_term.title}</strong> 已创建"
+        updated: "分类术语 <strong>%{classification_term.title}</strong> 已更新"
+        updated_with_parent: "分类术语 <strong>%{classification_term.title}</strong> 已更新"
+        deleted: "分类术语 <strong>%{classification_term.title}</strong> 已删除"
+      section:
+        basic_information: 基本信息
+        search_embedded: 链接记录
+      action:
+        add_child: 添加子项
+        add_sibling: 添加同级
+        save: 保存分类术语
+      tree:
+        new_record_title: 新增分类术语
+
+  collection_management: &collection_management_attributes
+    _frontend:
+      title_prefix: 处理
+      action:
+        add: 添加汇集管理字段
+
+  container:
+    _frontend:
+      action:
+        add: 添加装具
+
+  container_location:
+    _frontend:
+      action:
+        add: 添加位置
+
+  date:
+    _frontend:
+      action:
+        add: 添加日期
+
+  dates_of_existence:
+    _frontend:
+      action:
+        add: 添加日期
+
+  deaccession:
+    _frontend:
+      action:
+        add: 添加藏品注销
+
+  digital_object:
+    <<: *slug_attributes
+    _frontend:
+      messages:
+        created: "数字对象 <strong>%{digital_object.title}</strong> 已创建"
+        updated: "数字对象 <strong>%{digital_object.title}</strong> 已更新"
+        deleted: "数字对象 <strong>%{digital_object.title}</strong> 已删除"
+        published: "数字对象 <strong>%{digital_object.title}</strong> 机器子记录和构件已发布"
+        merge_description: 在下面选择合并目标的数字对象
+        please_select_a_digital_object_to_merge: 请选择数字对象
+        merged: 数字对象已合并
+        transfer_description: 传送此资源到...
+        transfer_target: 选择传送目标档案库
+        unsuppressed: 数字对象 <strong>%{digital_object.title}</strong> 已取消抑制
+        suppressed: 数字对象 <strong>%{digital_object.title}</strong> 已被抑制
+        suppressed_info: 数字对象被抑制，无法编辑
+        delete_conflict: "数字对象无法删除: <pre>%{error}</pre>"
+      section:
+        basic_information: 基本信息
+      action:
+        add_child: 添加子项
+        create: 创建数字对象
+        save: 保存数字对象
+
+  digital_object_component:
+    <<: *slug_attributes
+    _frontend:
+      messages:
+        created_with_parent: 数字对象构件 <strong>%{digital_object_component.display_string}</strong> 已创建为数字对象 <strong>%{digital_object.title}</strong>上的<strong>%{parent.display_string}</strong>的子项
+        created: 数字对象构件 <strong>%{digital_object_component.display_string}</strong> 已在数字对象 <strong>%{digital_object.title}</strong> 上创建
+        updated_with_parent: 数字对象构件 <strong>%{digital_object_component.display_string}</strong> 已更新
+        updated: 数字对象构件 <strong>%{digital_object_component.display_string}</strong> 已更新
+        deleted: 数字对象构件 <strong>%{digital_object_component.display_string}</strong> 已删除
+        unsuppressed: 数字对象构件 <strong>%{digital_object_component.display_string}</strong> 已取消抑制
+        suppressed: 数字对象构件 <strong>%{digital_object_component.display_string}</strong> 已被抑制
+        suppressed_info: 数字对象构件被抑制，无法编辑
+        has_unpublished_ancestor: 请注意，此记录的祖先未发布。
+      section:
+        basic_information: 基本信息
+      action:
+        add_child: 添加子项
+        add_sibling: 添加同级
+        save: 保存数字对象构件
+      tree:
+        new_record_title: 新增数字对象构件
+
+  enumeration:
+    _frontend:
+      messages:
+        value_updated: 数值已更新
+        deleted: 数值已删除
+        delete_error: 无法删除数值
+        delete_conflict: "无法删除数值，该数值正被某个记录引用"
+        default_set: 默认值集合
+        created: 数值已创建
+        create_error: 无法创建数值
+        merged: 数值已合并
+        merge_tip: 数值可合并到另一数值
+        merge_error: 无法合并数值
+        no_selection: 请选择受控数值列表
+        name_selector: 列表名称
+        name_selector_tooltip: |
+            <p>拟编辑数值列表。</p>
+        no_name_provided: 创建新值前，请选择数值列表
+      action:
+        create_value: 创建数值
+        delete_value: 删除数值
+        merge_value: 合并数值
+
+  event:
+    _frontend:
+      messages:
+        created: 事件已创建
+        updated: 事件已更新
+        deleted: 事件已删除
+        suppressed_info: 事件被抑制，无法编辑
+      section:
+        basic_information: 基本信息
+        date: 事件日期/时间
+      action:
+        save: 保存事件
+        create: 创建事件
+    linked_agents: 代理链接
+
+  extent:
+    _frontend:
+      action:
+        add: 添加容积
+
+  external_document:
+    _frontend:
+      action:
+        add: 添加外部问昂
+
+  file_version:
+    _frontend:
+      action:
+        add: 添加文件版本
+        make_representative: 选作代表版本
+
+  group:
+    _frontend:
+      action:
+        create: 创建组
+        save: 保存组
+
+  instance:
+    _frontend:
+      messages:
+        select_a_type: 请选择实例类型
+      action:
+        add_digital_object: 添加数字对象
+        add: 添加实例
+
+  linked_agent:
+    _frontend:
+      action:
+        add: 添加代理链接
+
+  linked_record:
+    _frontend:
+      action:
+        add: 添加记录链接
+
+  location:
+    _frontend:
+      messages:
+        created: 位置已创建
+        updated: 位置已更新
+        deleted: 位置已删除
+      section:
+        basic_information: 基本信息
+        search_embedded: 链接记录
+      action:
+        add_child: 添加子构件
+        add_sibling: 添加同级
+        create: 创建位置
+        batch: 批量创建位置
+        batch_edit: 批量编辑位置
+        save: 保存位置
+        single: 单个位置
+        delete_confirm_message: "<p>请注意，<strong>无法撤消此操作。</strong>。</p> <p>如果此位置当前链接到一个或多个实例，则无法删除。</p>"
+        show_space_calculator: 通过空间计算器查找
+
+  location_batch:
+    _frontend:
+      section:
+        location: 基础位置
+        ranges: 坐标范围
+      messages:
+        created: "<strong>%{number_created}位置</strong> 已创建"
+        updated: "<strong>%{number_created}位置</strong> 已更新"
+        location_batch_info: "定义将应用于从下面的<strong>坐标范围</strong>生成的所有位置的基础值。"
+        location_batch_update_info: "请输入要使用的值。"
+        ranges_info: "请注意，在上面的<strong>基础位置</strong>中输入的任何坐标字段都将替换为以下范围生成的值，将最多创建%{max_range}个位置。"
+        number_to_create: 位置数量
+        warning: 根据范围的大小，此过程可能需要几分钟才能完成。
+      action:
+        create: 创建位置
+        update: 更新位置
+        preview: 预览位置
+        preview_short: 预览
+        creating: 批量处理中...
+
+  name:
+    _frontend:
+      section:
+        use_date: 名称使用日期
+      action:
+        add: 添加名称形式
+        make_authorized: 作为权威名称
+        make_display_name: 作为显示名称
+
+  note:
+    _frontend:
+      preview:
+        raw: 原始
+        raw_title: 原始注释内容
+        parsed: 格式化
+        parsed_title: 如何在公共应用界面中呈现注释
+      messages:
+        select_a_note_type: "<em>请选择注释类型</em>"
+      action:
+        add: 添加注释
+        add_content_item: 添加内容条目
+        add_note_orderedlist: 添加条目
+        add_sub_note: 添加子注释
+        add_note_index_item: 添加条目
+        add_note_chronology_item: 添加事件
+        add_event: 添加事件
+        add_note_bibliography_item: 添加条目
+        add_note_outline_level_item: 添加条目
+        add_note_outline_level_level: 添加层级
+        note_definedlist_item: 添加条目
+        expand: 展开
+        collapse: 折叠
+        apply_note_order: 应用标准注释排序
+
+  related_accession:
+    _frontend:
+      action:
+        add: 添加相关藏品
+
+  related_agent:
+    _frontend:
+      messages:
+        select_a_type: "<em>请选择关系类型</em>"
+      action:
+        add: 添加相关代理
+
+  related_resource:
+    _frontend:
+      action:
+        add: 添加相关资源
+
+  revision_statement:
+    _frontend:
+      action:
+        add: 添加修订说明
+
+  repository_oai:
+    oai_is_disabled: OAI Harvesting是否已禁用？
+    oai_sets_available: OAI所含集合
+
+  repository:
+    <<: *slug_attributes
+    _frontend:
+      messages:
+        created: 档案库已创建
+        updated: 档案库已更新
+        deleted: 档案库已删除
+        selected: 档案库被选定
+        selected_short: 选定
+        changed: 档案库 <strong>%{repository.repo_code}</strong> 处于激活状态
+        create_first_repository: "点击上面<strong>系统</strong>中的<strong>管理档案库</strong>创建第一个档案库。"
+        no_access_to_repositories: "<p>您无权访问任何档案库。</p> <p>请联系您的系统管理员以请求访问权。</p>"
+        continue_with_transfer: 继续传送?
+        transfer_failed: 因下列错误，传送未完成
+        transfer_target: 选择传送目标档案库
+        transfer_warning: <strong>警告：</strong><strong>此操作无法撤消</strong>，传送此档案会将<strong>所有</strong>记录移动到您选择的档案库中。
+        cannot_delete_nonempty: 无法删除 - 档案库非空
+      section:
+        all_fields: 档案库字段
+        oai_fields: OAI Harvest设置
+        transfer: 传送档案库
+        oai_settings: OAI设置
+      action:
+        select: 选择档案库
+        save: 保存档案库
+        create: 创建档案库
+    _sidebar:
+      oai_settings:
+        _plural: OAI Harvest设置
+
+  resource:
+    <<: *slug_attributes
+    _frontend:
+      messages:
+        created: "资源 <strong>%{resource.title}</strong> 已创建"
+        updated: "资源 <strong>%{resource.title}</strong> 已更新"
+        spawned: "已从藏品 <strong>%{accession.display_string}</strong> 产生一个新资源。"
+        deleted: "资源 <strong>%{resource.title}</strong> 已删除"
+        published: "资源 <strong>%{resource.title}</strong>，及其子记录和构件已发布"
+        merge_description: 在下面选择合并目标资源
+        please_select_a_resource_to_merge: 请选择资源
+        merged: 资源已合并
+        transfer_description: 传送此资源到...
+        transfer_target: 选择传送目标档案库
+        unsuppressed: 资源 <strong>%{resource.title}</strong> 已取消抑制
+        suppressed: 资源 <strong>%{resource.title}</strong> 已被抑制
+        suppressed_info: 资源被抑制，无法编辑
+        delete_conflict: "资源无法删除: <pre>%{error}</pre>"
+      section:
+        basic_information: 基本信息
+        finding_aid: 搜索辅助数据
+      action:
+        add_child: 添加子项
+        create: 创建资源
+        save: 保存资源
+        delete_multiple: 删除资源
+
+  preference:
+    _frontend:
+      messages:
+        updated: "偏好已更新"
+
+  rights_statement:
+    _frontend:
+      action:
+        add: 添加权利声明
+
+  term:
+    _frontend:
+      messages:
+        preview_pending: 主题预览
+      action:
+        add: 添加术语/分区
+
+  transfer:
+    ref: 目标档案库
+
+  subject:
+    <<: *slug_attributes
+    _frontend:
+      messages:
+        created: 主题已创建
+        updated: 主题已更新
+        deleted: 主题已删除
+        merged: 主题已合并
+        merge_description: 选择合并目标主题
+        please_select_a_subject_to_merge: 请选择主题
+      section:
+        basic_information: 基本信息
+        terms: 术语和分区
+        search_embedded: 链接记录
+      action:
+        create: 创建主题
+        save: 保存主题
+        add: 添加主题
+
+  user:
+    _frontend:
+      messages:
+        access_denied: 拒绝访问，请以管理员身份登录执行此操作。
+        created: 用户已创建
+        updated: 用户已更新
+        deleted: 用户已删除
+        error_update: 用户未保存
+        error_create: 用户未创建
+        group_not_required: 用户是系统管理员或系统用户，不需要选择组。
+      section:
+        manage_access: 管理用户访问
+        account: 帐户
+        edit_account: 编辑帐户
+        edit_account_submit: 更新帐户
+      action:
+        create_account: 创建帐户
+        update_account: 更新帐户
+        create: 创建用户
+
+  user_defined:
+    _frontend:
+      action:
+        add: 添加用户定义字段
+
+  use_date:
+    _frontend:
+      action:
+        add: 添加使用日期
+
+  rde:
+    date_type: 日期类型
+    instance_type: 实例类型
+    column_label: 列
+    sections:
+      basic_information: 基本信息
+      date: 日期
+      extent: 容积
+      instance: 实例
+      notes: 注释
+      file_version: 文件版本
+    actions:
+      add_row: 添加行
+      add_rows: 添加行
+      submit: 保存行
+      reset: 重置
+      showhide_prefix: "列:"
+      showhide_suffix: 可见
+      showhide_none: 过滤全部列
+      fill_toggle: 填充列
+      reorder_toggle: 重排列
+      validate_rows: 校验行
+      inline_errors_toggle: 查看内嵌错误
+      save_template: 保存为模板
+      select_template: 选择模板
+      manage_templates: 删除模板
+    fill_column:
+      basic: 基本
+      sequence: 序列
+      fill_value: 填充数值
+      select_a_column: 请选择一列
+      apply_basic_fill: 应用填充
+      apply_sequence_fill: 应用序列
+      sequence_count_warning: 行数比序列中值的数量多。
+      preview_sequence: 预览序列数值
+      sequence_summary: "序列中有%{count}项："
+      sequence_summary_with_maxsize: "对于%{limit}行，%{count}个序列值是："
+      sequence_from_required: 起始（从）必填
+      sequence_to_required: 终止（到）必填
+    reorder_columns:
+      apply_order: 使用列排序
+    save_template:
+      save_template: 保存模板
+      template_name: 模板名称
+      confirm_removal: 确认删除
+    templates:
+      listing: 模板
+      no_templates: 未定义模板
+    default_template: 默认模板
+    messages:
+      error_prefix: 行
+      success: "<div class='alert alert-success'>子项已创建，正在刷新页面...</div>"
+      no_rows: 请输入至少一行的值
+      rows_with_errors: "%{count}行有错 - 单击行字段以查看该行的错误"
+      rows_no_errors: "全部行有效"
+      error_summary_header: "行中错误："
+      select_prompt: 应用RDE模板
+    help:
+      keyboard_shortcuts: |
+                  <div><strong>快捷键</strong></div>
+                  <div class="row"><small><span class="span3">从单元格跳转：</span>SHIFT + 方向键</small></div>
+                  <div class="row"><small><span class="span3">创建一个新行（从最后一行）：</span> SHIFT + 回车</small></div>
+      sticky_columns: |
+                  <div><strong>粘滞列</strong></div>
+                  <div><small>突出显示的列是粘滞的，将在添加新行时被复制。单击相应的表标题切换“粘性”。</small></div>
+                  <div><small>点击<strong>添加行</strong>将复制最后一行的值; 每行的<strong> + </strong>按钮将复制当前焦点行的值。</small></div>
+      fill_column: |
+                  <div><strong>填充列 - 基础</strong></div>
+                  <div><small>要使用单个值填充列，请单击<strong>填充列</strong>，然后在<strong>基本</strong>选项卡下选择目标<strong>列</strong>，输入所需的<strong>填充值</strong>，然后点击<strong>应用填充</strong>。</small></div>
+                  <br/>
+                  <div><strong>填充列 - 序列</strong></div>
+                  <div><small>要将序列应用于列，请单击<strong>填充列</strong>，然后在<strong>序列</strong>选项卡下选择目标<strong>列</strong>并完成<strong>填充值</strong>字段以生成想要的序列。如果生成的序列不符合表单中的行数，则会显示警告。</small></div>
+      resize_and_reorder_columns: |
+                  <div><strong>重排列</strong></div>
+                  <div><small>单击<strong>重排列</strong>，选择要重新排序的行，然后使用向上/向下箭头按钮更改其在列表中的位置。如果对新排序感到满意，请点击<strong>应用列排序</strong></small></div>
+      reset: |
+                  <div><strong>重置表单</strong></div>
+                  <div><small>点击<strong>重置</strong>以清除表单，并将列的粘性、可见和顺序恢复为默认值。</small></div>
+  update_monitor:
+    save_failed: <strong>无法保存修改</strong>
+    stale_record: 此记录已由其他用户更新。 请刷新页面以访问最新版本。
+    other_editors: "此记录当前正由另一个用户编辑。 请与以下用户联系，以确保不会发生冲突：<strong>%{user_ids} </strong>"
+    repository_changed: "无法保存此记录，因为您的活动档案库已更改。 要保存此记录，请打开另一个窗口并重置活动档案库。"
+  job:
+    _frontend:
+      audit_data: 审计数据
+      action:
+        create: 创建作业
+        save: 启动作业
+        new: 新增后台作业
+        cancel: 取消作业
+        add_file: 添加文件
+        follow_log: 跟踪日志
+      section:
+        basic_information: 基本信息
+        status: 作业状态
+        logs: 日志
+        generated_uris: 新增与修改记录
+        active_jobs: 活动作业
+        archived_jobs: 归档作业
+        files: 文件
+      messages:
+        status_changed_running: 作业已经启动运行。正在刷新页面...
+        status_changed_completed: 作业已经完成。
+        status_changed_failed: 作业已经失败。
+        status_changed_canceled: 作业已经被取消。
+        no_active_jobs: 无活动作业
+        no_archived_jobs: 无已归档作业
+        uploading: 正在上传作业...
+        upload_successful: 上载成功，跳转到作业页面...
+        import_type_missing: 请选择导入类型
+        queue_position_next: 队列中下一作业
+        queue_position: "作业处理队列第%{position}位。"
+        drag_and_drop_hint: 在此处拖放文件
+        find_and_replace_warning: 查找和替换作业可以并将对数据库进行重大更改。<strong>强烈</strong>建议您备份数据库并在继续之前在测试实例中运行您的作业。此操作无法“撤消”。
+        find_and_replace_instructions: 选择一个基础记录来限定查找和替换操作，然后选择要定位的记录类型和该类型的属性。如果目标类型是“资源”，则操作将在基础记录树中的每个目标记录中运行，或在基础记录本身中运行。
+        report_instructions: 使用<b>选择</b>按钮选择要运行的报告。
+        slug_lost_warning: <b>警告！</b>所有自动生成的访问URI都将被重新生成！
+        slug_generation: 这个作业将为所有<b>资源</b>，<b>归档对象</b>，<b>数字对象</b>，<b>数字对象组件</b>，<b>藏品</b>，<b>分类</b>，<b>代理</b>，<b>主题</b>和<b>档案库</b>的生成一个访问URI并启用访问URI自动生成。 <br/> <em>手动添加的访问URI不会被更改。</em>
+        slug_config_msg: <b>根据config.rb中的系统设置：</b>
+        slug_config_id: 在适当的情况下，使用实体标识符生成访问URI
+        slug_config_title: 将使用实体名称或标题生成访问URI
+        slug_config_eadid: 在适当的情况下，将使用EAD ID生成<b>资源</b>的访问URI
+        slug_config_cuid: 在适当的情况下，将使用组件ID生成<b>归档对象</b>的访问URI
+
+  shortcuts:
+    quick_reference_window: "快速参考: 快捷键"
+    actions:
+      this_reference: "快捷键参考"
+      close_modal: "关闭模态窗口 (例如：本窗口)"
+      toggle_shortcuts: "启用/禁用键盘快捷键"
+      save_record: "保存正在编辑的记录"
+      close_record: "关闭正在编辑的记录"
+      open_browse: "打开浏览菜单"
+      open_create: "打开创建菜单"
+
+  instance_container:
+    container: 装具
+
+  sub_container:
+    top_container: 顶层装具
+    top_container_tooltip: |
+        <p>必填字段。 容纳所述资料的顶级装具。</p>
+        <p>可以使用提前输入或浏览功能从现有的顶级装具列表中选择，也可以使用“创建”功能创建。</p>
+    type_2: 子项类型
+    type_2_tooltip: |
+        <p>容纳所述资料的第二级装具的类型。</p>
+        <p>可以修改此受控值列表中的值。</p>
+    indicator_2: 子项指示器
+    indicator_2_tooltip: |
+        <p>用于指示第二级装具ID的字母数字表达式，还可以指示第二级装具在这样的装具序列中的位置。 大容量的二级装具也是允许的，例如， 文件夹1-16。</p>
+    type_3: Grandchild类型
+    type_3_tooltip: |
+        <p>容纳所述资料的第三级装具的类型。</p>
+        <p>可以修改此受控值列表中的值。</p>
+    indicator_3: 孙项指示器
+    indicator_3_tooltip: |
+        <p>用于指示第三级装具的 ID的字母数字表达式，其还可以指示第三级装具在这样的装具序列中的位置。 大容量的三级装具也是允许的，例如， 文件夹1-16。</p>
+    _singular: 子装具
+    _plural: 子装具
+    _frontend:
+      action:
+        add: 添加装具实例
+
+  top_container:
+    container_profile: 装具配置
+    container_profile_tooltip: |
+        <p>对特定类型装具的各种特征的描述，包括尺寸。</p>
+    indicator: 指示器
+    indicator_tooltip: |
+        <p>必填字段。 一个字母数字表达式，用于指示最高级别装具的位置，也可以是装具序列中装具的位置。</p>
+    barcode: 条形码
+    barcode_tooltip: |
+        <p>用于记录唯一标识顶级别装具的条形码。</  p>
+    type: 装具类型
+    type_tooltip: |
+        <p>最高级别装具的类型。</p>
+        <p>可以修改此受控值列表中的值。</p>
+    ils_holding_id: ILS馆藏ID
+    ils_holding_id_tooltip: |
+      <p>ILS库中相关馆藏记录的标识</p>
+    ils_item_id: ILS条目ID
+    ils_item_id_tooltip: |
+      <p>由API提供的标识，用于库ILS中的关联项记录（系统字段;不能手动编辑）</p>
+    exported_to_ils: 导出ILS
+    not_exported: 未导出
+    restricted: 受限?
+    parent: 父级装具
+
+    managed_container_2_type: 子装具类型
+    managed_container_2_type_tooltip: |
+        <p>容纳所述资料的第二级装具的类型。</p>
+        <p>可以修改此受控值列表中的值。</p>
+    managed_container_2_indicator: 子装具指示器
+    managed_container_2_indicator_tooltip: |
+        <p>用于指示第二级装具ID的字母数字表达式，还可以指示第二级装具在这样的装具序列中的位置。 大容量的二级装具也是允许的，例如， 文件夹1-16。</p>
+    managed_container_3_type: 孙装具类型
+    managed_container_3_type_tooltip: |
+        <p>容纳所述资料的第三级装具的类型。</p>
+        <p>可以修改此受控值列表中的值。</p>
+    managed_container_3_indicator: 孙装具指示器
+    managed_container_3_indicator_tooltip: |
+        <p>用于指示第三级装具的 ID的字母数字表达式，其还可以指示第三级装具在这样的装具序列中的位置。 大容量的三级装具也是允许的，例如， 文件夹1-16。</p>
+    barcode_length_for_this_repository: "本档案库的条形码长度："
+    characters: 字符
+
+    batch_delete:
+      success: 顶层装具已成功删除
+      error: 删除顶层装具时出现问题
+
+    _singular: 顶层装具
+    _plural: 顶层装具
+
+    _frontend:
+      section:
+        active_restrictions: 活动限制
+        linked_records: 链接记录
+        basic_information: 装具信息
+      action:
+        add: 添加顶层装具
+        create: 创建顶层装具
+        save: 保存顶层装具
+      messages:
+        created: 顶层装具已创建
+        updated: 顶层装具已更新
+        filter_required: 请提供过滤器
+        max_results_limit_reached: 并未列出所有结果。 请优化您的搜索
+        max_results_limit_details: "显示<strong>%{num_found}</strong>个匹配结果的<strong>%{visible}</strong>个"
+        results_summary: "匹配结果: <strong>%{num_found}</strong>个"
+        bulk_selection_sort_help: 单击一列以设置排序顺序。 按住shift可按多列排序
+        bulk_action_success: 顶层装具已成功更新
+        bulk_action_success_info: 请注意，更改可能需要一段时间才会反映在搜索结果中
+        no_active_restrictions: 没有活动限制
+      bulk_operations:
+        title: 批量操作
+        collection_singular: 资源/藏品
+        collection_plural: 资源/藏品
+        collection_resource_singular: 资源
+        collection_resource_plural: 资源
+        collection_accession_singular: 藏品
+        collection_accession_plural: 藏品
+        series: 系列
+        current_location: 当前位置
+        keyword_criteria: 关键字
+        barcodes_criteria: 条形码
+        exported_to_ils_true: 是
+        exported_to_ils_false: 否
+        empty: 未关联装具
+        empty_true: 是
+        empty_false: 否
+        search: 搜索
+        update_ils_holding_ids: 更新ILS持有ID
+        update_ils_holding_ids_help: 为所有选定装具输入ILS Holding ID值
+        update_container_profiles: 更新装具配置
+        update_container_profiles_help: 为所有选定装具选择装具配置
+        update_locations_singular: "更新位置: 单个位置"
+        update_locations_singular_help: 为所有选定装具选择位置
+        update_locations_multiple: "更新位置: 多个位置"
+        update_locations_multiple_help: 为每个选定装具选择位置
+        rapid_barcode_entry: 快速条形码输入
+        rapid_barcode_entry_existing_barcode: 现存条形码
+        rapid_barcode_entry_new_barcode: 新增条形码
+        batch_delete: 删除顶层装具
+        batch_delete_help: 删除所有选定装具.
+        update_n_records: "更新 %{n} 个记录"
+        delete_n_records: "删除 %{n} 个记录"
+        update_locations_current_location: 当前位置
+        update_locations_new_location: 新增位置
+
+  container_profile:
+    _singular: 装具配置
+    _plural: 装具配置
+    _frontend:
+      action:
+        save: 保存装具配置
+        edit: 编辑装具配置
+        create: 创建装具配置
+        space_calculator: 空间计算器
+      messages:
+        created: 装具配置已创建
+        updated: 装具配置已更新
+      section:
+        basic_information: 基本信息
+    name: 名称
+    name_tooltip: |
+        <p>必填字段。 装具配置文件的名称。 可能是通用的或具体的。</p>
+        <p>例如</p>
+        <ul>
+        <li>文档盒</li>
+        <li>小型卡片文件盒</li>
+        </ul>
+    url: URL
+    url_tooltip: |
+        <p>装具外部描述的超链接。</p>
+    dimension_units: 量纲
+    dimension_units_tooltip: |
+        <p>尺寸的测量单位。</p>
+        <p>可以修改此受控值列表中的值。</p>
+    extent_dimension: 幅度尺寸
+    extent_dimension_tooltip: |
+        <p>用于计算和说明装具中资料的范围尺寸的尺寸。 这有助于确定幅度计算器将测量哪个尺寸。</p>
+    extent_dimension_depth: 深
+    extent_dimension_depth_tooltip: |
+        <p>装具深度（前后尺寸）的数值。</p>
+    extent_dimension_height: 高
+    extent_dimension_height_tooltip: |
+        <p>装具高度（从上到下）的数值。</p>
+    extent_dimension_width: 宽
+    extent_dimension_width_tooltip: |
+        <p>装具宽度（侧面尺寸）的数值。</p>
+    depth: 深
+    depth_tooltip: |
+        <p>装具深度（前后尺寸）的数值。</p>
+    height: 高
+    height_tooltip: |
+        <p>装具高度（从上到下）的数值。</p>
+    width: 宽
+    width_tooltip: |
+        <p>装具宽度（侧面尺寸）的数值。</p>
+    stacking_limit: 堆叠极限
+    stacking_limit_tooltip: |
+        <p>可以堆叠在一起的本类装具的数量。 如果没有限制，请留空。 必须是正整数。</p>
+
+  rights_restriction:
+    begin: 限制 开始
+    begin_tooltip: |
+        <p>对于有时限的限制条件，限制访问的开始日期。 必须是YYYY-MM-DD格式的单个日期。 一旦到期，将与装具解除关联。 使用注释文本表示不太精确的日期或日期范围。</p>
+    end: 限制 End
+    end_tooltip: |
+        <p>对于有时限的限制条件，限制访问的结束日期。 必须是YYYY-MM-DD格式的单个日期。 一旦到期，将与装具解除关联。 使用注释文本表示不太精确的日期或日期范围。</p>
+    local_access_restriction_type: Local 访问限制类型
+    local_access_restriction_type_inline_help: "按住CTRL（Windows）/ Command（Mac）以选择多个选项或取消选择一个选项"
+    local_access_restriction_type_tooltip: |
+        <p>对于没有时间限制的限制，指示限制的原因。</p>
+        <p>可以修改此受控值列表中的值。</p>
+    linked_records: 链接记录
+    restriction_note_type: 注释类型
+
+  extent_calculator:
+    no_object_message: 请指定一个对象来运行范围计算器
+    report_title: 计算的尺寸报告
+    container_profile_header: 装具配置
+    count_header: 数量
+    extent_header: 容积
+    no_profile: <span class="text-error">无配置</span>
+    all_containers_label: 全部装具
+    timestamp_label: 报告生成于
+    extent_record_header: 容积记录
+    create_extent: 创建容积
+    calculate_extent: 计算容积
+    create_extent_record_message: 在编辑模式下运行容积计算器，可以选择根据报告创建容积记录。
+    waiting_for_report_message: 正在计算容积...
+    container_summary_type:
+      _singular: 装具
+      _plural: 装具
+
+  location_profile:
+    _singular: 位置配置
+    _plural: 位置配置
+    _frontend:
+      action:
+        save: 保存位置配置
+        edit: 编辑位置配置
+        create: 创建位置配置
+      messages:
+        created: 位置配置已创建
+        updated: 位置配置已更新
+        fields_required_for_calculator: 请注意，空间计算器都需要量纲、深度、高度和宽度。 如果缺少任何这些值，将从结果中忽略该位置。
+      section:
+        basic_information: 基本信息
+    name: 名称
+    dimension_units: 量纲
+    depth: 深度
+    height: 高度
+    width: 宽度
+
+  space_calculator:
+    modal_title: 空间计算器
+    modal_loading: 正在加载...
+    message_container_profile_required: 空间计算器需要设置装具配置。
+    message_locations_required: 空间计算器需要设置一个或多个位置。
+    message_select_locations: "检查以下位置中的控件："
+    message_no_locations_with_space: 找不到包含空间的位置
+    message_total_spaces: "此装具类型可用的总空间数：%{total_spaces}"
+    message_total_containers: "在这些位置找到此类型的装具总数：%{total_containers}"
+    message_loading: 正在加载...
+    count: 可用空间(以装具类型计)
+    calculate_space: 检查空间
+    locations_without_space_details: 复查无空间位置
+    by_locations: 位置过滤
+    by_building: 建筑物过滤
+    result_filter: 过滤结果
+    summary:
+      locations_with_space: "有空间位置: <strong>%{count}</strong>个"
+      locations_without_space: "无空间位置: <strong>%{count}</strong>个"
+      uncalculatable_locations: "无法计算: <strong>%{count}</strong>个"
+    view_all_toggle: 显示无空间位置
+    reason:
+      location_lacks_a_profile: 位置缺少配置
+      location_lacks_dimension_data: 位置配置文件缺少维度数据
+      container_is_bigger: 装具至少一个维度上大于此位置
+      container_at_location_lacks_profile: 当前位于该位置的装具中至少有一个装具缺少配置文件
+      containers_at_location_dont_fit: 当前位于该位置的装具不适合
+      location_cannot_fit_container: 该位置目前无法容纳此类型的任何装具
+
+  date_calculator:
+    toolbar_button: 计算日期
+    calculate_button: 计算日期记录
+    modal_title: 计算日期
+    all_labels: 计算所有日期
+    no_object_message: 未找到记录
+    results_title: 计算的日期记录
+    create_date_button: 创建日期记录
+    generic_create_error: 日期无效，无法创建
+    create_success: 日期已创建成功，正在刷新页面...
+    no_dates: 未找到适合的日期
+    no_dates_for_label: 未找到适合 %{label} 的日期
+
+  act:
+    _frontend:
+      action:
+        add: 添加操作
+
+  assessment:
+    _frontend:
+      form_header: 评估 %{display_string}
+      formats: 资料类型 / 格式
+      ratings: 评级
+      conservation_issues: 保藏事宜
+      record_types: 记录类型
+      action:
+        create: 创建评估
+        save: 保存评估
+        add_rating_note: 添加注释
+        remove_rating_note: 删除注释
+        create_for_record: 创建评估
+      section:
+        basic_information: 基本信息
+        existing_description: 现存描述
+        rating_attributes: 评估信息
+        rating_attributes_empty: 未输入评估信息
+        rating_attributes_additional: 评级附加信息
+        format_attributes: 资料类型/格式列表
+        format_attributes_empty: 未输入类型/格式信息
+        format_attributes_additional: 附加资料类型/格式
+        conservation_issue_attributes: 保藏事宜
+        conservation_issue_attributes_empty: 未输入保藏事宜
+        conservation_issue_attributes_additional: 附加保藏事宜
+      messages:
+        created: 评估已创建
+        updated: 评估已更新
+        deleted: 评估已删除
+        attributes_hint: 请与管理员联系以添加附加 %{attribute_type}
+        manage_attributes_hint: 管理此档案库的附加 %{attribute_type}
+      assessment_review_required:
+        true_value: 是
+        false_value: 否
+      assessment_sensitive_material:
+        true_value: 是
+        false_value: 否
+      assessment_inactive:
+        true_value: 是
+        false_value: 否
+      assessment_completed:
+        true_value: 是
+        false_value: 否
+      browse_reviewers: 评论者
+      linked_records:
+        heading: 链接记录
+        loading: 正在加载...
+        linked_via_assessment_records: 评估
+        linked_via_assessment_surveyed_by: 评估 - 调查者
+        linked_via_assessment_reviewer: 评估 - 评论者
+      ratings_list:
+        rating: 评级
+        score: 分值
+        note: 注释
+
+  assessment_attribute_definitions:
+    _frontend:
+      title: 评估属性
+      section:
+        formats: 资料类型/格式
+        ratings: 评级
+        conservation_issues: 保藏事宜
+      global: 全局 %{type}
+      repository: 档案库 %{type}
+      action:
+        save: 保存评估属性
+      messages:
+        updated: 评估属性已更新
+        error: Error updating评估属性
+        conflict: "评估属性更新错误。 以下标签与现有条目冲突：%{conflicts}"
+        attribute_in_use: 无法删除评估当前使用的属性
+      database_value: 数据库值
+      translation: 翻译
+
+  custom_report_template:
+    _frontend:
+      new_title: 新增用户报告模板
+      section:
+        template_information: 模板信息
+        basic_information_fields: 基本信息字段
+        linked_records: 链接记录
+        sort_by: 报告排序
+      action:
+        create: 创建模板
+        save: 保存模板
+      messages:
+        created: 用户报告模板已创建
+        updated: 用户报告模板已更新
+
+  oai_config:
+    title: OAI-PMH设置
+    title_repo_section: 每档案库OAI-PMH设置
+    general_section: 一般设置
+    repo_set_section: 档案库集合
+    sponsor_set_section: 赞助者集合
+    repo_set_desc: 除了基于描述级别的集合之外，您还可以基于档案库定义OAI集合。
+    sponsor_set_desc: 除了基于描述级别的集合外，您还可以根据赞助商名称定义OAI集合。
+    oai_record_prefix: OAI记录前缀
+    oai_admin_email: OAI管理员电子邮件
+    oai_repository_name: OAI档案库名称
+    repo_set_name: 档案库集合名称
+    repo_set_codes: 集合中档案库
+    repo_set_description: 档案库集合描述
+    sponsor_set_name: 赞助者集合名称
+    sponsor_set_names: 赞助者名称
+    sponsor_set_description: 赞助者集合描述
+    oai_leave_repo_form: 这些选项仅影响此档案库的OAI-PMH。 单击下方可查看/编辑全局OAI选项。 这将保留当前表单而不保存更改。
+    _frontend:
+      section:
+        basic_information: 一般设置
+      action:
+        create: 更新OAI-PMH设置
+        updated: OAI-PMH设置已成功更新
+    _sidebar:
+      repo_set_section:
+        _plural: 档案库集合
+      sponsor_set_section:
+        _plural: 赞助者集合
+      repo_settings:
+        _plural: 档案库OAI-PMH设置
