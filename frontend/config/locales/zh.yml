@@ -1176,7 +1176,7 @@ zh:
 
     _frontend:
       section:
-        active_restrictions: 活动限制
+        active_restrictions: 生效的限制
         linked_records: 链接记录
         basic_information: 装具信息
       action:
@@ -1193,7 +1193,7 @@ zh:
         bulk_selection_sort_help: 单击一列以设置排序顺序。 按住shift可按多列排序
         bulk_action_success: 顶层装具已成功更新
         bulk_action_success_info: 请注意，更改可能需要一段时间才会反映在搜索结果中
-        no_active_restrictions: 没有活动限制
+        no_active_restrictions: 没有生效的限制
       bulk_operations:
         title: 批量操作
         collection_singular: 资源/藏品

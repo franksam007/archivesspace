@@ -307,6 +307,7 @@ zh:
         summary: 概要
         acquisition_type: 征集类型
         provenance: 出处
+        restrictions_apply: 存在限制条件？
         access_restrictions: 访问限制
         access_restrictions_apply: 适用访问限制
         use_restrictions: 使用限制
