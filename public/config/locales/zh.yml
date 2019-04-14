@@ -389,7 +389,7 @@ zh:
         note: 注释
         revision: 修订说明
       related_accessions:
-        accessions: 藏品登记记录
+        accessions: 入藏登记记录
         deaccessions: 藏品注销记录
 
   top_container:
@@ -861,7 +861,7 @@ zh:
       work: 作品
       image: 图像
     event_event_type:
-      accession: 藏品登录
+      accession: 入藏登录
       accumulation: 积累
       acknowledgement: 确认
       acknowledgement_sent: 确认已发送
@@ -916,7 +916,7 @@ zh:
       under_revision: 正在修订
       unprocessed: 未处理
     instance_instance_type:
-      accession: 藏品
+      accession: 入藏品
       audio: 音频
       books: 数据
       computer_disks: 计算机碟片
@@ -1942,12 +1942,12 @@ zh:
       shared: 共享
 
   enumeration_names:
-    accession_acquisition_type: 藏品-征集类型
-    accession_parts_relator: 藏品-相关方
-    accession_parts_relator_type: 藏品-相关方类型
-    accession_sibling_relator: "藏品-同属相关方"
-    accession_sibling_relator_type: 藏品-同属相关方类型
-    accession_resource_type: 藏品-资源类型
+    accession_acquisition_type: 入藏-征集类型
+    accession_parts_relator: 入藏-相关方
+    accession_parts_relator_type: 入藏-相关方类型
+    accession_sibling_relator: "入藏-同属相关方"
+    accession_sibling_relator_type: 入藏-同属相关方类型
+    accession_resource_type: 入藏-资源类型
     agent_contact_salutation: 代理-联系人称呼
     agent_relationship_associative_relator: 代理关系-联合相关方
     agent_relationship_earlierlater_relator: 代理关系-早晚期相关方

@@ -311,9 +311,9 @@ zh:
     linked_agents_tooltip: |
         <p>必需的子记录：将一个或多个代理人作为此次活动的参与者。</p>
     linked_records_tooltip: |
-        <p>必需的子记录：将藏品、数字对象或资源与此事件相关联。</p>
+        <p>必需的子记录：将入藏品、数字对象或资源与此事件相关联。</p>
     types:
-      accession: 藏品
+      accession: 入藏
       accumulation: 积累
       acknowledgement: 确认
       acknowledgement_sent: 确认已发送
@@ -1124,7 +1124,7 @@ zh:
     <<: *section_tooltips
     user_defined:
       <<: *user_defined_attributes
-    accession_date: 藏品登录日期
+    accession_date: 入藏日期
     accession_date_inline_help: 例如YYYY-MM-DD
     accession_date_tooltip: |
         <p>REQUIRED FIELD: The date the accession took place. It is not
@@ -1247,19 +1247,19 @@ zh:
         linked.</p>
         <p>参见DACS 2.3.18-2.3.22</p>
     related_resources_tooltip: |
-        <p>Used for linking associated Resources with this 藏品.</p>
+        <p>Used for linking associated Resources with this 入藏品.</p>
     relator: 相关方
     relator_type: 相关方类型
-    _singular: 藏品
-    _plural: 藏品
+    _singular: 入藏品
+    _plural: 入藏品
 
   interrelated_accession:
-    _plural: 相关藏品
+    _plural: 相关入藏品
     relationship_type: 关系类型
 
   accession_sibling_relationship:
     _singular: 同属/同辈关系
-    relator: 本藏品
+    relator: 本入藏品
     sibling_of: 与之同属/同辈：
     relator_type: 相关方类型
     bound_with: "\"绑定\" 关系"
@@ -1267,7 +1267,7 @@ zh:
   accession_parts_relationship:
     _singular: "\"是...的一部分\" 关系"
     part: "\"是...的一部分\" 关系"
-    relator: 本藏品
+    relator: 本入藏品
     forms_part_of: 形成后述资料的一部分：
     has_part: 拥有
     relator_type: 相关方类型
@@ -1426,7 +1426,7 @@ zh:
       update_subject_record: 创建/更新主题记录
       update_agent_record: 创建/更新代理记录
       update_vocabulary_record: 创建/更新词汇记录
-      update_accession_record: 在此档案库中创建/更新藏品
+      update_accession_record: 在此档案库中创建/更新入藏记录
       update_resource_record: 在此档案库中创建/更新资源
       update_digital_object_record: 在此档案库中创建/更新数字对象
       update_event_record: 在此档案库中创建/更新事件记录
@@ -1570,8 +1570,8 @@ zh:
     _plural: 资源
 
   related_accession:
-    _singular: 相关藏品
-    _plural: 相关藏品
+    _singular: 相关入藏
+    _plural: 相关入藏
 
   revision_statement:
     _singlular: 修订声明
@@ -1740,7 +1740,7 @@ zh:
   collection_management: &collection_management_attributes
     cataloged_note: 编目注释
     cataloged_note_tooltip: |
-        <p>关于归档单位（藏品，资源，数字对象）编目的说明，包括提供目录记录标识符。</p>
+        <p>关于归档单位（入藏品，资源，数字对象）编目的说明，包括提供目录记录标识符。</p>
         <p>例如：</p>
         <ul>
         <li>Catalog record number: 21345672</li>
@@ -1793,10 +1793,10 @@ zh:
         <p>Used to indicate the source of funding the processing of the described materials.</p>
     processors: 处理者
     processors_tooltip: |
-        <p>列出已分配档案单元（藏品，资源或数字对象）处理任务的员工。</p>
+        <p>列出已分配档案单元（入藏品，资源或数字对象）处理任务的员工。</p>
     rights_determined: 权利已确定?
     rights_determined_tooltip: |
-        <p>表示是否已确定存档单元（藏品，资源或数字对象）的权利，是否已创建权利记录并将其链接到存档单元。</p>
+        <p>表示是否已确定存档单元（入藏品，资源或数字对象）的权利，是否已创建权利记录并将其链接到存档单元。</p>
     rights_determined_true: 是
     rights_determined_false: 否
     parent: 父级
@@ -1858,8 +1858,8 @@ zh:
     publish: 发布?
     publish_tooltip: 是否默认发布新记录。
     default_values: 预生成记录?
-    default_values_tooltip: 是否使用默认值预填充新的藏品和资源记录。
-    accession_browse_section: 藏品浏览
+    default_values_tooltip: 是否使用默认值预填充新的入藏品和资源记录。
+    accession_browse_section: 入藏品浏览
     accession_browse_column_1: 列 1
     accession_browse_column_1_tooltip: 字段显示在列1.
     accession_browse_column_2: 列 2
@@ -2010,12 +2010,12 @@ zh:
     import_type: 导入类型
     import_type_ead_xml: EAD
     import_type_assessment_csv: 评估 CSV
-    import_type_accession_csv: 藏品CSV
+    import_type_accession_csv: 入藏品CSV
     import_type_digital_object_csv: 数字对象 CSV
     import_type_eac_xml: EAC
     import_type_location_csv: 位置 CSV
     import_type_marcxml: MarcXML (资源)
-    import_type_marcxml_accession: MarcXML (藏品)
+    import_type_marcxml_accession: MarcXML (入藏品)
     import_type_marcxml_subjects_and_agents: MarcXML (仅限主题和代理)
 
   find_and_replace_job:
@@ -2104,7 +2104,7 @@ zh:
     records: 记录
     records_tooltip: |
         <p>REQUIRED FIELD: A link to the resource(s), accession(s), archival object(s), or digital object(s) that are the subjects of the assessment.</p>
-    accession_report: 藏品报告
+    accession_report: 入藏品报告
     appraisal: 鉴定
     container_list: 盒/装具列表
     catalog_record: 目录记录 (MARC)

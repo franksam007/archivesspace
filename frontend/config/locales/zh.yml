@@ -157,7 +157,7 @@ zh:
       digital_object_type: 类型
       level: 层级
       classification_path: 分类
-      accession_date_year: 藏品登录日期
+      accession_date_year: 入藏登录日期
       creators: 创建者
       source: 源
       rules: 规则
@@ -232,7 +232,7 @@ zh:
     area: 区域
     resource_type: 资源类型
     acquisition_type: 收集类型
-    accession_date: 藏品登录日期
+    accession_date: 入藏登录日期
     restrictions_apply: 应用限制
     access_restrictions: 访问限制
     use_restrictions: 使用限制
@@ -290,7 +290,7 @@ zh:
     import_ead: EAD文件
     import_marcxml: MARCXML
     import_marcxml_subjects_and_agents: MARCXML(仅限主题和代理)
-    import_accession_csv: 藏品登录CSV
+    import_accession_csv: 入藏登录CSV
     import_digital_object_csv: 数字对象CSV
     search_all: 全部记录
     search_placeholder: 搜索全部记录
@@ -381,7 +381,7 @@ zh:
     ead_title: 导入EAD文件
     marcxml_title: 导入MARCXML文件
     marcxml_subjects_and_agents_title: 从MARCXML文件导入主题和代理
-    accession_csv_title: 从CSV文件导入藏品登录记录
+    accession_csv_title: 从CSV文件导入入藏登录记录
     digital_object_csv_title: 从CSV文件导入数字对象记录
     import_report: 导入报告
     import_another: 导入另一文件
@@ -398,7 +398,7 @@ zh:
     form_title:
       archival_object: 构件记录默认值
       resource: 资源记录默认值
-      accession: 藏品登录记录默认值
+      accession: 入藏登录记录默认值
       subject: 主题记录默认值
       agent_person: 代理记录默认值 (个人)
       agent_family: 代理记录默认值 (家庭)
@@ -445,21 +445,21 @@ zh:
     <<: *slug_attributes
     _frontend:
       messages:
-        created: 藏品 <strong>%{accession.display_string}</strong> 已创建
-        unsuppressed: 藏品 <strong>%{accession.display_string}</strong> 已取消抑制
-        updated: 藏品 <strong>%{accession.display_string}</strong> 已更新
-        suppressed: 藏品 <strong>%{accession.display_string}</strong> 已被抑制
-        suppressed_info: 藏品被抑制，无法编辑
-        deleted: 藏品 <strong>%{accession.display_string}</strong> 已删除
-        transfer_description: 将此藏品传送到...
+        created: 入藏品 <strong>%{accession.display_string}</strong> 已创建
+        unsuppressed: 入藏品 <strong>%{accession.display_string}</strong> 已取消抑制
+        updated: 入藏品 <strong>%{accession.display_string}</strong> 已更新
+        suppressed: 入藏品 <strong>%{accession.display_string}</strong> 已被抑制
+        suppressed_info: 入藏品被抑制，无法编辑
+        deleted: 入藏品 <strong>%{accession.display_string}</strong> 已删除
+        transfer_description: 将此入藏品传送到...
         transfer_target: 选择传送目标档案库
-        spawned: "此藏品已从藏品 <strong>%{accession.display_string}</strong>衍生出来"
-        delete_conflict: "藏品无法删除: <pre>%{error}</pre>"
+        spawned: "此入藏品已从入藏品 <strong>%{accession.display_string}</strong>衍生出来"
+        delete_conflict: "入藏品无法删除: <pre>%{error}</pre>"
       section:
         basic_information: 基本信息
       action:
-        create: 创建藏品
-        save: 保存藏品
+        create: 创建入藏品
+        save: 保存入藏品
 
   agent: &agent_attributes
     <<: *slug_attributes
@@ -812,7 +812,7 @@ zh:
   related_accession:
     _frontend:
       action:
-        add: 添加相关藏品
+        add: 添加相关入藏品
 
   related_agent:
     _frontend:
@@ -871,7 +871,7 @@ zh:
       messages:
         created: "资源 <strong>%{resource.title}</strong> 已创建"
         updated: "资源 <strong>%{resource.title}</strong> 已更新"
-        spawned: "已从藏品 <strong>%{accession.display_string}</strong> 产生一个新资源。"
+        spawned: "已从入藏品 <strong>%{accession.display_string}</strong> 产生一个新资源。"
         deleted: "资源 <strong>%{resource.title}</strong> 已删除"
         published: "资源 <strong>%{resource.title}</strong>，及其子记录和构件已发布"
         merge_description: 在下面选择合并目标资源
@@ -1079,7 +1079,7 @@ zh:
         find_and_replace_instructions: 选择一个基础记录来限定查找和替换操作，然后选择要定位的记录类型和该类型的属性。如果目标类型是“资源”，则操作将在基础记录树中的每个目标记录中运行，或在基础记录本身中运行。
         report_instructions: 使用<b>选择</b>按钮选择要运行的报告。
         slug_lost_warning: <b>警告！</b>所有自动生成的访问URI都将被重新生成！
-        slug_generation: 这个作业将为所有<b>资源</b>，<b>归档对象</b>，<b>数字对象</b>，<b>数字对象组件</b>，<b>藏品</b>，<b>分类</b>，<b>代理</b>，<b>主题</b>和<b>档案库</b>的生成一个访问URI并启用访问URI自动生成。 <br/> <em>手动添加的访问URI不会被更改。</em>
+        slug_generation: 这个作业将为所有<b>资源</b>，<b>归档对象</b>，<b>数字对象</b>，<b>数字对象组件</b>，<b>入藏品</b>，<b>分类</b>，<b>代理</b>，<b>主题</b>和<b>档案库</b>的生成一个访问URI并启用访问URI自动生成。 <br/> <em>手动添加的访问URI不会被更改。</em>
         slug_config_msg: <b>根据config.rb中的系统设置：</b>
         slug_config_id: 在适当的情况下，使用实体标识符生成访问URI
         slug_config_title: 将使用实体名称或标题生成访问URI
@@ -1196,12 +1196,12 @@ zh:
         no_active_restrictions: 没有生效的限制
       bulk_operations:
         title: 批量操作
-        collection_singular: 资源/藏品
-        collection_plural: 资源/藏品
+        collection_singular: 资源/入藏品
+        collection_plural: 资源/入藏品
         collection_resource_singular: 资源
         collection_resource_plural: 资源
-        collection_accession_singular: 藏品
-        collection_accession_plural: 藏品
+        collection_accession_singular: 入藏品
+        collection_accession_plural: 入藏品
         series: 系列
         current_location: 当前位置
         keyword_criteria: 关键字
