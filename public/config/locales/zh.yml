@@ -598,7 +598,7 @@ zh:
       cph: 版权持有者
       crr: 校对者
       crp: 记者
-      cst: 戏装设计师=
+      cst: 戏装设计师
       cou: 管理法院
       crt: Court reporter
       cov: 封面设计师
@@ -954,7 +954,7 @@ zh:
       tgn: Getty Thesaurus of Geographic Names
     event_outcome:
       pass: 通过
-      partial pass: 部分通过
+      partial_pass: 部分通过
       fail: 失败
     agent_contact_salutation:
       mr: 尊敬的
@@ -1562,8 +1562,8 @@ zh:
       loan: 出借中
       reading_room: 阅览室
     name_person_name_order:
-      direct: 直接
-      inverted: 间接
+      direct: 名，姓
+      inverted: 姓，名
     country_iso_3166:
       AF: Afghanistan
       AX: Åland Islands

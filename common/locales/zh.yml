@@ -48,10 +48,8 @@ zh:
   section_tooltips: &section_tooltips
     dates_tooltip: |
         <p>识别并记录与所描述资料的创建、组装、积累和/或维护和使用相关的日期。</p>
-        <p>参见DACS 2.4</p>
     extents_tooltip: |
         <p>表示所描述资料的范围和物理性质。</p>
-        <p>参见DACS 2.5</p>
     linked_agents_tooltip: |
         <p>将代理人作为所描述资料的创建者、来源或主题进行关联，以提供有关其背景的信息。</p>
     subjects_tooltip: |
@@ -257,7 +255,7 @@ zh:
     title_tooltip: |
         <p>可选字段：在此处记录作品的权威标题，以便为作为创作者或主题关联到该作品的代理制作名称/标题标题：</p>
         <p>例如：</p>
-        <ul><li>Shakespeare, William, 1564-1616. King Lear</li><li> Pound, Ezra, 1885-1972. Cantos</li><li> Lincoln, Abraham, 1809-1865. Emancipation Proclamation</li></ul>
+        <ul><li>莎士比亚, 威廉姆, 1564-1616. 里尔王</li><li>钱钟书, 1910-1998. 围城</li></ul>
     _singular: 代理链接
     _plural: 代理链接
 
@@ -285,7 +283,6 @@ zh:
     event_type_tooltip: |
         <p>对事件性质的分类。</p>
         <p>可以修改此受控值列表中的值。</p>
-        <p>参见PREMIS eventType</p>
     outcome: 输出
     outcome_tooltip: |
         <p>根据成功、部分成功或失败对事件总体结果进行分类。 建议的做法是使用系统可以自动操作的受控词汇表。 关于结果的更多细节可以记录在结果注释中。 建议的做法是定义具有足够粒度的事件，以确保每个事件都有一种结果。</p>
@@ -309,9 +306,9 @@ zh:
         <p>事件发生时的单个日期和时间，或日期和时间范围。</p>
         <p>如果单个日期/时间或开始或结束日期/时间未知，请在日期表达式字段中输入“未知”。</p>
     linked_agents_tooltip: |
-        <p>必需的子记录：将一个或多个代理人作为此次活动的参与者。</p>
+        <p>必填子记录：将一个或多个代理人作为此次活动的参与者。</p>
     linked_records_tooltip: |
-        <p>必需的子记录：将入藏品、数字对象或资源与此事件相关联。</p>
+        <p>必填子记录：将入藏品、数字对象或资源与此事件相关联。</p>
     types:
       accession: 入藏
       accumulation: 积累
@@ -369,23 +366,23 @@ zh:
         <p>必填字段：已注销资料的描述</p><p>
         <p>例如：</p>
         <ul>
-        <li>Periodicals, newspaper clippings, and family financial records.</li>
-        <li>Trophies awarded at dog shows.</li>
+        <li>关于X项目的监理资料</li>
+        <li>关于招商的洽谈会议纪要</li>
         </ul>
     reason: 原因
     reason_tooltip: |
         <p>所述资料的注销原因。</p>
         <p>例如：</p>
         <ul>
-        <li>Donor did not intend to transfer these materials.</li>
+        <li>主管部门不想移交资料。</li>
         </ul>
     disposition: 处置
     disposition_tooltip: |
         <p>描述对已注销资料做了什么的处理。</p>
         <p>例如：</p>
         <ul>
-        <li>Financial records returned to the family.</li>
-        <li>Dog show trophies returned to the donor's wife.</li>
+        <li>资料返还原部门</li>
+        <li>资料返还后续负责人</li>
         </ul>
     notification: 给出提示?
     notification_tooltip: |
@@ -397,105 +394,102 @@ zh:
   agent_name: &agent_name_attributes
     authority_id: 权威机构ID
     authority_id_tooltip: |
-        <p>The unique identifier for the Name Form for an Agent within the source from which it was acquired, (i.e., a MADS record identifier or EAC record identifier). The identifier may be represented as a URI.</p>
-        <p>参见DACS 13.2</p>
+        <p>作为资料获取源的代理（个人、机构、软件等）的唯一ID。ID可表示为一个URI</p>
         <p>例如：</p>
         <ul>
-        <li>nr92045078 <em>for a LCNAF name heading</em></li>
-        <li>500115393 <em>for a ULAN name heading</em></li>
-        <li>http://viaf.org/viaf/134138653 <em>for a VIAF name heading</em>
+        <li>个人的身份证号</em></li>
+        <li>企业的社会信用代码、组织机构代码</li>
+        <li>某个电子资料的访问URI（某个权威的档案库/资料库中的）</li>
         </ul>
     source: 源
     source_tooltip: |
-        <p>CONDITIONALLY REQUIRED FIELD, if Name Rules is not used. An indicator of the authoritative source from which the name was taken.</p>
-        <p>Values in this Controlled Value List may be modified.</p>
+        <p>如果没有使用名称规则，则此项必填，是从中获取名称的权威来源。</p>
+        <p>可以修改此受控值列表中的值。</p>
     rules: 规则
     rules_tooltip: |
-        <p>CONDITIONALLY REQUIRED FIELD, if Name Source is not used. An indication of the rules used to formulate the name entry.</p>
-        <p>Values in this Controlled Value List may be modified.</p>
+        <p>如果不使用名称来源，则此项必填， 是用于表示名称条目的规则。</p>
+        <p>可以修改此受控值列表中的值。</p>
     name_order: Name Order
     name_order_tooltip: |
-        <p>Indicates if the name form should be displayed in inverted (last name, first name) order or in direct order (first name last name).</p>
+        <p>指示名称表单是以先姓氏后名字还是以先名字后后姓氏的顺序显示。对与西方名称采用先名字后姓氏的顺序显示</p>
     prefix: 前缀
     prefix_tooltip: |
-        <p>Any term associated with a name that in normative use would precede the entire name.</p>
+        <p>与在规范使用中的名称时，将放在在整个名称之前的相关联的任何词语，主要用于西方姓名中。</p>
         <p>例如：</p>
         <ul>
         <li>Mrs.</li>
         </ul>
-    title: 标题
+    title: 头衔/职务
     title_tooltip: |
-        <p>A title that is part of the name.</p>
+        <p>作为名称一部分的头衔，主要用于西方名字中，中文中基本不使用。</p>
         <p>例如：</p>
         <ul>
-        <li>Sir <em>(for Churchill, Winston, Sir, 1874-1965)</em></li>
-        <li>Chief (for Black Foot, Chief, d. 1877)</li>
-        <li>Emperor of the East <em>(for John II Comnenus. Emperor of the East.)</em></li>
+        <li>Sir <em>( Churchill, Winston, Sir, 1874-1965)</em></li>
+        <li>Chief (Black Foot, Chief, d. 1877)</li>
+        <li>Emperor of the East <em>(John II Comnenus. Emperor of the East.)</em></li>
         </ul>
     primary_name: 名称的主要部分
     primary_name_tooltip: |
-        <p>The primary part of a name form (e.g. a last name or surname of a person).</p>
+        <p>名称形式的主要部分（例如，姓名中的姓氏）。</p>
         <p>例如：</p>
         <ul>
-        <li>Churchill <em>(for Churchill, Winston, Sir, 1874-1965 [person])</em></i>
-        <li>Black Foot <em>(for Black Foot, Chief, d. 1877 [person])</em></li>
-        <li>International Business Machines <em>(for International Business Machines. Microelectronics Division [corporate entity])</em></li>
+        <li><em>李白</em>的李</li>
+        <li><em>钱钟书</em>的钱</li>
+        <li><em>International Business Machines. Microelectronics Division</em>中的International Business Machines</li>
         </ul>
     rest_of_name: 名称的剩余部分
     rest_of_name_tooltip: |
-        <p>The first name element or forename and additional names, e.g, middle names, for the person named in the record.</p>
+        <p>第一个名称元素、名字及其他名称，例如西方姓名中的中间名。</p>
         <p>例如：</p>
         <ul>
-        <li>Winston <em>(for Churchill, Winston, Sir, 1874-1965)</em></li>
-        <li>Humphrey <em>(for Ward, Humphrey, Mrs., 1851-1920)</em></li>
+        <li><em>李白</em>的白</li>
+        <li><em>钱钟书</em>的钟书</li>
         </ul>
     suffix: 后缀
     suffix_tooltip: |
-        <p>A term following a name that qualifies the name but is not a title.</p>
+        <p>跟随名称之后，对名称进行一定说明的词</p>
         <p>例如：</p>
         <ul>
-        <li>Jr.</li>
-        <li>fils</li>
+        <li>先生</li>
+        <li>小姐</li>
         </ul>
     fuller_form: 全称形式
     fuller_form_tooltip: |
-        <p>The fuller form of first and middle names, when abbreviated.</p>
+        <p>缩写时，第一和中间名称的更完整形式。</p>
         <p>例如：</p>
         <ul>
-        <li>Hilda Doolittle <em>(for H.D., Hilda Doolittle, 1886-1961)</em></li>
+        <li>对于<em>(H.D., Hilda Doolittle, 1886-1961)</em>，使用Hilda Doolittle</li>
         </ul>
     number: 数字
     number_tooltip: |
-        <p>A number, sometimes with a term, that qualifies the name. For personal names, often a roman numeral or a roman numeral and a subsequent part of a forename. For corporate names, the number of a part / section or meeting.</p>
+        <p>一个数字，有时带有一个术语，可以限定名称。 对于个人姓名，通常是罗马数字或罗马数字以及姓氏的后续部分。 对于公司名称，部件/部分或会议的编号。</p>
         <p>例如：</p>
         <ul>
-        <li>II Comnenus <em>(for John II Comnenus, Emperor of the East</em>/li>
-        <li>II <em>(for John Paul II)</em></li>
-        <li>97th, 2nd session <em>(for United States Congress, 97th, 2nd session)</em></li>
+        <li>对于<em>（John II Comnenus, Emperor of the East<)</em>，使用“II Comnenus” <em></li>
+        <li>对于<em>(John Paul II)</em>，使用“II” </li>
+        <li>对于<em>(全国人民代表大会第十三届第二次会议)</em>，使用“第13届，第2次” </li>
         </ul>
     dates: 日期
     dates_tooltip: |
-        <p>Use this field for alignment with MARC authority records. These dates, rather than Dates of Existence, are added to the name entry in the display.</p>
-        <p>Dates of existence for the named entity.</p>
+        <p>命名实体的存续日期。</p>
         <p>例如：<p>
         <ul>
-        <li>1886-1961 <em>(for H.D., Hilda Doolittle, 1886-1961)</em></li>
+        <li>对于钱钟书，使用1886-1961</li>
         </ul>
     use_dates: 使用日期
     use_dates_tooltip: |
-        <p>Dates in which this name was used for the agent.</p>
+        <p>此名称用于代理的日期。</p>
     qualifier: 限定词
     qualifier_tooltip: |
-        <p>A term or phrase for distinguishing two name forms identical in all other respects but identifying two different entities.  The term may be a date, a place, or any other suitable descriptor.</p>
+        <p>一个术语或短语，用于区分两个在所有其他方面相同但代表两个不同实体的名称。 该术语可以是日期、地点或任何其他合适的描述符。</p>
         <p>例如：</p>
         <ul>
-        <li>Florists <em>(for Smith family (Florists))</em>)</li>
-        <li>Bronx, New York, N.Y. <em>(for St. James Church (Bronx, New York, N.Y.))</em></li>
+        <li>对于<em>(张三(北京))</em>)，可以用“北京”识别不同地点的“张三”</li>
         </ul>
     sort_name: 显示名
     sort_name_tooltip: |
-        <p>A version of the name concatenating all the parts of the name provided in a given agent record. Used for display purposes in the application and for some exports.</p>
-        <p>The sort name may be edited by unchecking the "Automatically generate" checkbox and then entering the form of the sort name desired.</p>
+        <p>连接给定代理记录中提供的名称的所有部分的名称版本。 用于应用程序和某些导出中的显示目的。</p>
+        <p>可以通过取消选中“自动生成”复选框，然后输入所需排序名称的形式来编辑排序名称。</p>
     authorized: 经授权
     is_display_name: 显示名
     _singular: 名称
@@ -508,46 +502,51 @@ zh:
     <<: *agent_name_attributes
     family_name: 姓（家族名）
     family_name_tooltip: |
-        <p>The last name, or surname, for a family, typically supplemented with the term "family".</p>
+        <p>家族/家庭的姓氏。</p>
 
   name_corporate_entity:
     <<: *agent_name_attributes
     subordinate_name_1: 下属名称 1
     subordinate_name_1_tooltip: |
-        <p>A hierarchical unit with the corporate entity named in the Primary Name field.</p>
+        <p>具有在“主要名称”字段中命名的法人实体的下属单位。</p>
         <p>例如：</p>
         <ul>
-        <li>Microelectronics Division <em>(for International Business Machines. Microelectronics Division)</em></li>
+        <li><em>(International Business Machines. Microelectronics Division)</em>中的Microelectronics Division </li>
+        <li><em>(管委会， 经发局)</em>中的经发局</li>
         </ul>
     subordinate_name_2: 下属名称 2
     subordinate_name_2_tooltip: |
-        <p>A hierarchical unit with the corporate entity named in the Primary Name field and lower than the unit named in the Subordinate Name 1 field.</p>
-
+        <p>一个下属单位，其公司实体在“主要名称”字段中命名，并且低于“下属名称 1”字段中指定的单位。</p>
+        <p>例如：</p>
+        <ul>
+        <li><em>(International Business Machines. Microelectronics Division)</em>中的Microelectronics Division </li>
+        <li><em>(X局， Y处，Z科)</em>中的Z科</li>
+        </ul>
   name_software:
     <<: *agent_name_attributes
     software_name: 软件名
     software_name_tooltip: |
-        <p>The name of a software package.</p>
+        <p>软件包的名称。</p>
         <p>例如：</p>
         <ul>
-        <li>Photoshop <em>(for Adobe Photoshop CS3)</em></li>
-        <li>Bagger <em>(for Library of Congress Bagger 2.1.2)</em></li>
+        <li>对于<em>(Adobe Photoshop CS3)</em>，使用Photoshop </li>
+        <li>对于<em>(Microsoft Windows 10)</em>，可以使用Windows</li>
         </ul>
     version: 版本
     version_tooltip: |
-        <p>The version number or other indicator for a specific version of a software package.</p>
+        <p>特定版本软件包的版本号或其他指示符。</p>
         <p>例如：</p>
         <ul>
-        <li>CS3 <em>(for Adobe Photoshop CS3)</em></li>
-        <li>2.1.2 <em>(for Library of Congress Bagger 2.1.2)</em></li>
+        <li>对于<em>(Adobe Photoshop CS3)</em>，使用CS3</li>
+        <li>对于<em>(Microsoft Windows 10)</em>，使用10</li>
         </ul>
     manufacturer: 生产者
     manufacturer_tooltip: |
-        <p>The manufacturer, creator or other responsible party for a software package's distribution, development, or maintenance.</p>
+        <p>软件包的分发/分销、开发或维护的制造商、创建者或其他责任方。</p>
         <p>例如：</p>
         <ul>
-        <li>Adobe <em>(for Adobe Photoshop CS3)</em></li>
-        <li>Library of Congress <em>(for Library of Congress Bagger 2.1.2)</em></li>
+        <li>对于<em>(Adobe Photoshop CS3)</em>，使用Adobe </li>
+        <li>对于<em>(Microsoft Windows 10)</em>，使用Microsoft</li>
         </ul>
 
   name:
@@ -557,42 +556,42 @@ zh:
   agent_contact: &agent_contact
     name: 联系人姓名
     name_tooltip: |
-        <p>Name of the person serving as contact for the entity in the main record.</p>
+        <p>作为在主记录中所描述实体的联系人的姓名。</p>
     salutation: 尊称
     salutation_tooltip: |
-        <p>Salutation for the contact person.</p>
-        <p>Values in this Controlled Value List may be modified.</p>
+        <p>联络人尊称</p>
+        <p>可以修改此受控值列表中的值。</p>
     address_1: 地址 1
     address_1_tooltip: |
-        <p>Address for the contact person.</p>
+        <p>联系人的地址。</p>
     address_2: 地址 2
     address_3: 地址 3
     city: 城市
     city_tooltip: |
-        <p>City in which the contact person is located.</p>
+        <p>联系人所在的城市。</p>
     region: 省/州/区
     region_tooltip: |
-        <p>State or Region in which the City is located</p>
+        <p>城市所在的省、州或地区</p>
     country: 国家
     country_tooltip: |
-        <p>Country in which the contact person is located.</p>
+        <p>联系人所在的国家/地区。</p>
     post_code: 邮政编码
     post_code_tooltip: |
-        <p>Mail or zip code for the contact person’s address.</p>
+        <p>联系人地址的邮政编码。</p>
     telephone: 电话
     telephone_ext: 分机号
     fax: Fax
     fax_tooltip: |
-        <p>Fax number for the contact person.</p>
+        <p>联系人的传真号码。</p>
     email: E-mail
     email_tooltip: |
-        <p>E-mail address for the contact person.</p>
+        <p>联系人的电子邮件地址。</p>
     email_signature: E-mail签名
     email_signature_tooltip: |
-        <p>E-mail signature for the contact person.</p>
+        <p>联系人的电子邮件签名。</p>
     note: 联系人注释
     note_tooltip: |
-        <p>Additional notes or contact information for the contact person.</p>
+        <p>联系人的附加说明或联系信息。</p>
     telephones: 电话号码
     _singular: 联系人
     _plural: 联系人
@@ -602,61 +601,61 @@ zh:
     number_type: 号码类型
     number: 号码
     number_tooltip: |
-        <p>Telephone number for the contact person.</p>
+        <p>联系人的电话号码。</p>
     ext: 分机号
     ext_tooltip: |
-        <p>Telephone number extension for the contact person.</p>
+        <p>联系人的分机号</p>
 
   telephone_required: &telephone
     _plural: 电话号码
     number_type: 号码类型
     number: 号码
     number_tooltip: |
-        <p>Telephone number for the contact person.</p>
+        <p>联系人的电话号码。</p>
     ext: 分机号
     ext_tooltip: |
-        <p>Telephone number extension for the contact person.</p>
+        <p>联系人的分机号</p>
 
   telephone_merge: &telephone
     _plural: 电话号码
     number_type: 号码类型
     number: 号码
     number_tooltip: |
-        <p>Telephone number for the contact person.</p>
+        <p>联系人的电话号码。</p>
     ext: 分机号
     ext_tooltip: |
-        <p>Telephone number extension for the contact person.</p>
+        <p>联系人的分机号</p>
 
   telephone_merge_target: &telephone
     _plural: 电话号码
     number_type: 号码类型
     number: 号码
     number_tooltip: |
-        <p>Telephone number for the contact person.</p>
+        <p>联系人的电话号码。</p>
     ext: 分机号
     ext_tooltip: |
-        <p>Telephone number extension for the contact person.</p>
+        <p>联系人的分机号</p>
 
   note_attributes: &note_attributes
     label: 标签
     label_tooltip: |
-        <p>A label or heading for the specific note. If a label is not used, the note type will be used as the label wherever required.</p>
+        <p>特定注释的标签或标题。 如果未使用标签，则注释类型将在需要时用作标签。</p>
     persistent_id: 持久性ID
     content: 内容
     content_tooltip: |
-        <p>The content of the note.</p>
+        <p>注释内容</p>
     items: 条目
     items_singular: 条目
     item_singular: 条目
     publish: 发布?
     publish_tooltip: |
-        <p>Determines whether this Note to public (patron) interfaces.</p>
+        <p>确定此注释是否向公共界面提供，即公共界面可见。</p>
     title: 标题
     title_tooltip: |
-      <p>An element for recording a specific label, or title, for the subnote.</p>
+      <p>用于记录子注释的特定标签或标题的元素。</p>
     type: 类型
     type_tooltip: |
-      <p>The type of note for the content.  Note types are used for guiding export of note contents to certain elements in specific data formats.</p>
+      <p>内容的注释类型。 注释类型用于指导将注释内容导出为特定数据格式的某些元素。</p>
 
   related_agent:
     relationship_type: 关系类型
@@ -714,7 +713,7 @@ zh:
     note_type: 注释类型
     note_rights_statement: 权利声明注释
     note_rights_statement_act: Act注释
-    note_agent_rights_statement: 权利声明注释 (do not use)
+    note_agent_rights_statement: 权利声明注释 (暂不可用)
     _singular: 注释
     _plural: 注释
 
@@ -728,13 +727,13 @@ zh:
 
   note_index_item:
     value: 值
-    value_tooltip: The content of each entry in the bibliography. At least one is required for any index note.
+    value_tooltip: 参考书目中每个条目的内容。 任何索引说明至少需要一个。
     type: 类型
-    type_tooltip: The type of index entry.
+    type_tooltip: 索引条目的类型。
     reference: 参考
-    reference_tooltip: The target for the index item.
+    reference_tooltip: 索引项的目标。
     reference_text: 参考文本
-    reference_text_tooltip: A description for the reference, if warranted.
+    reference_text_tooltip: 如有必要，参考说明。
 
   note_singlepart:
     <<: *note_attributes
@@ -770,10 +769,10 @@ zh:
   chronology_item:
     event_date: 事件日期
     event_date_tooltip: |
-        <p>The date of an event in a chronology list.</p>
+        <p>年表列表中事件的日期。</p>
     events: 事件
     events_tooltip: |
-        <p>A description of an event corresponding to the chronology date item.</p>
+        <p>与年表日期项对应的事件的描述。</p>
     events_singular: 事件
 
   note_definedlist:
@@ -783,17 +782,17 @@ zh:
   definedlist_item:
     label: 标签
     label_tooltip: |
-        A text string that either contextualizes or is explained by the content in the defined list note item.
+      被所定义的列表注释项中的内容所解释的文本字符串。
     value: 值
     value_tooltip: |
-        A defined list item in a defined list.
+      被定义列表中的列表项。
 
   note_orderedlist:
     <<: *note_attributes
     option: 有序列表
     enumeration: 枚举
     enumeration_tooltip: |
-        <p>An attribute for indicating the type of numeration to be applied to the note items</p>
+        <p>用于指示要应用于注释项的枚举类型的属性</p>
 
   note_bioghist:
     <<: *note_attributes
@@ -826,8 +825,8 @@ zh:
     is_representative: 是代表性的?
     instance_type: 类型
     instance_type_tooltip: |
-        <p>A designation of the manifestation for the described materials. The instance designation is optional, but required to open and complete a container record for the material described.</p>
-        <p>Values in this Controlled Value List may be modified.</p>
+        <p>指定所述材料的表现形式。 实例指定是可选的，但在打开并完成所描述材料的容器记录时是必填的。</p>
+        <p>可以修改此受控值列表中的值。</p>
     digital_object: 数字对象
     _plural: 实例
     _singular: 实例
@@ -844,24 +843,24 @@ zh:
     file: 文件
     file_uri: 文件URI
     file_uri_tooltip: |
-        <p>An identifier for a file associated with a digital object, accessible on the web or in a file directory.</p>
+        <p>与数字对象关联的文件的标识符，可在Web或文件目录中访问。</p>
     publish: 发布?
     publish_tooltip: |
-        <p>Determines whether this File Version is published to public (patron) interfaces.</p>
+        <p>确定此文件版本是否发布到公共界面。</p>
     use_statement: 使用说明
     use_statement_tooltip: |
-        <p>A descriptor indicating the use for which the digital file is intended (e.g., a thumbnail).</p>
-        <p>Values in this Controlled Value List may be modified.</p>
+        <p>描述数字文件用途的描述符（例如，缩略图）。</p>
+        <p>可以修改此受控值列表中的值。</p>
     xlink_actuate_attribute: XLink动作属性
     xlink_actuate_attribute_tooltip: |
-        <p>An XLink attribute used for export for indicating how the digital object should display (e.g. whether the link occurs automatically or must be requested by the user). It is used in conjunction with the XLink Show attribute.</p>
+        <p>用于导出的XLink属性，用于指示数字对象应如何显示（例如，链接是自动发生还是必须由用户请求）。 它与XLink显示属性一起使用。</p>
     xlink_show_attribute: XLink显示属性
     xlink_show_attribute_tooltip: |
-        <p>An XLink attribute used for export for indicating how the target of a link should be displayed. It is used in conjunction with the XLink Actuate attribute.</p>
+        <p>用于导出的XLink属性，用于指示应如何显示链接的目标。 它与XLink动作属性一起使用。</p>
     file_format_name: 文件格式名称
     file_format_name_tooltip: |
-        <p>The name of the format for the file type.</p>
-        <p>Values in this Controlled Value List may be modified.</p>
+        <p>文件类型的格式名称。</p>
+        <p>可以修改此受控值列表中的值。</p>
         <p>例如：</p>
         <ul>
         <li>Audio Interchange File Format (aiff)</li>
@@ -872,21 +871,21 @@ zh:
         </ul>
     file_format_version: 文件格式版本
     file_format_version_tooltip: |
-        <p>The version of the format for the file type.</p>
+        <p>文件类型的格式版本。</p>
         <p>例如：</p>
         <ul>
-        <li>5.0 <em>(for TIFF 5.0)</em></li>
+        <li>对于<em>(TIFF 5.0)</em>，使用5.0 </li>
         </ul>
     file_size_bytes: 文件尺寸 (字节数)
     file_size_bytes_tooltip: |
-        <p>The size (in bytes) of the digital file.</p>
+        <p>数字文件的大小（以字节为单位）。</p>
     checksum: 校验和
     checksum_tooltip: |
-        <p>A digital signature for monitoring the integrity and authenticity of a digital file.</p>
+        <p>用于监控数字文件完整性和真实性的数字签名。</p>
     checksum_method: 校验方法
     checksum_method_tooltip: |
-        <p>The algorithm used for generating checksums.</p>
-        <p>Values in this Controlled Value List may be modified.</p>
+        <p>用于生成校验和的算法。</p>
+        <p>可以修改此受控值列表中的值。</p>
         <p>例如：</p>
         <ul>
         <li>MD5</li>
@@ -901,58 +900,50 @@ zh:
   extent: &extent_attributes
     portion: 部分
     portion_tooltip: |
-        <p>REQUIRED FIELD: Used to specify whether an extent statement relates to the whole or part of a given described aggregation or object.</p>
-        <p>参见DACS 2.5.7</p>
+        <p>必填项目：用于指定范围语句是否与给定描述的聚合或对象的全部或部分相关。</p>
     number: 编号
     number_tooltip: |
-        <p>REQIURED FIELD: A numeric value for indicating the number of units in the extent statement, e.g, 5, 11.5, 245. Used in conjunction with Extent 类型 to provide a structured extent statement.</p>
-        <p>参见DACS 2.5</p>
+        <p>必填项目：用于指示范围语句中单位数的数值，例如5,11.5,245。与幅度(尺寸)类型结合使用以提供结构化范围描述。</p>
     extent_type: 类型
     extent_type_tooltip: &extent_type_tooltip |
-        <p>REQUIRED FIELD: A term indicating the type of unit used to measure the extent of materials described.</p>
-        <p>Values in this Controlled Value List may be modified.</p>
-        <p>参见DACS 2.5</p>
+        <p>必填项目：表示用于测量所述材料幅度(尺寸)的单位类型。</p>
+        <p>可以修改此受控值列表中的值。</p>
     container_summary: 装具简介
     container_summary_tooltip: |
-        <p>A list of container and container types housing the materials described in the component record.</p>
+        <p>容纳组件记录中描述的材料的装具和装具类型的列表。</p>
         <p>例如：</p>
         <ul>
-        <li>10 record cartons, 6 archives boxes, 3 oversize folders.</li>
-        <li>12 shoeboxes.</li>
-        <li>4 archives boxes, 32 tubes.</li>
+        <li>XX型号纸箱</li>
         </ul>
     physical_details: 物理详情
     physical_details_tooltip: |
-        <p>Other physical details of the materials described, e.g., analog, b&w, negatives.</p>
-        <p>参见DACS 2.5</p>
+        <p>所述材料的其他物理细节，例如模拟、黑白、负片。</p>
     dimensions: 外形尺寸
     dimensions_tooltip: |
-        <p>Dimensions of the materials described.</p>
-        <p>参见DACS 2.5</p>
+        <p>所述材料的尺寸。</p>
         <p>例如：</p>
         <ul>
         <li>29 cm</li>
-        <li>7 1/4 x 3 1/2 in.</li>
-        <li>1/2 in. tape</li>
+        <li>210 mm × 297mm</li>
         </ul>
-    _plural: 扩展
-    _singular: 扩展
+    _plural: 幅度(尺寸)
+    _singular: 幅度(尺寸)
 
   external_document: &external_document_attributes
     title: 标题
     title_tooltip: |
-        <p>The title of an external document referenced from the record. The document may be of any form or content. A web accessible file, a network accessible file, a file on the same computer as the application, etc.</p>
+        <p>从记录中引用的外部文档的标题。 该文件可以是任何形式或内容，Web可访问文件，网络可访问文件，与应用程序在同一计算机上的文件等</p>
     location: 位置
     location_tooltip: |
-        <p>The location of the file, ideally a resolvable URI.</p>
+        <p>文件的位置，理想情况下是可解析的URI。</p>
         <p>例如：</p>
         <ul>
-        <li>http://www.archivesspace.org/</li>
+        <li>http://www.example.org/files/1234</li>
         <li>file:///c:/path/to/the%20file.txt</li>
         </ul>
     publish: 发布?
     publish_tooltip: |
-        <p>Determines whether this External Document is published to public (patron) interfaces.</p>
+        <p>确定是否将此外部文档发布到公共界面。</p>
     document_link: 文档链接
     _plural: 外部文档
     _singular: 外部文档
@@ -961,7 +952,7 @@ zh:
     <<: *external_document_attributes
     identifier_type: 标识类型
     identifier_type_tooltip: |
-        <p>The identifier type indicates what domain the external document belongs to.</p>
+        <p>标识符类型指示外部文档属于哪个领域。</p>
 
   external_id:
     _plural: 外部ID
@@ -973,55 +964,55 @@ zh:
   rights_statement: &rights_statement_attributes
     identifier: 标识
     identifier_tooltip: |
-        <p>Uniquely identifies the rights statement within the repository domain. Rights Statement identifiers are usually auto-generated by the application.</p>
+        <p>唯一标识档案库中的权利声明。 权利声明标识符通常是由程序自动生成。</p>
     identifier_auto_generate_message: "-- auto-generated upon save --"
     rights_type: 权利类型
     rights_type_tooltip: |
-        <p>The basis for the rights statement being made.  Four bases are allowed:  Copyright, License, Statute, and Other.  License is for formal and informal licenses, such as donor and purchase agreements.  Statute is for codified laws such as Fair Use or FERPA in the United States.  Other is for institutional policy or other bases other than copyright, license, and statute.  It too may be used for donor and purchase agreements if the repository prefers.</p>
+        <p>正在进行的权利声明的基础。 允许四个基础：版权、许可、法规和其他。 许可证适用于正式和非正式许可，例如捐赠和购买协议。 法规适用于现行适用法律。 其他用于机构政策或版权，许可和法规以外的其他基础。 如果档案库需要的情况下，它也可以用于捐赠和购买协议。</p>
     rights_type_message: 请选择一个权利类型
     status: 状态
     status_tooltip: |
-        <p>A coded designation for the copyright status of the object at the time the rights statement is recorded.</p>
+        <p>记录权利声明时对象的版权状态的编码名称。</p>
         <ul>
-          <li>Copyrighted = Under copyright.</li>
-          <li>Public domain = In the public domain.</li>
-          <li>Unknown = Copyright status of the resource is unknown</li>
+          <li>受版权保护=版权所有。</li>
+          <li>公共领域=在公共领域可用。</li>
+          <li>未知=资源的版权状态未知</li>
         </ul>
     license_terms: 特许术语
     license_terms_tooltip: |
-        <p>A statement (actual text snippet or summary) of the permissions granted in the license.</p>
+        <p>许可证中授予的权限的声明（实际文本片段或摘要）。</p>
     statute_citation: 法令引文
     statute_citation_tooltip: |
-        <p>A citation, URI, or other reference to the statute related to this Rights Statement.</p>
+        <p>本权利声明相关的法规的引用、URI或其他引用。</p>
         <p>例如：</p>
         <ul>
-        <li>Freedom of Information and Protection of Privacy Act [RSBC 1996] Chapter 165</li>
+        <li>只是产权法法第X章第Y节第Z条第N款</li>
         </ul>
     jurisdiction: 管辖机构
     jurisdiction_tooltip: |
-        <p>Copyright: The country whose copyright laws apply.</p>
-        <p>Statute: The country or other political body enacting the statute.</p>
-        <p>Conforms to ISO 3166.</p>
+        <p>版权：适用版权法的国家/地区。</p>
+        <p>法规：颁布法规的国家或其他政治机构。</p>
+        <p>参照ISO 3166。</p>
     type_note: 类型注释
     type_note_tooltip: |
-        <p>Any additional information about the copyright, license, statute, or institutional policy and/or about its application to the materials described.</p>
+        <p>有关版权，许可，法规或机构政策和/或其对所述材料的应用的任何其他信息。</p>
         <p>例如：</p>
         <ul>
-        <li>Constraint(s) on Use: This work may be protected by copyright law. Use of this work beyond that allowed by the applicable copyright statute requires the written permission of the copyright holder(s). Responsibility for obtaining permissions for any use and distribution of this work rests exclusively with the user and not the UC San Diego Libraries. Inquiries can be made to the Mandeville Special Collections Library (http://libraries.ucsd.edu/locations/mscl/).</li>
+          <li>使用限制：本作品可能受版权法保护。 除适用的版权法规允许的范围外，使用此作品需要获得版权所有者的书面许可。 获得任何使用和分发此项作品的权限的责任完全在于用户而不是本档案馆。 如有查询，联系author@example.com。</li>
         </ul>
     determination_date: 权利确定日期
     determination_date_tooltip: |
-        <p>Copyright: The date the copyright status recorded in copyright status was determined.</p>
-        <p>Statute: The date that the determination was made that the statute authorized the permission(s) noted.</p>
+        <p>版权：确定版权状态中记录的版权状态的日期。</p>
+        <p>法规：确定法规授权所述许可的日期。</p>
     start_date: 起始日期
     start_date_tooltip: |
-        <p>The date the rights statement went into effect.</p>
+        <p>权利声明生效的日期。</p>
     end_date: 终止日期
     end_date_tooltip: |
-        <p>The date the rights statement ends.</p>
+        <p>权利声明结束的日期。</p>
     other_rights_basis: 其他权利基础
     other_rights_basis_tooltip: |
-      <p>Rights Type of other rights statements that are not statutes, licenses, or copyright.</p>
+      <p>权利声明中非法规，许可或版权的其他权利类型。</p>
     _plural: 权利声明
     _singular: 权利声明
 
@@ -1040,53 +1031,44 @@ zh:
   date: &date_attributes
     label: 标签
     label_tooltip: |
-        <p>REQUIRED FIELD: Describes what the type of activity the date signifies.</p>
-        <p>参见DACS 2.4 and 2.4.3</p>
+        <p>必填项目：描述日期所表示的活动类型。</p>
     date_type: 类型
     date_type_tooltip: |
-        <p>REQUIRED FIELD: Indicates the type for normalized date information, either a single date or a date range (inclusive or bulk).</p>
-    date_type_message: Select a Type to enter normalized date or date range
+        <p>必填项目：表示标准化日期信息的类型，可以是单个日期或日期范围（包含性或批量）。</p>
+    date_type_message: 选择类型以输入标准化日期或日期范围
     expression: 表达式
     expression_tooltip: |
-        <p>CONDITIONALLY REQUIRED FIELD: A natural language expression specifying the date or date range of the materials. Required when a normalized date is not recorded.</p>
-        <p>参见DACS 2.4</p>
+        <p>未记录标准化日期时，为必填项目。指定材料的日期或日期范围的自然语言表达式</p>
         <p>例如：</p>
         <ul>
         <li>1968</li>
         <li>1979-1993</li>
-        <li>1785-1960, bulk 1916-1958</li>
         <li>1827, 1952-1978</li>
-        <li>circa 1870-1879</li>
-        <li>1906 March 17</li>
-        <li>undated</li>
-        <li>unknown <em>(for events)</em></li>
+        <li>1906-3- 17</li>
+        <li>无日期</li>
+        <li>未知</li>
         </ul>
     begin: 开始
     begin_inline_help: 例如：YYYY, YYYY-MM, 或YYYY-MM-DD
     begin_tooltip: |
-        <p>A normalized date (in the form YYYY, YYYY-MM, or YYYY-MM-DD) representing a single date or the first date in a date range.</p>
-        <p>参见DACS 2.4.7-2.4.16</p>
-        <p>A.D. years are expressed with four digits.</p>
-        <p>B.C. years are expressed as a negative number, e.g., -214 for 214 B.C.</p>
+        <p>表示单个日期或日期范围内的第一个日期的标准化日期（格式为YYYY，YYYY-MM或YYYY-MM-DD）。</p>
+        <p>公元后年数用四位数表示。</p>
+        <p>公元前年数表示为负数，例如公元前214年使用-214表示。</p>
     end: 结束
     end_inline_help: 例如：YYYY, YYYY-MM, 或YYYY-MM-DD
     end_tooltip: |
-        <p>A normalized date (in the form YYYY, YYYY-MM, or YYYY-MM-DD) representing the second date in a date range.</p>
-        <p>参见DACS 2.4.7-2.4.16</p>
-        <p>A.D. years are expressed with four digits.</p>
-        <p>B.C. years are expressed as a negative number, e.g., -214 for 214 B.C.</p>
+      <p>表示日期范围内的第二个日期的标准化日期（格式为YYYY，YYYY-MM或YYYY-MM-DD）。</p>
+      <p>公元后年数用四位数表示。</p>
+      <p>公元前年数表示为负数，例如公元前214年使用-214表示。</p>
     certainty: 置信度
     certainty_tooltip: |
-        <p>The level of confidence for the information given in a date statement. This information is optional and should only be added when qualifying date information as potentially uncertain based upon the description or cataloging rules in use.</p>
-        <p>参见EAD attribute "certainty".</p>
+      <p>日期声明中给出的信息的置信水平。 此信息是可选的，只有在根据使用的描述或编目规则将日期信息限定为可能不确定时才应添加。</p>
     era: Era
     era_tooltip: |
-        <p>Period during which years are numbered and dates reckoned, such as B.C. or C.E. The value "ce" is the default.</p>
-        <p>参见EAD attribute "era".</p>
+        <p>年份编号和日期计算的时间段，值“公元”是默认值。</p>
     calendar: 日历
     calendar_tooltip: |
-        <p>System of reckoning time, such as the Gregorian calendar or Julian calendar. The value "gregorian" is the default.</p>
-        <p>参见EAD attribute "calendar" and DACS 2.4.5.</p>
+        <p>计算时间系统，例如公历、月历(阴历)或儒略历。 “公历”是默认值。</p>
     _plural: 日期
     _singular: 日期
 
@@ -1127,127 +1109,95 @@ zh:
     accession_date: 入藏日期
     accession_date_inline_help: 例如YYYY-MM-DD
     accession_date_tooltip: |
-        <p>REQUIRED FIELD: The date the accession took place. It is not
-        necessarily the same date as when the record is created.</p>
+        <p>必填项目：入藏日期。 它不一定与创建记录时的日期相同。</p>
     accession_id: 标识
     accession_id_tooltip: |
-        <p>The internal database number for a specific accession record.</p>
+        <p>特定登录记录的内部数据库编号。</p>
     identifier: 标识
     id_0: 标识
     id_1: 标识 2
     id_2: 标识 3
     id_3: 标识 4
     id_0_tooltip: |
-        <p>REQUIRED FIELD:  The unique identifier for an accession within a
-        repository.</p>
-        <p>In this system, four fields are provided for parsing out an
-        accession identifier into its component parts. Each segment is
-        limited to 50 characters, or 200 characters total for the identifier.
-        At least the first part must be used for a valid accession record.</p>
-        <p>Default values may be used to populate the component parts that are
-        the same across all accession numbers.</p>
-        <p>参见DACS 5.2.5</p>
+        <p>必填项目：一个入藏(品)在档案库中的唯一标识符。</p>
+        <p>在本系统中，提供了四个字段来从标识符解析出其组成部分。 每个细分都是标识符总共限制为50个字符或200个字符。
+           至少第一部分必须用于有效的入藏(品)记录。</p>
+        <p>默认值可用于填充所有入藏号码都一样的组件部分。</p>
     content_description: 内容描述
     content_description_tooltip: |
-        <p>A description of the document types and topical contents of the
-        accession.</p>
-        <p>参见DACS 3.1.4-3.1.7</p>
-        <p>例如：</p>
-        <p>Ten cartons of materials containing field notes, diaries, and
-        drafts of maps documenting Mr. Smith's 10 years in residence at the
-        Otay Mesa Ranch.</p>
+        <p>关于入藏品文档类型和主题内容的描述</p>
     condition_description: 状况描述
     condition_description_tooltip: |
-        <p>A description of the physical condition of the contents of the
-        accession, including any special handling requirements.</p>
+        <p>对入藏品中物品的物理条件的描述，包括任何特殊处理要求。</p>
         <p>例如：</p>
-        <p>The maps in box 4 are brittle and several are covered with mold.
-        Inhalation guards should be worn during processing.</p>
+        <p>本资料年代久远，已经变脆，处理时需要轻拿轻放</p>
     disposition: 处置
     disposition_tooltip: |
-        <p>A note to describe how a particular accession may have been assigned to different resources.</p>
+        <p>描述关于如何将特定入藏品分配给不同资源的注释。</p>
         <p>例如：</p>
-        <p>Photographs were separated and assigned to Photographs 025.</p>
-        <p>The letters to William Colton were added to the William Colton correspondence collection, while the maps of local country streams were added to the records of the County River collection.</p>
+        <p>照片已被分开，并分配给照片025。</p>
+        <p>案卷分为两部分，分别分配给案卷A、案卷B</p>
     general_note: 一般注释
     general_note_tooltip: |
-        <p>A catch all note field for any information that does not fit in any of the more specifically defined fields.</p>
+        <p>通用型注释字段，用于填写不适合任何其他具有更明确定义字段的任何信息。</p>
     inventory: 清单
     inventory_tooltip: |
-        <p>A list of the containers and their contents making up an accession. The box list may be composed in the field, copied and pasted into the field, or referenced as an external document. The reference to the external document may be recorded here or in an External Documents subrecord.</p>
-        <p>Example:</p>
+        <p>构成入藏品的装具及其内容的列表。 盒子列表可以在字段中组合，复制并粘贴到字段中，或者作为外部文档引用。 可以在此处或在外部文档子记录中记录对外部文档的引用。</p>        <p>Example:</p>
         <ul>
-        <li>Box 1:   Diaries</li>
-        <li>Box 2:   Letters to Mr. Smith's family</li>
-        <li>Box 3:   Personal records for ranch employees</li>
-        <li>Box 4:   Drafts of ranch maps</li>
+        <li>盒1：总纲及卷一</li>
+        <li>盒2：卷二、卷三</li>
         </ul>
     provenance: 出处
     provenance_tooltip: |
-       <p>A note that provides provenance information about an accession, such as custodial history, detailed acquisition information, etc.</p>
-       <p>参见DACS 5.1-5.2</p>
+        <p>提供有关入藏品的出处信息的说明，例如保管历史、详细的收购信息等。</p>
     retention_rule: 保存规则
     retention_rule_tooltip: |
-        <p>A note indicating the retention authority or rule for the accession.
-        <p>例如：</p>
-        <ul>
-        <li>参见the Campus Retention Schedule.</li>
-        </ul>
-    restrictions_apply: 适用限制?
+        <p>说明入藏品的保管权限或规则的注释。</p>
+    restrictions_apply: 存在限制?
     restrictions_apply_tooltip: |
-        <p>Indication if restrictions apply to the accession.</p>
-        <p>参见DACS 4.1.5-4.1.6; 4.2.5-4.2.7, 4.3.4-4.3.6</p>
+        <p>表明针对入藏品是否存在某种限制。</p>
     resource_type: 资源类型
     resource_type_tooltip: |
-        <p>A list of terms used by a repository for categorizing its resources into basic types.</p>
-        <p>Values in this Controlled Value List may be modified.</p>
+        <p>档案库用于将其资源分类为基本类型的术语列表。</p>
+        <p>可以修改此受控值列表中的值。</p>
     access_restrictions: 访问受限?
     access_restrictions_tooltip: |
-        <p>A checkbox for indicating access to the materials is restricted.</p>
-        <p>参见DACS 4.1.5-4.1.6; 4.2.5-4.2.7, 4.3.5-4.3.6</p>
+        <p>用于指示对材料的访问是否受到限制的复选框。</p>
     access_restrictions_note: 访问限制注释
     access_restrictions_note_tooltip: |
-        <p>A statement indicating what materials in the accession have access to them restricted, what the authority of the restriction is, and for how long the restriction will be in effect. Additional information may also be recorded in a Rights subrecord.</p>
+        <p>一项声明，指出入藏品中哪些材料的获取受到限制，限制的权限是什么，以及限制将生效多长时间。其他信息也可以记录在权限子记录中。</p>
         <p>例如：</p>
         <ul>
-        <li>Diaries in box ten have are restricted by the donor until 2030.</li>
+        <li>案卷1由于该处室工作性质原因到2030年才可开放</li>
         </ul>
     use_restrictions: 使用受限?
     use_restrictions_tooltip: |
-        <p>A check box to indicate that there are use restrictions for materials in the accession.</p>
+        <p>一个复选框，指示在入藏品中存在对材料的使用限制。</p>
     use_restrictions_note: 使用限制注释
     use_restrictions_note_tooltip: |
-        <p>A statement indicating which materials have use restrictions, how the materials can be used, what the authority of the restriction is, and for how long the restriction will be in effect. Additional information may also be recorded in a Rights subrecord.</p>
-        <p>例如：</p>
-        <p>Manuscripts in box 33 are fragile; photocopies must be used instead.</p>
+        <p>说明哪些材料有使用限制、如何使用材料、限制的权限以及限制的有效期的声明。其他信息也可以记录在权限子记录中。</p>        <p>例如：</p>
+        <p>第33盒的手稿很易损，必须用影印代替。</p>
     acquisition_type: 征集类型
     acquisition_type_tooltip: |
-        <p>A categorical descriptor for the type of acquisition. Repositories
-        may customize the list of data values.</p>
+        <p>入藏类型的分类描述符。档案库可以自定义数据值列表。</p>
         <p>例如：</p>
         <ul>
-        <li>Gift</li>
-        <li>Purchase</li>
-        <li>Transfer</li>
+        <li>赠品</li>
+        <li>购买</li>
+        <li>移交</li>
         </ul>
     publish: 发布?
-    publish_help: Check this if you wish to publish this accession to the public.
+    publish_help: 如果希望向公众发布此入藏品内容，请选中此项。
     publish_tooltip: |
-        <p>Determines whether this Accession will be published to public (patron) interfaces.</p>
+        <p>确定此登录是否将发布到公共（用户）接口。</p>
     restrictions: 受限?
     restrictions_tooltip: |
-        <p>Indication if restrictions apply to the accession.</p>
-        <p>参见DACS 4.1.5 - 4.1.6; 4.2.5 - 4.2.7, 4.3.4 - 4.3.6</p>
+        <p>说明限制是否适用于入藏。</p>
     title: 标题
     title_tooltip: |
-        <p>The title assigned to an accession or resource. The accession title
-        need not be the same as the resource title. Moreover, a title need not
-        be expressed for the accession record, as it can be implicitly
-        inherited from the resource record to which the accession is
-        linked.</p>
-        <p>参见DACS 2.3.18-2.3.22</p>
+        <p>分配给入藏或资源的标题。入藏标题不必与资源标题相同。此外，不需要为加入记录表示标题，因为可以从与加入关联的资源记录隐式继承标题。</p>
     related_resources_tooltip: |
-        <p>Used for linking associated Resources with this 入藏品.</p>
+        <p>用于将相关资源链接到此入藏品。 </p>
     relator: 相关方
     relator_type: 相关方类型
     _singular: 入藏品
@@ -1276,8 +1226,7 @@ zh:
   agent: &agent_attributes
     type: 代理类型
     type_tooltip: |
-        <p>The type of entity represented by the Agent record.</p>
-        <p>参见DACS 10.2 and PREMIS Agent entity</p>
+        <p>由代理记录表示的实体的类型。</p>
     agent_type:
       agent_family: 家族
       agent_person: 个人
@@ -1286,20 +1235,20 @@ zh:
     name: 代理名称
     names: 名称形式
     names_tooltip: |
-        <p>REQUIRED SUBRECORD: Records different forms of an Agent's name. Each Agent record must have at least one Name Form subrecord.</p>
+      <p>必填子记录：记录代理名称的不同形式。每个代理记录必须至少有一个名称形式子记录。</p>
     agent_contacts: 联系人详情
     contacts_tooltip: |
-        <p>Records contact information about a particular Agent.</p>
+        <p>记录有关特定代理的联系信息。 </p>
     notes: 注释
     notes_tooltip: |
-        <p>Records additional descriptive information about an Agent, such as a biographical note or an administrative history.</p>
+        <p>记录有关代理的其他描述性信息，例如传记笔记或管理历史。</p>
     related_agents_tooltip: |
-        <p>Allows links from this Agent record to another in associative, hierarchical, or parent/child relationships.</p>
+        <p>允许在关联关系、层次关系或父/子关系中将此代理记录链接到另一个代理记录。 </p>
     external_documents_tooltip: |
-        <p>Allows links to external documentation, e.g. biographical files, reference works, etc. about this Agent.</p>
+        <p>允许链接到有关此代理的外部文档，例如传记文件、参考作品等。</p>
     dates_of_existence: 存在日期
     dates_of_existence_tooltip: |
-        <p>Dates in which the agent existed.</p>
+        <p>代理存在的日期。</p>
     publish: 发布
     _singular: 代理
     _plural: 代理
@@ -1337,68 +1286,50 @@ zh:
     <<: *section_tooltips
     title: 标题
     title_tooltip: |
-        <p>CONDITIONALLY REQUIRED FIELD: The title assigned to the materials described. An Archival Object must have either a Title or a Date subrecord.</p>
-        <p>参见DACS 2.3</p>
-        <p>例如：</p>
-        <ul>
-        <li>Graciany Miranda Archilla papers</li>
-        <li>Love Makes a Family records</li>
-        <li>Cameron family account book</li>
-        <li>Caroline and Erwin Swann collection of caricatures and cartoons</li>
-        <li>National Academy of Sciences correspondence</li>
-        <li>Audio and video recordings</li>
-        </ul>
+        <p>有条件必填字段：指定给所述材料的标题。存档对象必须具有标题或日期子记录。</p>
     ref_id: 参考ID
     ref_id_tooltip: |
-        <p>An automatically provided and updatable reference ID, which can be used as a target for linking, etc. The Ref ID is intended to be generated automatically or imported from an existing system and to remain persistent.</p>
+        <p>自动提供和可更新的引用ID，可用作链接等的目标。引用ID旨在自动生成或从现有系统导入，并保持持久。</p>
     ref_id_export_prefix: aspace_
     dates: 日期
     dates_tooltip: |
-        <p>CONDITIONALLY REQUIRED SUBRECORD. An Archival Object must have either a Title or a Date subrecord.</p>
+        <p>有条件必填子记录。存档对象必须具有标题或日期子记录。</p>
     extents: 扩展
     ref_id_auto_generation_message: "-- auto-generated upon save --"
     component_id: 组件唯一标识
     component_id_tooltip: |
-        <p>Expresses a unique ID, within the context of the resource description, for the component part.</p>
+        <p>在资源描述的上下文中表示组件部件的唯一ID。</p>
         <p>例如：</p>
         <ul>
-        <li>Series I</li>
-        <li>Subseries 8</li>
-        <li>Accession 2005-M-078</li>
+        <li>系列1</li>
+        <li>子系列2</li>
         </ul>
     level: 描述层级
     level_tooltip: |
-        <p>REQUIRED FIELD. Indicates. the hierarchical level of the materials being described.</p>
-        <p>参见DACS Chapter 1</p>
-        <p>Values are prescribed by the EAD schema.</p>
+        <p>必填字段。描述了材料的层级/等级。 </p>
     other_level: 其他层级
     other_level_tooltip: |
-        <p>REQUIRED FIELD if "Other Level" is the value selected for Level. Expresses the type of level outside of the values specified in the EAD schema.</p>
+        <p>如果级别的值为“其他级别”，则为必填字段。表示超出已有级别类型。</p>
     container_summary: 装具简介
     container_summary_tooltip: |
-        <p>For recording the number and type of containers comprising a resource description. This is considered a textual summary and not identical with the extent subrecords.</p>
-        <p>参见DACS 2.5</p>
+        <p>用于记录包含资源描述的容器的数量和类型。此字段为一个文本摘要，与尺寸子记录不相同。</p>
         <p>例如：</p>
         <ul>
-        <li>10 record cartons, 6 archives boxes, 3 oversize folders.</li>
-        <li>12 shoeboxes.</li>
-        <li>4 archives boxes, 32 tubes.</li>
+        <li>10个档案盒, 6个文件夹。</li>
         </ul>
     publish: 发布?
     publish_tooltip: |
-        <p>Determines whether this archival object will be published to public (patron) interfaces.</p>
+        <p>确定是否将此存档对象发布到公共（用户）界面。</p>
     restrictions_apply: 适用限制
     restrictions_apply_tooltip: |
-        <p>Indicates whether the materials described are restricted in any way. Additional description of the restriction should be provided in appropriate注释s or Rights Statements for the record where the restriction occurs.</p>
-        <p>参见DACS 4.1-4.4</p>
+        <p>指示所描述的材料是否以任何方式受到限制。对于发生限制的记录，应在适当的注释或权利声明中提供限制的其他说明。</p>
     repository_processing_note: 档案库处理注释
     repository_processing_note_tooltip: |
-         <p>An application-specific field for recording information about processing of the materials. This note is not included in any exports or reports, and is not populated by imports.</p>
-    automate_title: Automatically generate title
+         <p>用于记录材料加工信息的应用特定字段。此注释不包括在任何导出或报告中，也不由导入填充。</p>
+    automate_title: 自动生成标题
     language: 语言
     language_tooltip: |
-        <p>The language term and code represented in the material(s) described.</p>
-        <p>参见DACS 4.5</p>
+        <p>所述材料中表示的语言术语和代码。</p>
     "[:resource_id, :ref_id]": 参考ID
     has_unpublished_ancestor: 存在未公开上级资料?
     _singular: 归档对象
@@ -1407,19 +1338,18 @@ zh:
   group:
     group_code: 组代码
     group_code_tooltip: |
-        <p>A short version of the name of the group.</p>
+        <p>用户组名的短版本</p>
     description: 描述
     description_tooltip: |
-        <p>A brief textual description of the group.</p>
+        <p>该组的简短文字描述。 </p>
         <p>例如
         <ul>
-        <li>Summer 2013 interns</li>
-        <li>Collection management staff</li>
+        <li>档案管理组</li>
         </ul>
     member_usernames: 成员
     member_usernames_tooltip: |
-        <p>The members that are part of this group.</p>
-    permissions: "成员有权执行以下操作："
+        <p>属于此组的成员。</p>
+    permissions: "成员有权："
     permission_types:
       manage_repository: 管理此档案库（更改组和其他设置）
       update_location_record: 在此档案库中创建/修改/删除位置记录
@@ -1470,102 +1400,71 @@ zh:
     id_2: 标识 3
     id_3: 标识 4
     id_0_tooltip: |
-        <p>REQUIRED FIELD. The identification number assigned to each discrete Resource within a Repository.</p>
-        <p>参见DACS 2.1.3</p>
-        <p>例如：</p>
-        <ul>
-        <li>R.001 (Two elements "R" + "001")</li>
-        <li>MSS 025 (A single element)</li>
-        <li>Archives.RSS.0333 (Three elements "Archives" + "RSS" + "0333")</li>
-        </ul>
+        <p>必填字段。分配给档案库中每个独立资源的标识号。</p>
     "[:id_0, :id_1, :id_2, :id_3]": 标识
     "[:repo_id, :identifier]": 标识
     identifier: 标识
     title_tooltip: |
-        <p>REQUIRED FIELD. The title assigned to the resource.</p>
-        <p>参见DACS 2.3</p>
-        <p>例如：</p>
-        <ul>
-        <li>Graciany Miranda Archilla papers</li>
-        <li>Love Makes a Family records</li>
-        <li>Cameron family account book</li>
-        <li>Caroline and Erwin Swann collection of caricatures and cartoons</li>
-        <li>National Academy of Sciences correspondence</li>
-        <li>Audio and video recordings</li>
-        </ul>
+        <p>必填字段。分配给资源的标题。 </p>
     resource_type: 资源类型
     resource_type_tooltip: |
-        <p>A list of terms used by a repository for categorizing its resources into basic types.</p>
-        <p>Values in this Controlled Value List may be modified.</p>
+        <p>档案库用于将其资源分类为基本类型的术语列表。</p>
+        <p>可以修改此受控值列表中的值。</p>
     repository_processing_note: 档案库处理注释
     extents_tooltip: |
-        <p>REQUIRED SUBRECORD: Used for recording the size of the described materials.</p>
-        <p>参见DACS 2.5</p>
+        <p>必填子记录：用于记录所述材料的尺寸。</p>
     related_accessions_tooltip: |
-        <p>Used for linking associated Accessions with this Resource.</p>
+        <p>用于将关联入藏链接到此资源。</p>
     publish_tooltip: |
-        <p>Determines whether this Resource will be published to public (patron) interfaces.</p>
+        <p>确定是否将此资源发布到公共（用户）界面。 </p>
     restrictions: 适用限制
     restrictions_tooltip: |
-        <p>Indicates whether the materials described are restricted in any way. Additional description of the restriction should be provided in appropriate Notes or Rights Statements for the record where the restriction occurs.</p>
-        <p>参见DACS 4.1-4.4</p>
+        <p>指示所描述的材料是否以任何方式受到限制。有关限制的其他说明，应在记录的适当注释或权利声明中为发生限制的提供说明。</p>
     repository_processing_note_tooltip: |
-        <p>An application-specific field for recording information about processing of the materials. This note is not included in any exports or reports, and is not populated by imports.</p>
+        <p>用于记录材料加工信息的应用特定字段。此说明不包括在任何导出或报告中，也不由导入填充。</p>
     ead_id: EAD ID
     ead_id_tooltip: |
-        <p>The identifier for the EAD generated from the resource description, typically a file name. Needs to be unique within the repository context.</p>
+        <p>根据资源描述生成的EAD的标识符，通常是文件名。需要在档案库上下文中是唯一的。</p>
     ead_location: EAD 位置
     ead_location_tooltip: |
-        <p>The location for the EAD generated from the resource description, either a web URL or a file directory statement. The location typically terminates.</p>
+        <p>根据资源描述（Web URL或文件目录语句）生成的EAD的位置。位置通常终止。</p>
     finding_aid_tooltip: |
-        <p>Used to record administrative data about the archival description instance, usually for when the description is exported into Encoded Archival Description (EAD).</p>
+        <p>用于记录有关存档描述实例的管理数据，通常用于将描述导出到的编码存档描述（EAD）中时。</p>
     finding_aid_title: 检索工具标题
     finding_aid_title_tooltip: |
-        <p>The (bibliographic) title for the finding aid associated with this Resource.</p>
-        <p>例如：</p>
-        <ul>
-        <li>Register of the Collection of Jason Twirly</li>
-        <li>Inventory of the Papers of the Reese Family</li>
-        <li>List of the Drawings and Models of the Simon and Simon Architectural Firm</li>
-        </ul>
+        <p>与此资源相关的检索工具的标题。 </p>
     finding_aid_subtitle: 检索工具副标题
     finding_aid_filing_title: 检索工具备案标题
     finding_aid_filing_title_tooltip: |
-        <p>A modified version of the formal title of the finding aid. Designed to aid browsing and sorting of finding aid title lists.</p>
-        <p>例如：</p>
-        <ul>
-        <li>Wayne (Bruce M.) Papers</li>
-        <li>Rooney Family Papers</li>
-        <li>Communist Party of the United States Records</li>
-        </ul>
+        <p>一个修改过的寻找援助的正式名称。旨在帮助浏览和排序查找辅助标题列表。</p>
     finding_aid_date: 检索工具日期
     finding_aid_date_tooltip: |
-        <p>The date expression for when  the current finding aid was generated from the resource description.</p>
+        <p>根据资源说明生成当前检索工具的日期表达式。 </p>
     finding_aid_author: 检索工具作者
     finding_aid_author_tooltip: |
-        <p>The names(s) of the agents responsible for creating the content of the finding aid or its encoding.</p>
+        <p>负责创建辅助查找工具内容或其编码的代理的名称。</p>
     finding_aid_description_rules: 描述规则
     finding_aid_description_rules_tooltip: |
-        <p>Indicates the descriptive rules used to guide description of the Resource.</p>
-        <p>Values in this Controlled Value List may be modified.</p>
+        <p>指示用于指导资源描述的描述性规则。</p>
+        <p>可以修改此受控值列表中的值。</p>
     finding_aid_language: 描述语言
     finding_aid_language_tooltip: |
-        <p>Indicates all the languages present in the finding aid generated from the resource description.</p>
+        <p>指示根据资源说明生成的查找工具中存在的所有语言。</p>
     finding_aid_sponsor: 赞助者
     finding_aid_sponsor_tooltip: |
-        <p>Indicates any sponsors that contributed to the description of the finding aid.</p>
+        <p>表示对检索工具的描述有贡献的任何赞助者。</p>
     finding_aid_edition_statement: 版本声明
     finding_aid_edition_statement_tooltip: |
-        <p>For recording information about the edition of the finding aid.</p>
+        <p>用于记录关于搜索工具版本的信息。</p>
     finding_aid_series_statement: 系列声明
     finding_aid_series_statement_tooltip: |
-        <p>Indicates any bibliographic series to which the finding aid belongs.</p>
+        <p>指示查询工具所属的任何书目系列。</p>
     finding_aid_status: 检索工具状态
     finding_aid_status_tooltip: |
-        <p>Indicates the status of the finding aid.</p>
+        <p>指示查询工具的状态。</p>
     finding_aid_note: 检索工具注释
     finding_aid_note_tooltip: |
-        <p>For recording any additional information about the finding aid (not the described Resource) not covered by the other finding aid data elements.</p>
+       <p>用于记录查询工具的其他数据元素未涵盖的有关查询工具（而不是所述资源）的任何其他信息。</p>
     _singular: 资源
     _plural: 资源
 
@@ -1578,10 +1477,10 @@ zh:
     _plural: 修订声明
     date: 修订日期
     date_tooltip: |
-        <p>Specifies the date the finding aid was last revised.</p>
+        <p>指定上次修订查询工具的日期。</p>
     description: 修订描述
     description_tooltip: |
-        <p>A description of the last revision(s) done to the finding aid.</p>
+        <p>对查询工具的最新修订的描述。</p>
 
   related_resource:
     _singular: 相关资源
@@ -1590,52 +1489,29 @@ zh:
   repository:
     repo_code: 档案库简称
     repo_code_tooltip: |
-        <p>REQUIRED FIELD. An abbreviation or acronym of the repository name, which can be better accommodated in the user interface.</p>
-        <p>例如：</p>
-        <ul>
-        <li>YNHSCL <em>(for Your Name Here Special Collections Library)</em></li>
-        <li>MSCL <em>(for Mandeville Special Collections Library)</em></li>
-        <li>Tamwag <em>(for Tamiment Library and Robert F. Wagner Labor Archives)</em></li>
-        </ul>
+        <p>必填项目。档案库名称的缩写或首字母缩略词，可以更好地在用户界面中容纳。</p>
     name: 档案库名称
     name_tooltip: |
-        <p>REQUIRED FIELD. The name of the repository which has administrative responsibility for and custody of the materials described in the accession, resource, and digital object modules of the application.</p>
-        <p>参见DACS 2.2</p>
-        <p>例如：</p>
-        <ul>
-        <li>Your Name Here Special Collections Library</li>
-        <li>Mandeville Special Collections Library</li>
-        <li>Tamiment Library and Robert F. Wagner Labor Archives</li>
-        </ul>
+        <p>必填项目。对应用程序的加入、资源和数字对象模块中描述的材料具有管理责任和保管权的档案库的名称。</p>
     org_code: 组织/代理代码
     org_code_tooltip: |
-        <p>A code compliant with ISO/DIS 15511 Information and Documentation International Standard Identifier for Libraries and Related Organizations (ISIL). For United States institutions, this includes codes from the MARC Organization Code list.</p>
-        <p>例如：</p>
-        <ul>
-        <li>NNU-TL <em>(for Tamiment Library and Robert F. Wagner Labor Archives)</em></li>
-        <li>IU-Ar <em>(for University of Illinois Archives)</em></li>
-        </ul>
+        <p>符合ISO/DIS15511信息和文献国际标准图书馆和相关组织标识符（ISIL）的代码。对于非正式组织，留空。</p>
     parent_institution_name: 父级机构名称
     parent_institution_name_tooltip: |
-        <p>The name of the parent institution of which the repository is a part.</p>
-        <p>例如：</p>
-        <ul>
-        <li>University of Illinois <em>(for University of Illinois Archives)</em></li>
-        <li>New York University <em>(for Tamiment Library and Robert F. Wagner Labor Archives)</em></li>
-        </ul>
+        <p>档案库所属的父机构的名称。 </p>
     address_1: 地址 1
     address_1_tooltip: &address_tooltip |
-        <p>The postal address or street address for the repository.</p>
+        <p>档案库的邮政地址或街道地址。</p>
     address_2: 地址 2
     address_2_tooltip: *address_tooltip
     city: 城市
     district: 省/州/区
     country: 国家
     country_tooltip: |
-        <p>The country in which the repository is located, taken from the ISO 3166 code list.</p>
+        <p>档案库所在的国家，取自ISO 3166代码列表。</p>
     description: 描述
     description_tooltip: |
-        <p>An about section or descriptive summary for the repository.</p>
+        <p>档案库的描述性摘要。 </p>
     post_code: 邮政编码
     telephone: 电话号码
     telephone_ext: 分机号
@@ -1644,55 +1520,45 @@ zh:
     email_signature: Email签名
     url: 主页URL
     url_tooltip: |
-        <p>A URL for the repository's webpage.</p>
+        <p>档案库网页的URL。</p>
     contact_persons: 联系人
     image_url: 品牌图像URL
     image_url_tooltip: |
-        <p>A URL or other file location identifier referencing a file that contains a branding device to be used in the repository's online finding aids. A typical branding device is a university seal or logo.</p>
+        <p>引用文件的URL或其他文件位置标识符，该文件包含要在档案库的联机查找帮助中使用的品牌标识。一个典型的品牌标识是一个机构印章或标志。</p>
     _singular: 档案库
     _plural: 档案库
     publish: 发布?
     publish_tooltip: |
-        <p>Determines whether this Repository and any record it contains will be published to public (patron) interfaces.</p>
+        <p>确定是否将此档案库及其包含的任何记录发布到公共（用户）界面。</p>
 
 
   term: &term_attributes
     # tooltips not displaying
-    term: 术语
+    term: 主题词
     term_tooltip: |
-        <p>REQUIRED FIELD. A descriptor for part of a subject heading. A subject heading must have at least 1 term associated with it.</p>
+        <p>必填项目:主题标题部分的描述符，一个主题标题至少须关联一个主题词。</p>
     term_type: 类型
     term_type_tooltip: |
-        <p>REQUIRED FIELD. An indicator for expressing the type or category of a subject term.</p>
-    _singular: 术语
-    _plural: 术语
+        <p>必填项目。表示主题词的类型或类别的指示符。</p>
+    _singular: 主题词
+    _plural: 主题词
 
   subject:
     authority_id: 权威机构ID
     authority_id_tooltip: |
-        <p>The unique identifier for the record within the source from which it was acquired, (i.e. an LCSH number). The identifier may be represented as a URI.</p>
+        <p>从中获取记录的源中记录的唯一标识符。标识符可以表示为一个uri。</p>
     source: 源
     source_tooltip: |
-        <p>The vocabulary from which an established term is taken.</p>
-        <p>Values in this Controlled Value List may be modified.</p>
-        <p>例如：</p>
-        <ul>
-        <li>Medical Subject Headings (mesh)</li>
-        <li>Library of Congress Subject Headings (lcsh)</li>
-        </ul>
+        <p>从中获取既定主题词(术语)的标准词汇集。</p>
+        <p>可以修改此受控值列表中的值。</p>
     scope_note: 范围注释
     scope_note_tooltip: |
-        <p>A note that explains and clarifies what is meant and what is not meant in the definition of the term and in its use as a subject heading.</p>
-        <p>例如：</p>
-        <ul>
-        <li>Here are entered works on biological studies of bacteria. Works on the science are entered under the heading Bacteriology.</li>
-        <li>"The right of security and privacy in a man's home." - Black, Law dictionary, 4th ed., 1951.</li>
-        </ul>
+        <p>解释和澄清术语定义和用作主题标题时具备什么含义和不具备什么含义的注释。</p>
     terms: 术语
     terms_tooltip: |
-        <p>REQUIRED SUBRECORD. Used to manage each term or subdivision within a given subject heading. Each subject record must have at least one term associated with it.</p>
+        <p>必填子记录。用于管理给定主题标题中的每个主题词(术语)或细分。每个主题记录必须至少有一个与之相关联的主题词(术语)。</p>
     external_documents_tooltip: |
-        <p>Allows links to external documentation, e.g. how a particular heading is to be used.</p>
+        <p>允许链接到外部文档，例如如何使用特定标题。</p>
     heading: 主题标题
     _singular: 主题
     _plural: 主题
@@ -1700,40 +1566,40 @@ zh:
   user:
     username: 用户名
     username_tooltip: |
-        <p>REQUIRED FIELD. The username for the account that the user will use to authenticate to the application. Permitted characters include a-z, A-Z, @, numbers, hyphen, dash, and dot.</P>
+        <p>必填项目:账号的用户名，用于系统认证用户。允许字符包括a-z, A-Z, @, 数字, -, ——和.。</P>
     name: 全名
     name_tooltip: |
-        <p>REQUIRED FIELD. The full name of the user designated by the username.</p>
+        <p>必填项目:用户全名.</p>
     password: 密码
     password_tooltip: |
-        <p>The password used with the username to authenticate to the application.</p>
+        <p>用于用户名进行验证的密码。</p>
     confirm_password: 确认密码
     confirm_password_tooltip: |
-        <p>A second field used to confirm a match with the password entered into the first field.</p>
+        <p>用于确认与第一个字段中输入的密码匹配的第二个字段。 </p>
     email: Email
     email_tooltip: |
-        <p>The user's email address.</p>
+        <p>用户的电子邮件地址。 </p>
     first_name: 名
     first_name_tooltip: |
-        <p>The user's first name.</p>
+        <p>用户的名字。</p>
     last_name: 姓
     last_name_tooltip: |
-        <p>The user's last name.</p>
+        <p>用户的姓氏。</p>
     telephone: 电话
     telephone_tooltip: |
-        <p>The user's telephone number.</p>
+        <p>用户的电话号码。</p>
     title: 职位
     title_tooltip: |
-        <p>The user's job title.</p>
+        <p>用户的职务。</p>
     department: 部门
     department_tooltip: |
-        <p>The user's department.</p>
+        <p>用户部门。</p>
     additional_contact: 其他联系信息
     additional_contact_tooltip: |
-        <p>Additional contact information for the user, or information such as the user's work schedule.</p>
+        <p>用户的其他联系信息，或用户工作日程等信息。</p>
     is_admin: 授予系统管理员权限
     is_admin_tooltip: |
-        <p>Used to indicate whether the user should have full administrative privileges to the application.</p>
+        <p>用于指示用户是否应具有系统的完全管理权限。</p>
     _singular: 用户
     _plural: 用户
 
@@ -1743,7 +1609,7 @@ zh:
         <p>关于归档单位（入藏品，资源，数字对象）编目的说明，包括提供目录记录标识符。</p>
         <p>例如：</p>
         <ul>
-        <li>Catalog record number: 21345672</li>
+        <li>目录编号：1345672</li>
         </ul>
     processing_hours_per_foot_estimate: 处理单位工时预估
     processing_hours_per_foot_estimate_tooltip: |
@@ -1763,34 +1629,33 @@ zh:
         <p>用于记录处理档案单元的计划。 该计划可以包括档案单元的布置概要，以及如何处理档案单元中的特定对象的说明。 该计划还可能为不同的档案库工作人员指定不同的任务。</p>
         <p>例如：</p>
         <ul>
-        <li>Arrange subject files alphabetically and project files chronologically.</li>
-        <li>Margaret's students will create descriptive records.</li>
-        <li>Project manager will review, output, and load the encoded finding aid.</li>
+        <li>按字母顺序排列主题文件，按时间顺序排列项目文件。</li>
+        <li>项目经理将审查、输出和加载编码的搜索工具。</li>
         </ul>
     processing_priority: 处理优先级
     processing_priority_tooltip: |
-        <p>Indicates the priority assigned to processing of an archival unit.</p>
-        <p>Values in this Controlled Value List may be modified.</p>
+        <p>表示分配给存档单元处理的优先级。 </p>
+        <p>可以修改此受控值列表中的值。</p>
         <p>例如：</p>
         <ul>
-        <li>High</li>
-        <li>Medium</li>
-        <li>Low</li>
+        <li>高</li>
+        <li>中</li>
+        <li>低</li>
         </ul>
     processing_started_date: 处理开始日期
     processing_status: 处理状态
     processing_status_tooltip: |
-        <p>For indicating the current status of processing for an archival unit (accession, resource, or digital object).</p>
-        <p>Values in this Controlled Value List may be modified.</p>
+        <p>用于指示档案单元（入藏、资源或数字对象）处理的当前状态。</p>
+        <p>可以修改此受控值列表中的值。</p>
         <p>例如：</p>
         <ul>
-        <li>New</li>
-        <li>In Progress</li>
-        <li>Completed</li>
+        <li>新</li>
+        <li>处理中</li>
+        <li>完成</li>
         </ul>
     processing_funding_source: 资金源
     processing_funding_source_tooltip: |
-        <p>Used to indicate the source of funding the processing of the described materials.</p>
+        <p>用于指示所述材料加工的资金来源。</p>
     processors: 处理者
     processors_tooltip: |
         <p>列出已分配档案单元（入藏品，资源或数字对象）处理任务的员工。</p>
@@ -2073,22 +1938,21 @@ zh:
     _plural: 操作
     act_type: 操作类型
     act_type_tooltip: |
-        <p>The action this rights statement allows.</p>
+        <p>此权限声明允许的操作。</p>
     restriction: 限制
     restriction_tooltip: |
-        <p>A condition or limitation on the act.</p>
+        <p>操作的条件或限制 </p>
         <p>例如：</p>
         <ul>
-          <li>No more than three</li>
-          <li>Allowed only after one year of archival retention has elapsed</li>
-          <li>Rightsholder must be notified after completion of act</li>
+          <li>不超过三个</li>
+          <li>仅在一年的存档保留期过后才允许</li>
         </ul>
     start_date: 起始日期
     start_date_tooltip: |
-        <p>The date the act went into effect.</p>
+        <p>操作开始的日期。</p>
     end_date: 终止日期
     end_date_tooltip: |
-        <p>The date the act ends.</p>
+        <p>操作结束的日期。</p>
 
   act:
     <<: *rights_statement_act_attributes
@@ -2103,7 +1967,7 @@ zh:
   assessment:
     records: 记录
     records_tooltip: |
-        <p>REQUIRED FIELD: A link to the resource(s), accession(s), archival object(s), or digital object(s) that are the subjects of the assessment.</p>
+        <p>必填项目：指向评估主题的资源、入藏、存档对象或数字对象的链接。</p>
     accession_report: 入藏品报告
     appraisal: 鉴定
     container_list: 盒/装具列表
@@ -2111,10 +1975,10 @@ zh:
     collections: 收藏集 
     control_file: 收藏集 /控制文件
     conservation_note: 保藏注释
-    conservation_note_tooltip: <p>Indicates areas of particular concern with regard to the conservation needs of the collection.</p>
+    conservation_note_tooltip: <p>表示特别关注收藏保护需求的领域。 </p>
     deed_of_gift: 礼物契约
     existing_description_notes: 存在描述注释
-    existing_description_notes_tooltip: <p>Any further information on existing description for the materials.</p>
+    existing_description_notes_tooltip: <p>有关材料现有说明的任何进一步信息。</p>
     finding_aid_ead: 检索工具(EAD-encoding)
     finding_aid_online: 检索工具(在线)
     finding_aid_paper: 检索工具(仅限纸质)
@@ -2122,42 +1986,42 @@ zh:
     finding_aid_spreadsheet: 检索工具(电子表格)
     id: ID
     inactive: 非活动?
-    inactive_tooltip: <p>Indicates if the Assessment record is no longer considered “active” and thus should not be included in searches or reports.</p>
+    inactive_tooltip: <p>指示评估记录是否不再被视为“活动”，因此不应包含在搜索或报告中。</p>
     inactive_true: 是
     inactive_false: 否
     monetary_value: 货币价值
-    monetary_value_tooltip: <p>Appraised or estimated market value of the assessed materials (numerical value).</p>
+    monetary_value_tooltip: <p>评估材料的鉴定或估计市场价值（数值）。</p>
     monetary_value_note: 货币价值注释
-    monetary_value_note_tooltip: <p>Indicates who provided the monetary value, date of appraisal, and any other relevant information.</p>
+    monetary_value_note_tooltip: <p>指明谁提供了货币价值、评估日期和任何其他相关信息。</p>
     surveyed_by: 调查者
     surveyed_by_tooltip: |
-        <p>REQUIRED FIELD: Name(s) of the person(s) who performed the assessment. This field is restricted to those with user records in this system.</p>
+        <p>必填字段：执行评估的人员的姓名。此字段仅限于在此系统中具有用户记录的人员。</p>
     survey_begin: 调查开始日期
     survey_begin_tooltip: |
-        <p>REQUIRED FIELD: The date the survey began, in yyyy-mm-dd format.</p>
+        <p>必填字段：调查开始的日期，格式为YYYY-MM-DD。</p>
     survey_end: 调查完成日期
-    survey_end_tooltip: <p>The date the survey ended, in yyyy-mm-dd format.</p>
+    survey_end_tooltip: <p>调查结束的日期，格式为YYYY-MM-DD。</p>
     surveyed_duration: 调查耗时
-    surveyed_duration_tooltip: <p>The time it took to complete the survey, measured in hour increments.</p>
+    surveyed_duration_tooltip: <p>完成调查所需的时间，以小时为单位计量。</p>
     surveyed_extent: 调查尺寸
-    surveyed_extent_tooltip: <p>The extent of the material surveyed in units such as cubic or linear feet.</p>
+    surveyed_extent_tooltip: <p>被调查材料的尺寸，单位为立方米或米。</p>
     related_eac_records: 相关EAC记录
     research_value: 研究价值
-    research_value_tooltip: <p>This value is automatically calculated by adding the value in the Documentation Quality field with the value in the Interest field.</p>
+    research_value_tooltip: <p>通过将“文档质量”字段中的值与“兴趣”字段中的值相加，自动计算此值。</p>
     review_required: 需要审查?
-    review_required_tooltip: <p>Indicates if review is required for the collection because of its format, subject matter, or circumstances.</p>
+    review_required_tooltip: <p>指示集合是否因其格式、主题或情况而需要审阅。</p>
     review_required_true: 是
     review_required_false: 否
     review_note: 审查注释
-    review_note_tooltip: <p>Explanation of the outcome of any special review.</p>
+    review_note_tooltip: <p>对任何特别审查结果的解释。</p>
     reviewer: 审查者
-    reviewer_tooltip: <p>Indicates who needs to perform the review. This field is restricted to those with user records in this system.</p>
+    reviewer_tooltip: <p>指示需要执行审核的人员。此字段仅限于在此系统中具有用户记录的人员。</p>
     purpose: 评估目的
     purpose_tooltip: |
-        <p>Indicates the reason the assessment was undertaken. Examples: conservation priorities; processing priorities; appraisal; etc.</p>
+        <p>说明进行评估的原因。例如：保护优先权、处理优先权、评估等。 </p>
     scope: 评估范围
     scope_tooltip: |
-        <p>Indicates the scope of the assessment. Examples: 10% sampling; entirety; a particular format or genre within or across collections; or other constraints or conditions on materials actively reviewed during an assessment.</p>
+        <p>表示评估的范围。示例：10%抽样、；整体、集合内或集合间的特定格式或流派、或评估期间正在审查的材料的其他限制或条件。 </p>
     sensitive_material: 敏感资料?
     sensitive_material_tooltip: <p>指示是否存在敏感资料。</p>
     sensitive_material_true: 是
